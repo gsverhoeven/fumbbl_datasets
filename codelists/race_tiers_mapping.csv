@@ -1,0 +1,31 @@
+tier_row_id,race_name,bb2020_tier,naf_tier,bb2020_nov21_tier,race_type
+1,Orc,1,1,2,bash
+2,Chaos Dwarf,1,1,1,bash
+3,Necromantic Horror,2,2,2,hybrid
+4,Dark Elf,1,1,1,agile
+5,Human,1,2,2,hybrid
+6,Chaos Chosen,2,2,2,bash
+7,Shambling Undead,1,1,1,hybrid
+8,Skaven,1,1,1,agile
+9,Dwarf,1,1,1,bash
+10,Lizardmen,1,1,1,hybrid
+11,Norse,1,1,1,hybrid
+12,Nurgle,2,2,2,bash
+13,Wood Elf,1,1,1,agile
+14,Tomb Kings,2,2,2,bash
+15,Chaos Renegade,2,2,2,hybrid
+16,Underworld Denizens,2,2,1,hybrid
+17,High Elf,2,2,1,agile
+18,Ogre,3,3,3,bash
+19,Amazon,1,1,1,hybrid
+20,Old World Alliance,1,2,2,hybrid
+21,Goblin,3,3,3,stunty
+22,Elven Union,2,2,2,agile
+23,Snotling,3,3,3,stunty
+24,Halfling,3,3,3,stunty
+25,Vampire,2,2,2,other
+26,Slann,,2,,other
+27,Bretonnian,,1,,hybrid
+28,Black Orc,2,2,2,bash
+29,Daemons of Khorne,2,2,2,hybrid
+30,Imperial Nobility,2,2,2,hybrid
