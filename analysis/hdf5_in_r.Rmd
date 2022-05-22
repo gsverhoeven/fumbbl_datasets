@@ -1,0 +1,50 @@
+---
+title: "HDF5 in R"
+output: html_notebook
+---
+
+```{r}
+#library(hdf5r)
+
+library(rhdf5)
+```
+
+```{r}
+
+few_h5File <- c("datasets/current/df_mbt.h5")
+
+
+
+loadFeatures <- function(h5File) {
+  # Load feature values from separate HDF5 tables into data.frame object
+  #
+  # Args:
+  #   h5File: filename of HDF5 file to be loaded. It has to contain two tables:
+  #   "/features/table" with feature values and "/labels/table" with
+  #   corresponding block labels.
+  #
+  # Returns:
+  #   A data.frame with feature values and block labels
+
+  labels <- h5read(h5File, "/labels/table", read.attributes = FALSE)
+  featTable <- h5read(h5File, "/features/table", compoundAsDataFrame = FALSE)
+  feats <- data.frame(t(featTable$values_block_0))
+  # data format conversion is application specific 
+  feats$job <- factor(labels$job)
+  feats$layer <- factor(labels$layer)
+  feats$block <- labels$block
+
+  feats$isElevated <- as.logical(labels$is_elevated)
+  feats$partLabel <- labels$part_label
+
+  return(feats)
+}
+
+feats <- loadFeatures(few_h5File)
+```
+```{r}
+h5ls(few_h5File)
+```
+```{r}
+mydata <- h5read(few_h5File, "/df_mbt/_i_/mydata")
+```
