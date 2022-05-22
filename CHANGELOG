@@ -1,0 +1,17 @@
+# current fumbbl datasets
+
+Uses raw datafiles scraped around march 16th 2022.
+Updated fumbbl_dataset notebook to add more columns etc.
+Used in the playground notebook (in `notebooks/`).
+
+# v0.2 fumbbl datasets
+
+Uses raw datafiles scraped around march 16th 2022.
+Used in the blog post https://gsverhoeven.github.io/post/blood-bowl-nufflytics/ (march 20th 2022)
+
+# v0.1 fumbbl datasets
+
+Uses raw datafiles scraped around dec 15th 2021. 
+Used in the blog post https://gsverhoeven.github.io/post/blood-bowl-fumbbl-dataset/ (dec 30th 2021)
+
+
