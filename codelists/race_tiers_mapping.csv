@@ -1,6 +1,6 @@
 tier_row_id,race_name,bb2020_tier,naf_tier,bb2020_nov21_tier,race_type,dk_atv_nosp,Europen_2020,Malta_2022
 4,Dark Elf,1,1,1,agile,0,1,1
-7,Shambling Undead,1,1,1,hybrid,0,1,1
+7,Shambling Undead,1,1,1,bash,0,1,1
 9,Dwarf,1,1,1,bash,0,1,1
 10,Lizardmen,1,1,1,hybrid,0,1,1
 13,Wood Elf,1,1,1,agile,0,1,1
@@ -13,18 +13,18 @@ tier_row_id,race_name,bb2020_tier,naf_tier,bb2020_nov21_tier,race_type,dk_atv_no
 11,Norse,1,1,1,hybrid,2,1,2
 5,Human,1,2,2,hybrid,2,3,2
 22,Elven Union,2,2,2,agile,2,4,3
-25,Khorne,,,,bash,2,NA,3
-6,Chaos Chosen,2,2,2,bash,3,3,3
+25,Khorne,,,,new,2,NA,3
+6,Chaos Chosen,2,2,2,hybrid,3,3,3
 14,Tomb Kings,2,2,2,bash,3,4,3
 26,Slann,NA,2,NA,other,3,4,3
 30,Imperial Nobility,2,2,2,hybrid,3,NA,3
 12,Nurgle,2,2,2,bash,4,4,3
-28,Black Orc,2,2,2,bash,4,NA,3
+28,Black Orc,2,2,2,new,4,NA,3
 15,Chaos Renegade,2,2,2,hybrid,3,4,4
 17,High Elf,2,2,1,agile,3,4,4
 20,Old World Alliance,1,2,2,hybrid,3,2,4
 25,Vampire,2,2,2,other,4,5,4
-18,Ogre,3,3,3,bash,4,6,5
+18,Ogre,3,3,3,stunty,4,6,5
 21,Goblin,3,3,3,stunty,5,6,5
 23,Snotling,3,3,3,stunty,5,6,5
 24,Halfling,3,3,3,stunty,5,6,5
