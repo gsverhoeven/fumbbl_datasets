@@ -13,3 +13,10 @@ See https://gsverhoeven.github.io/post/blood-bowl-fumbbl-dataset/ for a data pap
 
 The folder `analysis/` contains Rmarkdown and Jupyter notebooks with additional analyses.
 
+# Example analysis: matches played on FUMBBL by division
+
+
+
+# Example analysis: BB2020 Top 10 star player usage by week
+
+![](star_players_by_week.png)
