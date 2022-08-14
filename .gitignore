@@ -2,3 +2,4 @@ datasets/current/*
 playground.ipynb
 raw/old/*
 raw/match_html_files/*
+analysis/match_stats.json
