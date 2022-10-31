@@ -1,6 +1,6 @@
 tier_row_id,race_name,bb2020_tier,naf_tier,bb2020_nov21_tier,race_type,dk_atv_nosp,Europen_2020,Malta_2022
 4,Dark Elf,1,1,1,agile,0,1,1
-7,Shambling Undead,1,1,1,bash,0,1,1
+7,Shambling Undead,1,1,1,hybrid,0,1,1
 9,Dwarf,1,1,1,bash,0,1,1
 10,Lizardmen,1,1,1,hybrid,0,1,1
 13,Wood Elf,1,1,1,agile,0,1,1
@@ -8,7 +8,7 @@ tier_row_id,race_name,bb2020_tier,naf_tier,bb2020_nov21_tier,race_type,dk_atv_no
 2,Chaos Dwarf,1,1,1,bash,1,2,1
 19,Amazon,1,1,1,hybrid,1,1,2
 3,Necromantic Horror,2,2,2,hybrid,1,2,2
-16,Underworld Denizens,2,2,1,hybrid,1,5,2
+16,Underworld Denizens,2,2,1,agile,1,5,2
 8,Skaven,1,1,1,agile,2,2,2
 11,Norse,1,1,1,hybrid,2,1,2
 5,Human,1,2,2,hybrid,2,3,2
