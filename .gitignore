@@ -4,3 +4,4 @@ raw/old/*
 raw/match_html_files/*
 analysis/match_stats.json
 datasets/v0.2/*
+raw/player_html_files/*
