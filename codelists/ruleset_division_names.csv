@@ -1,21 +1,28 @@
-league,ruleset,division_id,new_division_name,ruleset_version
-0,1,10,Blackbox,bb2016
-0,1,1,Ranked,bb2016
-0,6,5,Regular_league,bb2016
-0,4,2,Competitive,bb2020
-10263,303,5,Secret League,bb2016
-9298,2228,5,NAF,mixed
-0,2,3,Stunty Leeg,bb2016
-11676,888,5,LegaGladio,mixed
-14713,4,5,Test Open League BB2020,bb2020
-14708,2198,5,SL BB2020,bb2020
-12026,1049,5,NAF 7s,bb2016
-10455,432,5,CIBBL,bb2016
-9298,2310,5,Online NAF Tournaments,mixed
-9941,188,5,German Eurobowl team,bb2020
-12879,2242,5,Tournois 2020 (France),bb2020
-12183,2233,5,Liga por el puñetero COVID,bb2020
-14883,2290,5,Benelux Hate Bowl,bb2020
-6888,1069,5,National College Blood Bowl,bb2020
-12013,2427,5,Tacklezone Star Division 3,bb2020
-647,2232,5,Southern Wastes League,bb2020
+league,ruleset,division_id,new_division_name,ruleset_version,group_id,details,tv,type
+0,1,10,Blackbox,bb2016,0,,,
+0,1,1,Ranked,bb2016,0,,,
+0,6,5,Regular_league,bb2016,0,,,
+0,4,2,Competitive,bb2020,0,,,
+10263,303,5,Secret League,bb2016,10263,,,
+9298,2228,5,NAF,mixed,9298,no longer present in the data. Ruleset NAF-BB2020,,
+0,2,3,Stunty Leeg,bb2016,0,,,
+11676,888,5,LegaGladio,mixed,11676,,,
+14713,4,5,Test Open League BB2020,bb2020,14713,,,
+14708,2198,5,SL BB2020,bb2020,14708,,,
+12026,1049,5,NAF 7s,bb2016,12026,,,
+10455,432,5,CIBBL,bb2016,10455,,,
+9298,2310,5,Online NAF Tournaments,mixed,9298,no longer present in the data. Ruleset Naf-custom,,
+9941,188,5,German Eurobowl team,bb2020,9941,,,
+12879,2242,5,Tournois 2020 (France),bb2020,12879,,,
+12183,2233,5,Liga por el puñetero COVID,bb2020,12183,,,
+14883,2290,5,Benelux Hate Bowl,bb2020,14883,,,
+6888,1069,5,National College Blood Bowl,bb2020,6888,,,
+12013,2427,5,Tacklezone Star Division 3,bb2020,12013,,,
+647,2232,5,Southern Wastes League,bb2020,647,,,
+9298,188,5,NAF eurobowl,bb2020,9298,on the road to eurobowl (German Eurobowl Team ruleset),1150,resurrection
+15734,4,5,Open league,bb2020,15734,,,
+3180,4,5,145 club,bb2020,3180,,,
+15615,2582,5,Super League,bb2020,15615,competitive resurrection tournament,1150,resurrection
+14984,2327,5,Polish eurobowl training,bb2020,14984,competitive resurrection tournament,1150,resurrection
+12311,1835,5,LIGAS Y TORNEOS CANARIOS,bb2020,12311,,,
+13342,6,5,Jupiler Budweiser League,bb2020,13342,,,
