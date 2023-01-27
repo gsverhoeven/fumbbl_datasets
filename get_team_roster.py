@@ -5,7 +5,9 @@ import plotnine as p9
 import requests
 import json
 
-def get_team_roster(match_id, team_id, df_skills, df_matches, inducements):
+def get_team_roster(team_id, df_skills, df_matches, inducements):
+
+    match_id = df_matches.query('team1_id == @team_id or team2_id == @team_id')['match_id'].max()
 
     dirname = "raw/team_files/" + str(team_id)[0:4]
 
