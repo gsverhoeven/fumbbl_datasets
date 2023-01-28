@@ -75,6 +75,16 @@ def get_team_roster(team_id, df_skills, df_matches, inducements):
             df_roster = df_roster.append(new_row)
 
     df_roster = df_roster.fillna('')
+
+    # Next we add the coach name
+    if (df_matches.query('match_id == @match_id')['team1_id'].values[0] == team_id):
+        coach_name = df_matches.query('match_id == @match_id')['coach1_ranking'].values[0]
+    elif (df_matches.query('match_id == @match_id')['team2_id'].values[0] == team_id):
+        coach_name = df_matches.query('match_id == @match_id')['coach2_ranking'].values[0]
+    else:
+        coach_name = 'unknown'
+
+    df_roster['coach_name'] = coach_name
     #df_roster = df_roster.drop(df_roster[df_roster.position == ''].index)
     #df_roster['skill_id'] = df_roster['skill_id'].replace(-1, None)
 
