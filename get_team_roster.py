@@ -9,6 +9,7 @@ def get_team_roster(team_id, df_skills, df_matches, inducements):
 
     team_id = int(team_id)
 
+    # Need a combi of Team and Match to get the inducements for the roster: use most recent match
     match_id = df_matches.query('team1_id == @team_id or team2_id == @team_id')['match_id'].max()
 
     dirname = "raw/team_files/" + str(team_id)[0:4]
