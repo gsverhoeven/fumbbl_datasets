@@ -13,12 +13,12 @@ See https://gsverhoeven.github.io/post/blood-bowl-fumbbl-dataset/ for a data pap
 
 The folder `analysis/` contains Rmarkdown and Jupyter notebooks with additional analyses.
 
-Two examples:
+Two example plots using data from the current release:
 
 ## BB2020 matches by race by week
 
-![](match_volumes_by_race.png)
+![](datasets/v0.4/match_volumes_by_race.png)
 
 ## Top 10 star player usage by week
 
-![](star_players_by_week.png)
+![](datasets/v0.4/star_players_by_week.png)

@@ -55,7 +55,7 @@ res2 = (df_mbt
 
 resx = pd.concat([res, res2], axis = 0)
 
-my_plot = (p9.ggplot(data = resx.query("week_date < '2022-06-01'"), mapping = p9.aes(x = 'week_date', y = 'n_games', 
+my_plot = (p9.ggplot(data = resx.query("week_date < '2023-02-01'"), mapping = p9.aes(x = 'week_date', y = 'n_games', 
 group = 'factor(race_name)', color = 'factor(race_name)'))
     + p9.geom_point() 
     + p9.geom_line() 

@@ -1,4 +1,9 @@
-# current fumbbl datasets
+# v0.4 fumbbl datasets
+
+Uses raw datafiles scraped around januari 2023.
+Added the ability to create full tournament rosters including skills and inducements.
+
+# v0.3 fumbbl datasets
 
 Uses raw datafiles scraped around march 16th 2022.
 Updated fumbbl_dataset notebook to add more columns etc.
