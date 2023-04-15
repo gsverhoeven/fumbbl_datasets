@@ -6,5 +6,5 @@ analysis/match_stats.json
 datasets/v0.2/*
 raw/player_html_files/*
 cache/*
-raw/*
+raw/*_files
 *.eml
