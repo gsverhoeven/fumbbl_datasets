@@ -1,0 +1,2018 @@
+[
+    {
+        "id": 52,
+        "categoryId": 7,
+        "category": "+",
+        "type": "Stat Increase",
+        "name": "+AG",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 159,
+        "categoryId": 7,
+        "category": "+",
+        "type": "Stat Increase",
+        "name": "+AV",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 54,
+        "categoryId": 7,
+        "category": "+",
+        "type": "Stat Increase",
+        "name": "+MA",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 53,
+        "categoryId": 7,
+        "category": "+",
+        "type": "Stat Increase",
+        "name": "+ST",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 119,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Accurate",
+        "option": "accurate",
+        "modifierType": null
+    },
+    {
+        "id": 136,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Always Hungry",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 170,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Animosity",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 137,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Ball & Chain",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 126,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Big Hand",
+        "option": "bigHand",
+        "modifierType": null
+    },
+    {
+        "id": 85,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Block",
+        "option": "block",
+        "modifierType": null
+    },
+    {
+        "id": 138,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Blood Lust",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 139,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Bombardier",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 140,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Bone-head",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 109,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Break Tackle",
+        "option": "breakTackle",
+        "modifierType": null
+    },
+    {
+        "id": 99,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Catch",
+        "option": "catch",
+        "modifierType": null
+    },
+    {
+        "id": 141,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Chainsaw",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 127,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Claw",
+        "option": "claw",
+        "modifierType": null
+    },
+    {
+        "id": 86,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Dauntless",
+        "option": "dauntless",
+        "modifierType": null
+    },
+    {
+        "id": 142,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Decay",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 87,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Dirty Player",
+        "option": "dirtyPlayer",
+        "modifierType": null
+    },
+    {
+        "id": 356,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Disposable",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 128,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Disturbing Presence",
+        "option": "disturbingPresence",
+        "modifierType": null
+    },
+    {
+        "id": 100,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Diving Catch",
+        "option": "divingCatch",
+        "modifierType": null
+    },
+    {
+        "id": 101,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Diving Tackle",
+        "option": "divingTackle",
+        "modifierType": null
+    },
+    {
+        "id": 102,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Dodge",
+        "option": "dodge",
+        "modifierType": null
+    },
+    {
+        "id": 120,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Dump-Off",
+        "option": "dumpOff",
+        "modifierType": null
+    },
+    {
+        "id": 129,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Extra Arms",
+        "option": "extraArms",
+        "modifierType": null
+    },
+    {
+        "id": 143,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Fan Favourite",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 88,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Fend",
+        "option": "fend",
+        "modifierType": null
+    },
+    {
+        "id": 130,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Foul Appearance",
+        "option": "foulAppearance",
+        "modifierType": null
+    },
+    {
+        "id": 89,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Frenzy",
+        "option": "frenzy",
+        "modifierType": null
+    },
+    {
+        "id": 110,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Grab",
+        "option": "grab",
+        "modifierType": null
+    },
+    {
+        "id": 111,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Guard",
+        "option": "guard",
+        "modifierType": null
+    },
+    {
+        "id": 121,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Hail Mary Pass",
+        "option": "hailMaryPass",
+        "modifierType": null
+    },
+    {
+        "id": 131,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Horns",
+        "option": "horns",
+        "modifierType": null
+    },
+    {
+        "id": 144,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Hypnotic Gaze",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 112,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Juggernaut",
+        "option": "juggernaut",
+        "modifierType": null
+    },
+    {
+        "id": 103,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Jump Up",
+        "option": "jumpUp",
+        "modifierType": null
+    },
+    {
+        "id": 90,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Kick",
+        "option": "kick",
+        "modifierType": null
+    },
+    {
+        "id": 358,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Kick Team-Mate",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 91,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Kick-Off Return",
+        "option": "kickOffReturn",
+        "modifierType": null
+    },
+    {
+        "id": 122,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Leader",
+        "option": "leader",
+        "modifierType": null
+    },
+    {
+        "id": 104,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Leap",
+        "option": "leap",
+        "modifierType": null
+    },
+    {
+        "id": 145,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Loner",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 113,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Mighty Blow",
+        "option": "mightyBlow",
+        "modifierType": null
+    },
+    {
+        "id": 206,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Monstrous Mouth",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 114,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Multiple Block",
+        "option": "multipleBlock",
+        "modifierType": null
+    },
+    {
+        "id": 123,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Nerves Of Steel",
+        "option": "nervesOfSteel",
+        "modifierType": null
+    },
+    {
+        "id": 146,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "No Hands",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 147,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Nurgle's Rot",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 124,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Pass",
+        "option": "pass",
+        "modifierType": null
+    },
+    {
+        "id": 92,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Pass Block",
+        "option": "passBlock",
+        "modifierType": null
+    },
+    {
+        "id": 115,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Piling On",
+        "option": "pilingOn",
+        "modifierType": null
+    },
+    {
+        "id": 132,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Prehensile Tail",
+        "option": "prehensileTail",
+        "modifierType": null
+    },
+    {
+        "id": 93,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Pro",
+        "option": "pro",
+        "modifierType": null
+    },
+    {
+        "id": 148,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Really Stupid",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 149,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Regeneration",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 150,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Right Stuff",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 125,
+        "categoryId": 13,
+        "category": "P",
+        "type": "Passing",
+        "name": "Safe Throw",
+        "option": "safeThrow",
+        "modifierType": null
+    },
+    {
+        "id": 151,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Secret Weapon",
+        "option": null,
+        "modifierType": "2D6"
+    },
+    {
+        "id": 94,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Shadowing",
+        "option": "shadowing",
+        "modifierType": null
+    },
+    {
+        "id": 105,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Side Step",
+        "option": "sideStep",
+        "modifierType": null
+    },
+    {
+        "id": 106,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Sneaky Git",
+        "option": "sneakyGit",
+        "modifierType": null
+    },
+    {
+        "id": 107,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Sprint",
+        "option": "sprint",
+        "modifierType": null
+    },
+    {
+        "id": 152,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Stab",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 153,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Stakes",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 116,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Stand Firm",
+        "option": "standFirm",
+        "modifierType": null
+    },
+    {
+        "id": 95,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Strip Ball",
+        "option": "stripBall",
+        "modifierType": null
+    },
+    {
+        "id": 117,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Strong Arm",
+        "option": "strongArm",
+        "modifierType": null
+    },
+    {
+        "id": 154,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Stunty",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 108,
+        "categoryId": 11,
+        "category": "A",
+        "type": "Agility",
+        "name": "Sure Feet",
+        "option": "sureFeet",
+        "modifierType": null
+    },
+    {
+        "id": 96,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Sure Hands",
+        "option": "sureHands",
+        "modifierType": null
+    },
+    {
+        "id": 454,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Swarming",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 352,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Swoop",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 97,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Tackle",
+        "option": "tackle",
+        "modifierType": null
+    },
+    {
+        "id": 155,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Take Root",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 133,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Tentacles",
+        "option": "tentacles",
+        "modifierType": null
+    },
+    {
+        "id": 118,
+        "categoryId": 12,
+        "category": "S",
+        "type": "Strength",
+        "name": "Thick Skull",
+        "option": "thickSkull",
+        "modifierType": null
+    },
+    {
+        "id": 156,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Throw Team-Mate",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 201,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Timmm-ber!",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 157,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Titchy",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 353,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Trademark Stilts (Leap, Very Long Legs)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 134,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Two Heads",
+        "option": "twoHeads",
+        "modifierType": null
+    },
+    {
+        "id": 135,
+        "categoryId": 14,
+        "category": "M",
+        "type": "Mutation",
+        "name": "Very Long Legs",
+        "option": "veryLongLegs",
+        "modifierType": null
+    },
+    {
+        "id": 202,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Weeping Dagger",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 158,
+        "categoryId": 15,
+        "category": "X",
+        "type": "Extraordinary",
+        "name": "Wild Animal",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 98,
+        "categoryId": 10,
+        "category": "G",
+        "type": "General",
+        "name": "Wrestle",
+        "option": "wrestle",
+        "modifierType": null
+    },
+    {
+        "id": 349,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "+AG",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 351,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "+MA",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 350,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "+ST",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 306,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Accurate",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 323,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Always Hungry",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 345,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Animosity",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 324,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Ball & Chain",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 193,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Banner of Champions (Fan Favourite, Leader, Mighty Blow, +AV)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 313,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Big Hand",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 273,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Block",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 325,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Blood Lust",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 326,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Bombardier",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 327,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Bone-head",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 165,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Boots of Var Cor (Leap, Dirty Player)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 166,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Bracers of VasaeLaer (Stand Firm)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 296,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Break Tackle",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 286,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Catch",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 328,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Chainsaw",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 314,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Claw",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 179,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Crown of Sand (+ST, Decay)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 354,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Crown of Sand (+ST, Leader)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 209,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Crown of Sand (+ST, Leader, Regeneration)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 195,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Curious Cuirass (Disturbing Presence, Hypnotic Gaze, Bone-Head)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 274,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Dauntless",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 329,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Decay",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 275,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Dirty Player",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 357,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Disposable",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 315,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Disturbing Presence",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 287,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Diving Catch",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 288,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Diving Tackle",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 289,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Dodge",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 80,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Dragon Helmet (+AV)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 186,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Drunken Goblin Boot Ale (Tackle, Bone-head)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 307,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Dump-Off",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 316,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Extra Arms",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 184,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Fan Favourite",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 276,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Fend",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 317,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Foul Appearance",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 277,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Frenzy",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 199,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Fried Goblin Stew (Frenzy, Catch)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 185,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Fried Jungleberry Bundt Cake (+ST, Really Stupid)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 194,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Gloves of Almost Thievery (+AG, Strip Ball, No Hands)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 176,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Gloves of Calostas (Diving Catch)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 297,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Grab",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 79,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Griffin Boots (Leap)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 160,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Griffin Bracers (+AG)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 161,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Griffin Greaves (Jump Up)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 208,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Grotty Weapon (Ball & Chain, No Hands, Secret Weapon)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 355,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Grotty Weapon (Bombardier, Secret Weapon)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 360,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Grotty Weapon (Chainsaw, Secret Weapon)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 207,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Grotty Weapon (Leap, Very Long Legs)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 298,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Guard",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 308,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Hail Mary Pass",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 188,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Helmet of Fear (Foul Appearance)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 171,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Helmet of VasaeLaer (Thick Skull)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 318,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Horns",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 330,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Hypnotic Gaze",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 78,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Ithilmir Armour (Sprint)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 299,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Juggernaut",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 290,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Jump Up",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 278,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Kick",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 359,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Kick Team-Mate",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 279,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Kick-Off Return",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 309,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Leader",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 291,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Leap",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 331,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Loner",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 173,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Loser's Crown (Tentacles, Take Root)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 300,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Mighty Blow",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 348,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Monstrous Mouth",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 301,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Multiple Block",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 310,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Nerves Of Steel",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 332,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "No Hands",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 333,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Nurgle's Rot",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 198,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Ogre Fatback Stew (Wrestle, Mighty Blow)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 311,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Pass",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 280,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Pass Block",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 302,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Piling On",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 319,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Prehensile Tail",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 168,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Pro",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 334,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Really Stupid",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 335,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Regeneration",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 336,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Right Stuff",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 180,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Ring of Amarth (Grab)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 190,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Ring of Nuffle (Fan Favourite)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 187,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Roasted Troll Heart Stew (Dauntless, Foul Appearance, No Hands)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 312,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Safe Throw",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 337,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Secret Weapon",
+        "option": null,
+        "modifierType": "2D6"
+    },
+    {
+        "id": 281,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Shadowing",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 292,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Side Step",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 293,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Sneaky Git",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 200,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Snotling Mystery Stew (Dauntless, Pass)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 294,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Sprint",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 338,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Stab",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 339,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Stakes",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 303,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Stand Firm",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 282,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Strip Ball",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 304,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Strong Arm",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 340,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Stunty",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 295,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Sure Feet",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 283,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Sure Hands",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 284,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Tackle",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 341,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Take Root",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 167,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Talisman of Eilai (Two Heads)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 320,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Tentacles",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 305,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Thick Skull",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 342,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Throw Team-Mate",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 346,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Timmm-ber!",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 343,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Titchy",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 321,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Two Heads",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 181,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Ulthuan Bracers (Fend)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 322,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Very Long Legs",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 164,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Big Hand)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 162,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Claw)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 196,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Disturbing Presence)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 84,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Extra Arms)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 189,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Foul Appearance)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 203,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Horns)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 205,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Horns)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 204,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Horns)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 163,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Prehensile Tail)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 83,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Spikes)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 169,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Tentacles)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 81,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Two Heads)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 82,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Very Long Legs)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 347,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Weeping Dagger",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 197,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Big Hand)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 191,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Disturbing Presence)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 192,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Foul Appearance)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 183,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Horns)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 177,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Juggernaut)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 175,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Prehensile Tail)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 174,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Tentacles)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 182,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Two Heads)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 178,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wheel of Chaos Mutation (Very Long Legs)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 344,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wild Animal",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 172,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Winner's Crown (Extra Arms, Claw)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 285,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Wrestle",
+        "option": null,
+        "modifierType": null
+    }
+]
