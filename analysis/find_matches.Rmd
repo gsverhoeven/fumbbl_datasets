@@ -1,0 +1,52 @@
+---
+title: 'Finding matches on FUMBBL'
+author: "Gertjan Verhoeven"
+date: '2023-01-20'
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Find the NAF tournament teams
+
+This dataset allows us to identify the teams that participated in the online NAF tournament. 
+The **NAF Online Tournaments** FUMBBL group (group id 9298) contains the Road To Malta tournament:
+
+```{r}
+df_matches <- read.csv(file = "../datasets/current/df_matches.csv")
+df_matches$match_date <- as.Date(df_matches$match_date)
+df_matches$week_date <- as.Date(df_matches$week_date)
+```
+
+```{r}
+res <- df_matches %>%
+  filter(league == 9298) %>%
+  group_by(division_name, tournament_id, division_id, league, ruleset) %>%
+  summarise(cnt = n(), start_date = min(match_date), end_date = max(match_date)) %>%
+  filter(start_date > as.Date("2022-08-01")) %>%
+  arrange(-tournament_id)
+
+res
+```
+
+
+# preparing for a Norse - Human match using WC rulset
+
+```{r}
+df_matches %>% 
+  filter(division_name == "Competitive") %>%
+  filter(team1_race_name %in% c("Norse", "Human") & team2_race_name %in% c("Norse", "Human")) %>%
+  filter(team1_race_name != team2_race_name) %>%
+  filter(tv_bin2 == "1.3M") %>%
+  filter(coach1_CR > 170)
+```
+
+
+
+
+
+
+
