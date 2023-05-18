@@ -8,3 +8,5 @@ raw/player_html_files/*
 cache/*
 raw/*_files
 *.eml
+*.xlsx
+*.xlsx#
