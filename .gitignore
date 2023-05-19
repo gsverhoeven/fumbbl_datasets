@@ -10,3 +10,4 @@ raw/*_files
 *.eml
 *.xlsx
 *.xlsx#
+datasets/kickoff_pngs/*
