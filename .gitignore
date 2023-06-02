@@ -11,4 +11,4 @@ raw/*_files
 *.xlsx
 *.xlsx#
 datasets/kickoff_pngs/*
-raw/old_match_data/*
+raw/old_data/*
