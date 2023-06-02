@@ -513,6 +513,15 @@
         "modifierType": null
     },
     {
+        "id": 507,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Helmet of VesaeLaer (Thick Skull)",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 493,
         "categoryId": 23,
         "category": "R",
@@ -537,7 +546,7 @@
         "type": "Traits",
         "name": "Hypnotic Gaze",
         "option": null,
-        "modifierType": null
+        "modifierType": "D6"
     },
     {
         "id": 482,
@@ -573,6 +582,15 @@
         "type": "Mutations",
         "name": "Iron Hard Skin",
         "option": "ironHardSkin",
+        "modifierType": null
+    },
+    {
+        "id": 508,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Ithilmir Armour (Sprint)",
+        "option": null,
         "modifierType": null
     },
     {
@@ -1239,6 +1257,24 @@
         "type": "Mutations",
         "name": "Very Long Legs",
         "option": "veryLongLegs",
+        "modifierType": null
+    },
+    {
+        "id": 506,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Warpstone Mutation (Claws)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 505,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Warpstone Mutation (Very Long Legs)",
+        "option": null,
         "modifierType": null
     },
     {
