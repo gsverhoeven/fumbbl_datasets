@@ -9,10 +9,6 @@ path_to_datasets = 'datasets/current/'
 target = 'df_matches.h5'
 df_matches = pd.read_hdf(path_to_datasets + target) 
 
-# FUMBBL matches by team
-target = 'df_mbt.h5'
-df_mbt = pd.read_hdf(path_to_datasets + target) 
-
 # FUMBBL inducements
 target = 'inducements.h5'
 inducements = pd.read_hdf(path_to_datasets + target) 

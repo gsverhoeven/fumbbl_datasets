@@ -7,10 +7,6 @@ from mizani.formatters import date_format
 # point this to the location of the HDF5 datasets
 path_to_datasets = 'datasets/current/'
 
-# FUMBBL matches
-target = 'df_matches.h5'
-df_matches = pd.read_hdf(path_to_datasets + target) 
-
 # FUMBBL matches by team
 target = 'df_mbt.h5'
 df_mbt = pd.read_hdf(path_to_datasets + target) 
@@ -55,7 +51,7 @@ res2 = (df_mbt
 
 resx = pd.concat([res, res2], axis = 0)
 
-my_plot = (p9.ggplot(data = resx.query("week_date < '2023-02-01'"), mapping = p9.aes(x = 'week_date', y = 'n_games', 
+my_plot = (p9.ggplot(data = resx, mapping = p9.aes(x = 'week_date', y = 'n_games', 
 group = 'factor(race_name)', color = 'factor(race_name)'))
     + p9.geom_point() 
     + p9.geom_line() 
