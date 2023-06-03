@@ -7,13 +7,10 @@ date: '2023-01-20'
 ```{r setup, include=FALSE}
 library(tidyverse)
 knitr::opts_chunk$set(echo = TRUE)
+options(dplyr.summarise.inform = FALSE)
 ```
 
-
-# Find the NAF tournament teams
-
-This dataset allows us to identify the teams that participated in the online NAF tournament. 
-The **NAF Online Tournaments** FUMBBL group (group id 9298) contains the Road To Malta tournament:
+# Read in data
 
 ```{r}
 df_matches <- read.csv(file = "../datasets/current/df_matches.csv")
@@ -22,9 +19,30 @@ df_matches$week_date <- as.Date(df_matches$week_date)
 ```
 
 ```{r}
+df_mbt <- read.csv(file = "../datasets/current/df_mbt.csv")
+df_mbt$match_date <- as.Date(df_mbt$match_date)
+df_mbt$week_date <- as.Date(df_mbt$week_date)
+
+df_mbt$raw_tv_bins <- cut(df_mbt$team_value, breaks = c(-Inf, 500, 900, 1100, Inf))
+df_mbt$match_tv_bins <- cut(df_mbt$tv_match, breaks = c(-Inf, 1150, 1450, Inf))
+```
+
+```{r}
+inducements <- read.csv(file = "../datasets/current/inducements.csv")
+```
+
+
+# Find the NAF tournament teams
+
+This dataset allows us to identify the teams that participated in the online NAF tournament. 
+The **NAF Online Tournaments** FUMBBL group (group id 9298) contains the Road To Malta tournament:
+
+
+
+```{r}
 res <- df_matches %>%
-  filter(league == 9298) %>%
-  group_by(division_name, tournament_id, division_id, league, ruleset) %>%
+  filter(group_id == 9298) %>%
+  group_by(division_name, tournament_id, division_id, group_id, tournament_name) %>%
   summarise(cnt = n(), start_date = min(match_date), end_date = max(match_date)) %>%
   filter(start_date > as.Date("2022-08-01")) %>%
   arrange(-tournament_id)
@@ -43,10 +61,113 @@ df_matches %>%
   filter(tv_bin2 == "1.3M") %>%
   filter(coach1_CR > 170)
 ```
+# CHeck current tv bin brackets
+
+```{r fig.width = 10}
+res <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 0) %>%
+  select(race_name, tv_match)
+
+ggplot(res, aes(x = tv_match)) + geom_histogram(binwidth = 100) + geom_vline(xintercept = c(1150, 1450), col = "red") 
+```
+
+# Win rates with or without star players
+
+We start with plotting the distribution ot team strength (TV) in the BB2020 Competitive division:
+
+```{r fig.height= 8, fig.width = 8}
+res <- df_mbt %>%
+  filter(division_name == "Competitive") %>%
+  group_by(race_name, race_type, bb2020_tier, has_sp) %>%
+  summarise(n_games = n(),
+            win_rate = mean(wins))
+
+ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = race_type, shape = factor(has_sp))) +
+  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (with or without star player)") +
+  labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
+```
+# main analysis
+
+```{r fig.height= 8, fig.width = 8}
+res <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 0) %>%
+  group_by(race_name, race_type, bb2020_nov21_tier, match_tv_bins) %>%
+  summarise(n_games = n(),
+            win_rate = mean(wins)) %>% filter(n_games > 300)
+
+ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = factor(bb2020_nov21_tier), shape = factor(match_tv_bins))) +
+  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by tv bin, no star players)") +
+  labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
+```
+```{r fig.height= 8, fig.width = 8}
+res <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 1) %>%
+  group_by(race_name, race_type, bb2020_nov21_tier, match_tv_bins) %>%
+  summarise(n_games = n(),
+            win_rate = mean(wins)) %>% filter(n_games > 300)
+
+ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = factor(bb2020_nov21_tier), shape = factor(match_tv_bins))) +
+  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by tv bin, with at least 1 star player in the match)") +
+  labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
+```
+
+# What up with the snotlings?
 
 
+First we check the star player matches:
 
+```{r}
+match_ids <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 1 & race_name == "Snotling") %>%
+  pull(match_id)
+```
 
+Check inducements for these matches:
 
+```{r}
+inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
+  group_by(inducements) %>%
+  summarise(cnt = n()) %>% 
+  arrange(-cnt)
+```
+
+So Bomber and Morg, thats wassup.
+
+Want to know more about snotlings without star player at low TV value.
+
+```{r fig.height= 8, fig.width = 8}
+res <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 0) %>%
+  group_by(race_name, race_type, bb2020_tier, raw_tv_bins) %>%
+  summarise(n_games = n(),
+            win_rate = mean(wins)) %>% filter(n_games > 100)
+
+ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = race_type, shape = factor(raw_tv_bins))) +
+  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by RAW tv bin)") +
+  labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
+```
+So for high team value they can get pretty strong?
+
+```{r}
+match_ids <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 0 & race_name == "Snotling" & raw_tv_bins == "(1.1e+03, Inf]" & wins == 1) %>%
+  pull(match_id)
+```
+
+Check inducements for these matches:
+
+```{r}
+inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
+  group_by(inducements) %>%
+  summarise(cnt = n()) %>% 
+  arrange(-cnt)
+```
+```{r}
+df_matches %>% filter(match_id %in% match_ids)
+```
 
 
