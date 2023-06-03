@@ -1,7 +1,7 @@
 ---
-title: 'Finding matches on FUMBBL'
+title: 'FUMBBL win rates'
 author: "Gertjan Verhoeven"
-date: '2023-01-20'
+date: '2023-06-03'
 ---
 
 ```{r setup, include=FALSE}
@@ -25,55 +25,28 @@ df_mbt$week_date <- as.Date(df_mbt$week_date)
 
 df_mbt$raw_tv_bins <- cut(df_mbt$team_value, breaks = c(-Inf, 500, 900, 1100, Inf))
 df_mbt$match_tv_bins <- cut(df_mbt$tv_match, breaks = c(-Inf, 1150, 1450, Inf))
+
+df_mbt[df_mbt$race_name == "Khorne",]$bb2020_nov21_tier <- 2
 ```
 
 ```{r}
 inducements <- read.csv(file = "../datasets/current/inducements.csv")
 ```
 
-
-# Find the NAF tournament teams
-
-This dataset allows us to identify the teams that participated in the online NAF tournament. 
-The **NAF Online Tournaments** FUMBBL group (group id 9298) contains the Road To Malta tournament:
-
-
-
-```{r}
-res <- df_matches %>%
-  filter(group_id == 9298) %>%
-  group_by(division_name, tournament_id, division_id, group_id, tournament_name) %>%
-  summarise(cnt = n(), start_date = min(match_date), end_date = max(match_date)) %>%
-  filter(start_date > as.Date("2022-08-01")) %>%
-  arrange(-tournament_id)
-
-res
-```
-
-
-# preparing for a Norse - Human match using WC rulset
-
-```{r}
-df_matches %>% 
-  filter(division_name == "Competitive") %>%
-  filter(team1_race_name %in% c("Norse", "Human") & team2_race_name %in% c("Norse", "Human")) %>%
-  filter(team1_race_name != team2_race_name) %>%
-  filter(tv_bin2 == "1.3M") %>%
-  filter(coach1_CR > 170)
-```
-# CHeck current tv bin brackets
+# Check current tv bin brackets
 
 ```{r fig.width = 10}
 res <- df_mbt %>%
-  filter(division_name == "Competitive" & has_sp == 0) %>%
+  filter(division_name == "Competitive") %>%
   select(race_name, tv_match)
 
 ggplot(res, aes(x = tv_match)) + geom_histogram(binwidth = 100) + geom_vline(xintercept = c(1150, 1450), col = "red") 
 ```
+Looks ok.
 
 # Win rates with or without star players
 
-We start with plotting the distribution ot team strength (TV) in the BB2020 Competitive division:
+We start with plotting the distribution of team strength (TV) in the BB2020 Competitive division:
 
 ```{r fig.height= 8, fig.width = 8}
 res <- df_mbt %>%
@@ -87,7 +60,9 @@ ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = race_type,
   scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (with or without star player)") +
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
-# main analysis
+# main analysis: win rate by team value bracket
+
+First without SP. Select only bins that have at least 300 games in it.
 
 ```{r fig.height= 8, fig.width = 8}
 res <- df_mbt %>%
@@ -101,6 +76,8 @@ ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = factor(bb2
   scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by tv bin, no star players)") +
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
+Next for matches that include star players.
+
 ```{r fig.height= 8, fig.width = 8}
 res <- df_mbt %>%
   filter(division_name == "Competitive" & has_sp == 1) %>%
@@ -114,8 +91,7 @@ ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = factor(bb2
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
 
-# What up with the snotlings?
-
+# What up with the snotlings and star players?
 
 First we check the star player matches:
 
@@ -136,7 +112,11 @@ inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
 
 So Bomber and Morg, thats wassup.
 
-Want to know more about snotlings without star player at low TV value.
+# What up with the snotlings without star players?
+
+They still have quite high win rate for a stunty team.
+
+Want to know more about snotlings without star player at low TV value before inducement.
 
 ```{r fig.height= 8, fig.width = 8}
 res <- df_mbt %>%
@@ -150,24 +130,41 @@ ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = race_type,
   scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by RAW tv bin)") +
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
-So for high team value they can get pretty strong?
+So for high team value before inducement they can get pretty strong?
+
+Check what inducements are used in matches where snotlings win.
 
 ```{r}
 match_ids <- df_mbt %>%
   filter(division_name == "Competitive" & has_sp == 0 & race_name == "Snotling" & raw_tv_bins == "(1.1e+03, Inf]" & wins == 1) %>%
   pull(match_id)
-```
 
-Check inducements for these matches:
-
-```{r}
 inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
   group_by(inducements) %>%
   summarise(cnt = n()) %>% 
   arrange(-cnt)
 ```
+This is riotous rookie.
+
 ```{r}
 df_matches %>% filter(match_id %in% match_ids)
 ```
 
+Eyeball a few teams. A snotling team at 1100 before inducement has a lot of skilled up players (trolls, pump wagons etc).
 
+# Win rates by year
+
+Check changes over time in the win rates:
+
+```{r fig.height= 8, fig.width = 8}
+res <- df_mbt %>%
+  filter(division_name == "Competitive") %>%
+  group_by(race_name, race_type, bb2020_tier, year) %>%
+  summarise(n_games = n(),
+            win_rate = mean(wins))
+
+ggplot(res, aes(x = reorder(race_name, win_rate), y = win_rate, col = race_type, shape = factor(year))) +
+  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by year)") +
+  labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
+```
