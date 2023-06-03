@@ -13,3 +13,4 @@ raw/*_files
 datasets/kickoff_pngs/*
 raw/old_data/*
 datasets/v0.5/v0.5_fumbbl_data_h5.zip
+*.pdf

@@ -1,7 +1,8 @@
 ---
-title: 'FUMBBL win rates'
+title: "FUMBBL win rates"
 author: "Gertjan Verhoeven"
 date: '2023-06-03'
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -146,7 +147,7 @@ inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
 ```
 This is riotous rookie.
 
-```{r}
+```{r eval = FALSE}
 df_matches %>% filter(match_id %in% match_ids)
 ```
 
