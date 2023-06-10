@@ -28,6 +28,7 @@ df_mbt$match_date <- as.Date(df_mbt$match_date)
 df_mbt$week_date <- as.Date(df_mbt$week_date)
 
 df_mbt$raw_tv_bins <- cut(df_mbt$team_value, breaks = c(-Inf, 500, 900, 1100, Inf))
+df_mbt$team_tv_bins <- cut(df_mbt$team_value, breaks = c(-Inf, 1150, 1450, Inf))
 df_mbt$match_tv_bins <- cut(df_mbt$tv_match, breaks = c(-Inf, 1150, 1450, Inf))
 
 df_mbt[df_mbt$race_name == "Khorne",]$bb2020_nov21_tier <- 2
@@ -43,9 +44,9 @@ inducements <- read.csv(file = "../datasets/current/inducements.csv")
 ```{r fig.width = 10}
 res <- df_mbt %>%
   filter(division_name == "Competitive") %>%
-  select(race_name, tv_match)
+  select(race_name, team_value)
 
-ggplot(res, aes(x = tv_match)) + geom_histogram(binwidth = 100) + geom_vline(xintercept = c(1150, 1450), col = "red") 
+ggplot(res, aes(x = team_value)) + geom_histogram(binwidth = 100) + geom_vline(xintercept = c(1150, 1450), col = "red") 
 ```
 Looks ok.
 
@@ -97,6 +98,27 @@ res_list <- append(res_list,
 
 
 # main analysis: win rate by team value bracket
+
+We focus on team value, not match value, i.e. before inducement.
+This focusses on how developed the players / team is.
+
+```{r fig.height= 8, fig.width = 8}
+res <- df_mbt %>%
+  filter(division_name == "Competitive") %>%
+  group_by(race_name, race_type, bb2020_nov21_tier, team_tv_bins) %>%
+  summarise(n_games = n(),
+            win_rate = mean(wins)) 
+
+ggplot(res %>% filter(n_games > 300), aes(x = reorder(race_name, win_rate), y = win_rate, col = factor(bb2020_nov21_tier), shape = factor(team_tv_bins))) +
+  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by tv bin, including SP)") +
+  labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
+```
+
+```{r}
+res_list <- append(res_list, 
+                   list(main_result_by_tv_bracket = res %>% pivot_wider(names_from = team_tv_bins, values_from = c(n_games, win_rate)) %>% arrange(race_name)))
+```
 
 First without SP. Select only bins that have at least 300 games in it.
 
@@ -156,6 +178,8 @@ res <- inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
   group_by(inducements) %>%
   summarise(cnt = n()) %>% 
   arrange(-cnt)
+
+res
 ```
 
 So Hakflem, Bomber and Morg, thats wassup.
@@ -181,7 +205,7 @@ res <- df_mbt %>%
 
 ggplot(res %>% filter(n_games > 100), aes(x = reorder(race_name, win_rate), y = win_rate, col = race_type, shape = factor(raw_tv_bins))) +
   geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
-  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by RAW tv bin)") +
+  scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (no sp, by RAW tv bin)") +
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
 
@@ -190,13 +214,15 @@ res_list <- append(res_list,
                    list(main_result_by_bracket_no_sp = res %>% arrange(-win_rate)))
 ```
 
-So for high team value before inducement they can get pretty strong?
+So for high team value before inducement they can get pretty strong? This means that they have a lot of skills.
+
+# Check snotling inducements
 
 Check what inducements are used in matches where snotlings win.
 
 ```{r}
 match_ids <- df_mbt %>%
-  filter(division_name == "Competitive" & has_sp == 0 & race_name == "Snotling" & raw_tv_bins == "(1.1e+03, Inf]" & wins == 1) %>%
+  filter(division_name == "Competitive" & has_sp == 0 & race_name == "Snotling" & wins == 1) %>%
   pull(match_id)
 
 res <- inducements %>% filter(match_id %in% match_ids) %>% arrange(match_id) %>%
@@ -218,6 +244,17 @@ df_matches %>% filter(match_id %in% match_ids & team1_coach_id != 255856 & team2
 ```
 
 Eyeball a few teams. A snotling team at 1100 before inducement has a lot of skilled up players (trolls, pump wagons etc).
+
+```{r}
+tmp <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 0 & race_name == "Snotling" )
+```
+
+```{r}
+tmp <- df_mbt %>%
+  filter(division_name == "Competitive" & has_sp == 0 & race_name == "Snotling" & team_value > 750 & team_value < 900)
+```
+
 
 # Win rates by year
 
@@ -244,5 +281,16 @@ res_list <- append(res_list,
 # write named list of dfs as as multi sheet excel
 
 ```{r}
-writexl::write_xlsx(res_list, "FUMBBL_competitive_win_rates_may2023.xlsx")
+selection_of_tables <- c("main_result", "main_result_by_tv_bracket", "by_starplayer")
+
+writexl::write_xlsx(res_list[selection_of_tables], "FUMBBL_competitive_win_rates_may2023.xlsx")
 ```
+
+# Snotling analysis
+
+Snotlings are a stunty team, but have a surprisingly high win rate of 54%.
+Snotling teams achieve this result by keeping team value low, and then inducing famous Star Players (so called "Mega stars"): mostly Morg n Thorg and Bomber Dribblesnot, and to a lesser extent Hakflem, Fungus and Varag.
+
+However, if we select only Snotling matches that did not include a Star player, the win rate drops to 46%, which is  higher than other "non-stunty" teams such as Black Orcs or Old World Alliance. Most of those matches were with team values (before inducement) around 850-1050K, which for a Snotling team typically means a lot of skilled up players: Trolls, Pump wagons, multiple sneaky git (SG), etc. Riotous Rookie and bribes complete the package. Finally, these teams are more likely to be played by experienced coaches, that this analysis does not take into account. The recent nerf to SG might lower this rate again in the future. 
+
+
