@@ -114,13 +114,18 @@ ggplot(res %>% filter(n_games > 300), aes(x = reorder(race_name, win_rate), y = 
   scale_size_area() + ggtitle("FUMBBL Competitive division win rates \n (by tv bin, including SP)") +
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
+Select only bins that have at least 300 games in it.
 
 ```{r}
 res_list <- append(res_list, 
-                   list(main_result_by_tv_bracket = res %>% pivot_wider(names_from = team_tv_bins, values_from = c(n_games, win_rate)) %>% arrange(race_name)))
+                   list(main_result_by_tv_bracket = res %>% 
+                          filter(n_games > 300) %>% 
+                          pivot_wider(names_from = team_tv_bins, values_from = c(n_games, win_rate)) %>% 
+                          arrange(race_name))
+                   )
 ```
 
-First without SP. Select only bins that have at least 300 games in it.
+Now without SP. 
 
 ```{r fig.height= 8, fig.width = 8}
 res <- df_mbt %>%
