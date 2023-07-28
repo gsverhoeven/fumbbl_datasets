@@ -119,7 +119,7 @@ Select only bins that have at least 300 games in it.
 ```{r}
 res_list <- append(res_list, 
                    list(main_result_by_tv_bracket = res %>% 
-                          filter(n_games > 300) %>% 
+                          #filter(n_games > 300) %>% 
                           pivot_wider(names_from = team_tv_bins, values_from = c(n_games, win_rate)) %>% 
                           arrange(race_name))
                    )
@@ -288,7 +288,7 @@ res_list <- append(res_list,
 ```{r}
 selection_of_tables <- c("main_result", "main_result_by_tv_bracket", "by_starplayer")
 
-writexl::write_xlsx(res_list[selection_of_tables], "FUMBBL_competitive_win_rates_may2023.xlsx")
+writexl::write_xlsx(res_list[selection_of_tables], "230702 FUMBBL_competitive_win_rates_may2023.xlsx")
 ```
 
 # Snotling analysis
