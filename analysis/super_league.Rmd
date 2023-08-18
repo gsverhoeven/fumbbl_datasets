@@ -6,6 +6,12 @@ output: pdf_document
 ---
 
 
+# HOW TO RUN:
+
+Do github clone repo: https://github.com/gsverhoeven/fumbbl_datasets/
+
+Go to folder datasets/v0.6
+extract Zip file into datasets/current
 
 
 TODO:
