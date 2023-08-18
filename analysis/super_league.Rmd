@@ -1,12 +1,19 @@
 ---
-title: "FUMBBL win rates"
+title: "Super league data analysis"
 author: "Gertjan Verhoeven"
-date: '2023-06-03'
+date: '2023-08-03'
 output: pdf_document
 ---
 
-PM pivot naar 1 row per race
-Verhaaltje over de snots.
+
+
+
+TODO:
+
+-fix coach problem (>8 coach names)
+-57864 tournament needs to be dropped.
+-Need to add scores (tie breakers).
+
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -19,7 +26,8 @@ options(dplyr.summarise.inform = FALSE)
 ```{r}
 df_matches <- read.csv(file = "../datasets/current/df_matches.csv")
 df_matches <- df_matches %>%
-  filter(group_id == 15615) 
+  filter(group_id == 15615) # TSL
+
 df_matches$match_date <- as.Date(df_matches$match_date)
 df_matches$week_date <- as.Date(df_matches$week_date)
 ```
@@ -27,20 +35,53 @@ df_matches$week_date <- as.Date(df_matches$week_date)
 ```{r}
 df_mbt <- read.csv(file = "../datasets/current/df_mbt.csv")
 df_mbt <- df_mbt %>%
-  filter(group_id == 15615) 
+  filter(group_id == 15615) # TSL
 
 df_mbt$match_date <- as.Date(df_mbt$match_date)
 df_mbt$week_date <- as.Date(df_mbt$week_date)
-
-df_mbt$raw_tv_bins <- cut(df_mbt$team_value, breaks = c(-Inf, 500, 900, 1100, Inf))
-df_mbt$team_tv_bins <- cut(df_mbt$team_value, breaks = c(-Inf, 1150, 1450, Inf))
-df_mbt$match_tv_bins <- cut(df_mbt$tv_match, breaks = c(-Inf, 1150, 1450, Inf))
 
 df_mbt[df_mbt$race_name == "Khorne",]$bb2020_nov21_tier <- 2
 df_mbt[df_mbt$race_name == "Khorne",]$bb2020_tier <- 2
 ```
 
+Fix coach name changes
+
+```{r}
+df_mbt[df_mbt$coach_name == "Edwin25301",]$coach_name <- "Edwin"
+```
+
+# Add seasons, levels
+
+```{r}
+cl <- as_tibble(read.csv2("spl_seasons_div.csv")) %>% select(-tournament_name)
+```
+
+```{r}
+df_matches <- df_matches %>%
+  left_join(cl, by = "tournament_id")
+
+df_mbt <- df_mbt %>%
+  left_join(cl, by = "tournament_id")
+```
+
+https://fumbbl.com/p/group?op=view&at=1&group=15615&p=tournaments&show=58581
+
+```{r}
+df_mbt %>% filter(tournament_id == 58588) %>% distinct(coach_name) 
+df_mbt %>% filter(tournament_id == 59507) %>% distinct(coach_name) 
+```
+
+# narrative blog post
+
+relationship with Elo/Glicko.
+What is the purpose of the system?
+We want to know who is currently the best.
+We cannot let everybody play everybody, we have a limited number of "measurements".
+
+
 # WHAT IS THE SUPER LEAGUE?
+
+![](pyramid.png)
 
 This is a competitive resurrection (non-progression) league which uses promotion and relegation.The exact structure will be decided (depending on player numbers) at the start of each season.
 
@@ -59,6 +100,16 @@ The league placing belongs to the **coach**.
 So you can swap teams (between seasons) and retain your ranking. 
 Coaches who are brand new will start from the bottom and have to work their way up.
 
+# Generate coach / match counts by tournbament
+
+```{r}
+res <- df_mbt %>%
+  group_by(tournament_id, tournament_name, coach_name, season, level) %>%
+  summarise(n_matches = n_distinct(match_id))
+
+writexl::write_xlsx(res, "spl_seasons_div2.xlsx")
+```
+
 ## THE COMMITMENT
 
 To organise and play 1 game of Blood Bowl every 2 weeks (14 days). Your opponent may live in a different country/ different time zone - so you may need to be flexible.
@@ -67,13 +118,15 @@ Tips on how to schedule properly: https://fumbbl.com/p/blog&c=ArrestedDevelopmen
 
 Two weeks should be plenty of time to organise to play a game. But if there are any problems please tell group admins nice and early.
 
-If you do not respond to your opponent or league admin during the 14 day period - you will be thrown out of the comptetion and replaced.
+If you do not respond to your opponent or league admin during the 14 day period - you will be thrown out of the competition and replaced.
 
 If a game is not played within deadline and an extension has not been requested. Admin will toss a coin and attribute the win accordingly.
 
 Re Time Outs: remember you are adults and act accordingly.
 
-Taking a break: If a coach rejoins the league after pausing for one or more seasons, they may play in the tier they qualified for with their placement in their last active season, provided there is a space available due to dropouts. Otherwise they get placed as high as possible (but not higher than what they qualified for). If multiple coaches are competing for the same space in a tier, the coach with the shorter break gets the space.
+### Taking a break: 
+
+If a coach rejoins the league after pausing for one or more seasons, they may play in the tier they qualified for with their placement in their last active season, provided there is a space available due to dropouts. Otherwise they get placed as high as possible (but not higher than what they qualified for). If multiple coaches are competing for the same space in a tier, the coach with the shorter break gets the space.
 Placements from Season 0 and coaches who dropped out during a running season do not qualify for this rule.
 
 ## THE RULES
@@ -127,15 +180,14 @@ Season 2:
 Premier League Winner: Purplegoo (Skaven)
 Championship Winners: Storr (Darkelf) and Siggi (Amazon)
 
-# reconstruct tournament structure, check past champions
+## using the "Take a break rule". 
 
-57864 tournament needs to be dropped.
-Then came Season 0 (57888). 76 teams, each 6 games.
-Need to add scores (tie breakers).
+```
+"Taking a break: If a coach rejoins the league after pausing for one or more seasons, they may play in the tier they qualified for with their placement in their last active season, provided there is a space available due to dropouts. Otherwise they get placed as high as possible (but not higher than what they qualified for). If multiple coaches are competing for the same space in a tier, the coach with the shorter break gets the space.
+Placements from Season 0 and coaches who dropped out during a running season do not qualify for this rule."
+```
 
-This formed the basis for the super league: Top 8 players formed the Super Premier League.
-Then came the championship, A and B. Each with 8 players. Each championship supplies 2 new players.
-
+Seeding are handled in sheets atm.
 
 # Straight up win rates 
 
@@ -172,7 +224,7 @@ res <- df_mbt %>%
             win_rate = mean(wins))
 
 ggplot(res %>% filter(n_games >= 14), aes(x = reorder(coach_name, win_rate), y = win_rate)) +
-  geom_point(aes(size = n_games)) + coord_flip() + expand_limits(y = 0) +
+  geom_point() + coord_flip() + expand_limits(y = 0) +
   scale_size_area() + ggtitle("FUMBBL Super League win rates \n (by coach)") +
   labs(y = "Win rate (%)", x = "") + geom_hline( yintercept =  0.5, col = "black")
 ```
