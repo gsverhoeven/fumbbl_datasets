@@ -23,6 +23,9 @@ TODO:
 
 ```{r setup, include=FALSE}
 library(tidyverse)
+library(httr)
+library(jsonlite)
+
 knitr::opts_chunk$set(echo = TRUE)
 options(dplyr.summarise.inform = FALSE)
 ```
@@ -70,11 +73,69 @@ df_mbt <- df_mbt %>%
   left_join(cl, by = "tournament_id")
 ```
 
-https://fumbbl.com/p/group?op=view&at=1&group=15615&p=tournaments&show=58581
+
+# Check data: recreate leaderboard
+https://fumbbl.com/p/group?op=view&at=1&group=15615&p=tournaments&show=58588
 
 ```{r}
-df_mbt %>% filter(tournament_id == 58588) %>% distinct(coach_name) 
-df_mbt %>% filter(tournament_id == 59507) %>% distinct(coach_name) 
+library(flextable)
+
+df_mbt %>% filter(tournament_id == 58588) %>% 
+  arrange(match_date) %>%
+  group_by(coach_name) %>%
+  summarise(G = n(), 
+            W = sum(if_else(wins == 1, 1, 0)),
+            T = sum(if_else(wins == 0.5, 1, 0)),
+            L = sum(if_else(wins == 0, 1, 0)),
+            TDfor = sum(team_score),
+            TDmin = sum(away_team_score),
+            CASfor = sum(home_cas),
+            CASmin = sum(away_cas)) %>%
+  mutate(TDdelta = TDfor - TDmin,
+         CASdelta = CASfor - CASmin,
+         tie_breaker = TDdelta + CASdelta,
+         score = W*2 + T) %>%
+  arrange(-score) %>% regulartable() %>% autofit() 
+```
+![](leaderboard_58588.png)
+
+
+
+# Fetch adminned match data from API endpoint
+
+```{r}
+fullrun <- 0
+all_tourneys <- unique(df_matches$tournament_id)
+
+if(fullrun){
+  i <- 0
+  for (tournament_id in all_tourneys){
+    url <- paste0("https://fumbbl.com/api/tournament/schedule/", tournament_id)
+    res <- GET(url)
+    if ( i == 0) all_matches <- data.frame(tournament_id, flatten(fromJSON(rawToChar(res$content))))
+    else all_matches <- rbind(all_matches, data.frame(tournament_id, flatten(fromJSON(rawToChar(res$content)))))
+    i <- i+1
+  }
+  saveRDS(all_matches, file = "all_matches.rds")
+} else {
+  all_matches <- readRDS("all_matches.rds")
+}
+```
+
+```{r}
+all_matches <- all_matches %>% 
+  left_join(df_matches %>% select(tournament_id, tournament_name, season, level) %>% distinct(), by = "tournament_id")
+```
+
+
+# Generate coach / match counts by tournbament
+
+```{r}
+res <- df_mbt %>%
+  group_by(tournament_id, tournament_name, coach_name, season, level) %>%
+  summarise(n_matches = n_distinct(match_id))
+
+writexl::write_xlsx(res, "spl_seasons_div2.xlsx")
 ```
 
 # narrative blog post
@@ -106,15 +167,7 @@ The league placing belongs to the **coach**.
 So you can swap teams (between seasons) and retain your ranking. 
 Coaches who are brand new will start from the bottom and have to work their way up.
 
-# Generate coach / match counts by tournbament
 
-```{r}
-res <- df_mbt %>%
-  group_by(tournament_id, tournament_name, coach_name, season, level) %>%
-  summarise(n_matches = n_distinct(match_id))
-
-writexl::write_xlsx(res, "spl_seasons_div2.xlsx")
-```
 
 ## THE COMMITMENT
 
