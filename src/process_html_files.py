@@ -148,8 +148,10 @@ def process_html_files(full_run, begin_match = None, end_match = None, verbose =
         df_matches_html4 = pd.read_hdf('raw/df_matches_html_20230115_133734.h5')
         df_matches_html5 = pd.read_hdf('raw/df_matches_html_20230526_080359.h5')
         df_matches_html6 = pd.read_hdf('raw/df_matches_html_20230728_185951.h5')
+        df_matches_html7 = pd.read_hdf('raw/df_matches_html_20240731_231611.h5')
         df_matches_html = pd.concat([df_matches_html1, df_matches_html2, 
                                      df_matches_html3, df_matches_html4, 
-                                     df_matches_html5, df_matches_html6], ignore_index= True)
+                                     df_matches_html5, df_matches_html6,
+                                     df_matches_html7], ignore_index= True)
 
     return df_matches_html
