@@ -153,6 +153,15 @@
         "modifierType": null
     },
     {
+        "id": 510,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Black Ink",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 487,
         "categoryId": 23,
         "category": "R",
@@ -180,6 +189,15 @@
         "modifierType": null
     },
     {
+        "id": 512,
+        "categoryId": 21,
+        "category": "T",
+        "type": "Traits",
+        "name": "Bloodlust",
+        "option": null,
+        "modifierType": "D6"
+    },
+    {
         "id": 425,
         "categoryId": 21,
         "category": "T",
@@ -194,6 +212,15 @@
         "category": "T",
         "type": "Traits",
         "name": "Bone Head",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 520,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Bounding Leap",
         "option": null,
         "modifierType": null
     },
@@ -258,6 +285,15 @@
         "type": "Agility",
         "name": "Catch",
         "option": "catch",
+        "modifierType": null
+    },
+    {
+        "id": 519,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Catch of the Day",
+        "option": null,
         "modifierType": null
     },
     {
@@ -378,6 +414,15 @@
         "modifierType": null
     },
     {
+        "id": 522,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Dragon Helmet (+AV)",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 485,
         "categoryId": 21,
         "category": "T",
@@ -393,6 +438,15 @@
         "type": "Passing",
         "name": "Dump-off",
         "option": "dumpOff",
+        "modifierType": null
+    },
+    {
+        "id": 511,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Dwarfen Scourge",
+        "option": null,
         "modifierType": null
     },
     {
@@ -483,6 +537,24 @@
         "type": "Strength",
         "name": "Grab",
         "option": "grab",
+        "modifierType": null
+    },
+    {
+        "id": 521,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Griffin Greaves (Jump Up)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 509,
+        "categoryId": 24,
+        "category": "Z",
+        "type": "Tournament Prizes",
+        "name": "Grotty Weapon (Ball & Chain)",
+        "option": null,
         "modifierType": null
     },
     {
@@ -702,6 +774,15 @@
         "modifierType": null
     },
     {
+        "id": 515,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Master Assassin",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 481,
         "categoryId": 23,
         "category": "R",
@@ -744,6 +825,15 @@
         "type": "Strength",
         "name": "Multiple Block",
         "option": "multipleBlock",
+        "modifierType": null
+    },
+    {
+        "id": 517,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "My Ball",
+        "option": null,
         "modifierType": null
     },
     {
@@ -1062,6 +1152,15 @@
         "modifierType": null
     },
     {
+        "id": 514,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Star of the Show",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 381,
         "categoryId": 17,
         "category": "G",
@@ -1125,6 +1224,15 @@
         "modifierType": null
     },
     {
+        "id": 518,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Swift as the Breeze",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 443,
         "categoryId": 21,
         "category": "T",
@@ -1148,6 +1256,15 @@
         "category": "T",
         "type": "Traits",
         "name": "Take Root",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 513,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Tasty Morsel",
         "option": null,
         "modifierType": null
     },
@@ -1220,6 +1337,15 @@
         "category": "R",
         "type": "Special Rules",
         "name": "Treacherous",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 516,
+        "categoryId": 23,
+        "category": "R",
+        "type": "Special Rules",
+        "name": "Trickster",
         "option": null,
         "modifierType": null
     },

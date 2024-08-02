@@ -963,20 +963,20 @@
         "modifierType": null
     },
     {
-        "id": 354,
-        "categoryId": 9,
-        "category": "T",
-        "type": "Tournament prize",
-        "name": "Crown of Sand (+ST, Leader)",
-        "option": null,
-        "modifierType": null
-    },
-    {
         "id": 209,
         "categoryId": 9,
         "category": "T",
         "type": "Tournament prize",
         "name": "Crown of Sand (+ST, Leader, Regeneration)",
+        "option": null,
+        "modifierType": null
+    },
+    {
+        "id": 354,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Crown of Sand (+ST, Leader)",
         "option": null,
         "modifierType": null
     },
@@ -1827,6 +1827,15 @@
         "modifierType": null
     },
     {
+        "id": 204,
+        "categoryId": 9,
+        "category": "T",
+        "type": "Tournament prize",
+        "name": "Warpstone Mutation (Horns)",
+        "option": null,
+        "modifierType": null
+    },
+    {
         "id": 203,
         "categoryId": 9,
         "category": "T",
@@ -1837,15 +1846,6 @@
     },
     {
         "id": 205,
-        "categoryId": 9,
-        "category": "T",
-        "type": "Tournament prize",
-        "name": "Warpstone Mutation (Horns)",
-        "option": null,
-        "modifierType": null
-    },
-    {
-        "id": 204,
         "categoryId": 9,
         "category": "T",
         "type": "Tournament prize",
