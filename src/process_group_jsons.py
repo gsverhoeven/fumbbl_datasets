@@ -5,11 +5,11 @@ import json
 import pandas as pd
 
 
-def process_group_jsons(group_ids, fullrun):
+def process_group_jsons(group_ids, fullrun, target = None):
 
     n_groups = len(group_ids)
-
-    target = 'raw/df_groups_' + time.strftime("%Y%m%d_%H%M%S") + '.h5'
+    if target is None:
+        target = 'raw/df_groups_' + time.strftime("%Y%m%d_%H%M%S") + '.h5'
 
     if fullrun:
         group_id = []
@@ -47,7 +47,9 @@ def process_group_jsons(group_ids, fullrun):
 
     else:
         # read from hdf5 file
-        df_groups = pd.read_hdf('raw/df_groups_20230814_080947.h5')
+        if target is None:
+            print("error choose target file")
+        df_groups = pd.read_hdf(target)
 
     df_groups['group_id'] = pd.to_numeric(df_groups.group_id) 
     df_groups['ruleset'] = pd.to_numeric(df_groups.ruleset) 

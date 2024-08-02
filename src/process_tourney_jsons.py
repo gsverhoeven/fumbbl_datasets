@@ -55,7 +55,9 @@ def process_tourney_jsons(tournament_ids, fullrun, target = None):
 
     else:
         # read from hdf5 file
-        df_tourneys = pd.read_hdf('raw/df_tourneys_20230814_080942.h5')
+        if target is None:
+            print("error choose a cached target file")      
+        df_tourneys = pd.read_hdf(target)
 
     df_tourneys['tournament_id'] = pd.to_numeric(df_tourneys.tournament_id) 
     df_tourneys['group_id'] = pd.to_numeric(df_tourneys.group_id) 
