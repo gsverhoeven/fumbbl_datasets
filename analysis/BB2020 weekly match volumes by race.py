@@ -8,12 +8,12 @@ from mizani.formatters import date_format
 path_to_datasets = 'datasets/current/'
 
 # FUMBBL matches by team
-target = 'df_mbt.h5'
-df_mbt = pd.read_hdf(path_to_datasets + target) 
+target = 'df_mbt.csv'
+df_mbt = pd.read_csv(path_to_datasets + target) 
 
 # FUMBBL inducements
-target = 'inducements.h5'
-inducements = pd.read_hdf(path_to_datasets + target) 
+target = 'inducements.csv'
+inducements = pd.read_csv(path_to_datasets + target) 
 
 # top 26 most popular races in FUMBBL BB2020
 top10 = (df_mbt

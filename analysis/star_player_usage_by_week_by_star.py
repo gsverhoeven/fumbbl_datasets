@@ -6,12 +6,12 @@ import plotnine as p9
 path_to_datasets = 'datasets/current/'
 
 # FUMBBL matches
-target = 'df_matches.h5'
-df_matches = pd.read_hdf(path_to_datasets + target) 
+target = 'df_matches.csv'
+df_matches = pd.read_csv(path_to_datasets + target) 
 
 # FUMBBL inducements
-target = 'inducements.h5'
-inducements = pd.read_hdf(path_to_datasets + target) 
+target = 'inducements.csv'
+inducements = pd.read_csv(path_to_datasets + target) 
 
 # top 10 star players in BB2020
 top10 = (inducements
