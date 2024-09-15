@@ -98,8 +98,14 @@ def process_match_jsons(full_run, begin_match, end_match, verbose = True, target
                 team2_coach_id.append(match['team2']['coach']['id'])
                 team1_race_name.append(match['team1']['roster']['name'] )
                 team2_race_name.append(match['team2']['roster']['name'] )
-                team1_value.append(match['team1']['teamValue'])
-                team2_value.append(match['team2']['teamValue'])
+                if 'currentTeamValue' in match['team1']:
+                    team1_value.append(match['team1']['currentTeamValue'])
+                else:
+                    team1_value.append(match['team1']['teamValue'])
+                if 'currentTeamValue' in match['team2']:
+                    team2_value.append(match['team2']['currentTeamValue'])
+                else:
+                    team2_value.append(match['team2']['teamValue'])
                 
             else:
                 # skip match
