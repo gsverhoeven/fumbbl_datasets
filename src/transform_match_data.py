@@ -2,7 +2,24 @@ import pandas as pd
 import numpy as np
 
 def transform_match_data(df_matches, api_change = 258150):
-    
+
+    # convert object dtype columns to proper pandas dtypes datetime and numeric
+    df_matches['match_date'] = pd.to_datetime(df_matches.match_date) # Datetime object
+
+    # calculate match score difference
+    df_matches['team1_win'] = np.sign(df_matches['team1_score'] - df_matches['team2_score'])
+    df_matches['team2_win'] = np.sign(df_matches['team2_score'] - df_matches['team1_score'])
+
+    # mirror match
+    df_matches['mirror_match'] = 0
+    df_matches.loc[df_matches['team1_race_name'] == df_matches['team2_race_name'], 'mirror_match'] = 1
+
+    # add total CAS
+    df_matches['team1_cas'] = df_matches['team1_cas_bh'] + df_matches['team1_cas_si'] + df_matches['team1_cas_rip']
+
+    # add total CAS
+    df_matches['team2_cas'] = df_matches['team2_cas_bh'] + df_matches['team2_cas_si'] + df_matches['team2_cas_rip']
+
     # convert 1150000 integer to 1150k string for newer matches
     mask = (df_matches.match_id > 4474450)
     df_matches.loc[mask, 'team1_value'] = df_matches.loc[mask, 'team1_value']//1000 # force division result as int
