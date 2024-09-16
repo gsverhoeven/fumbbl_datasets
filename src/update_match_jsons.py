@@ -46,4 +46,5 @@ def update_match_jsons(full_run, begin_match, end_match, verbose = False):
                 # file already present
                 if verbose:
                     print("o", end = '')
-                continue
+                continue # continue forces the loop to start at the next iteration, 
+            #whereas pass means, “there is no code to execute here,” and it will continue through the remainder of the loop body
