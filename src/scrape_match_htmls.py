@@ -1,6 +1,7 @@
 import gzip
 import requests
 import os
+import json
 
 def scrape_match_htmls(full_run, begin_match, end_match, verbose = False):
 
@@ -43,3 +44,30 @@ def scrape_match_htmls(full_run, begin_match, end_match, verbose = False):
                     print(i, end = '')
                     print(".", end = '')
 
+def scrape_single_html(verbose = False):
+
+    dirname = "raw/match_html_files/"
+    fname_string = dirname +  "tst.html.gz"
+
+    # check if file already exists, else scrape it
+    try:
+        f = open(fname_string, mode = "rb")
+
+    except OSError as e:
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
+        # fetch html
+        api_string = 'https://fumbbl.com/p/boxtrophy'
+        headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36'}
+
+        response = requests.get(api_string, headers = headers)
+        # write html
+        with gzip.open(fname_string, mode = "wb") as f:
+            f.write(response.text.encode("utf-8"))
+            f.close()
+            if verbose:
+                print("o", end = '')
+    else:
+        # file already present
+        pass
+    return json.loads(response.text)
