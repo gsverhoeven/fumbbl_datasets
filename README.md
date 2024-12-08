@@ -5,7 +5,9 @@ Scraping is semi-automated and is done at irregular intervals.
 The folder `datasets` contains the current and previous releases. 
 see `CHANGELOG` for details.
 
-Two example plots using data from the current release:
+The folder `analysis/` contains Rmarkdown and Jupyter notebooks with additional analyses.
+
+Two example plots using data from an older release:
 
 ## BB2020 matches by race by week
 
@@ -14,14 +16,4 @@ Two example plots using data from the current release:
 ## Top 10 star player usage by week
 
 ![](datasets/v0.5/star_players_by_week.png)
-
-## Full code and documentation available
-
-The Jupyter Notebook `fumbbl_dataset.ipynb` contains the current scraping and data processing code that produces the current release of the datasets.
-
-The folder `raw` contains the raw data that works with the current code to produce the latest release.
-
-See https://gsverhoeven.github.io/post/blood-bowl-fumbbl-dataset/ for a data paper describing a previous version of these datasets (v0.1).
-
-The folder `analysis/` contains Rmarkdown and Jupyter notebooks with additional analyses.
 
