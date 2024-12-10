@@ -1,0 +1,32 @@
+---
+title: "Roster book Road to Malta FUMBBL Online NAF tournament"
+author: "Gertjan Verhoeven"
+date: '2023-02-10'
+output: pdf_document
+classoption: landscape
+---
+```{r echo = FALSE, fig.align="center" ,  out.width = "150%"}
+
+knitr::include_graphics("eurobowl_malta.png")
+```
+
+```{r, include=FALSE}
+df_rosters <- read.csv(file = "../../../../fumbbl_datasets/datasets/current/df_rosters_road_to_malta.csv")
+
+races <- unique(df_rosters$roster.name)
+
+group_name <- "Road to Malta"
+```
+
+```{r, echo=FALSE, results='asis', out.width = "150%", fig.align = "center"}
+for (i in 1:length(races)) {
+  
+  race_name <- races[i]
+  plotname <- paste0("road_to_malta/", group_name, "_roster_plot_", race_name, ".png")
+  cat(paste0("![](", gsub(" ", "_", plotname), ")"))
+  
+  cat("\n\n\\newpage\n")
+
+}
+
+```
