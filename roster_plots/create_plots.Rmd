@@ -20,7 +20,7 @@ This dataset allows us to identify the teams that participated in the online NAF
 The **NAF Online Tournaments** FUMBBL group (group id 9298) contains the Road To Malta tournament:
 
 ```{r}
-df_matches <- read.csv(file = "../../../../fumbbl_datasets/datasets/current/df_matches.csv")
+df_matches <- read.csv(file = "../datasets/v0.7/df_matches.csv")
 df_matches$match_date <- as.Date(df_matches$match_date)
 df_matches$week_date <- as.Date(df_matches$week_date)
 ```
@@ -30,7 +30,7 @@ res <- df_matches %>%
   filter(group_id == 9298) %>%
   group_by(division_name, tournament_id, division_id, group_id, current_ruleset) %>%
   summarise(cnt = n(), start_date = min(match_date), end_date = max(match_date)) %>%
-  filter(start_date > as.Date("2022-08-01")) %>%
+  filter(start_date > as.Date("2022-08-01") & end_date < as.Date("2023-01-01")) %>%
   arrange(-tournament_id)
 
 res
@@ -86,7 +86,7 @@ df_rosters <- rbind(df_rosters1, df_rosters2, df_rosters3) %>%
 --->
 
 ```{r}
-df_rosters1 <- read.csv(file = "../../../../fumbbl_datasets/datasets/current/df_rosters_road_to_malta.csv")
+df_rosters1 <- read.csv(file = "../datasets/v0.7/df_rosters_road_to_malta.csv")
 
 df_rosters1$group_name <- "Road to Malta"
 
@@ -95,6 +95,7 @@ group_name <- "Road to Malta"
 df_rosters <- df_rosters1 %>%
   filter(position != "") %>%
   mutate(cnt = 1) %>%
+  select(-Unnamed..0) %>%
   rename(skill_name = name)
 ```
 
@@ -445,6 +446,7 @@ Ok, so we have multiple teams per coach, so lets work with coach_name_team_id.
 Ready for hierarchical clustering. We use `ggoheatmap::hclust_order()` to perform the actual clustering.
 
 ```{r}
+#devtools::install_github("gsverhoeven/ggoheatmap")
 library(ggoheatmap)
 
 df_order <- df %>%
@@ -485,6 +487,10 @@ df_rosters <- df_rosters %>%
   left_join(malta_standings %>% select(coach_name, Points), by = "coach_name")
 
 df_rosters$coach_name <- paste0(df_rosters$coach_name, "_", df_rosters$Points, "p")
+```
+
+```{r}
+dir.create("road_to_malta")
 ```
 
    

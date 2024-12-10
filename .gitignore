@@ -18,3 +18,4 @@ datasets/v0.5/v0.5_fumbbl_data_h5.zip
 *.txt
 raw/*
 datasets/v0.7/*
+roster_plots/road_to_malta/*
