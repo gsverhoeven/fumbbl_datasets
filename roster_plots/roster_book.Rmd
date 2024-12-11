@@ -11,7 +11,7 @@ knitr::include_graphics("eurobowl_malta.png")
 ```
 
 ```{r, include=FALSE}
-df_rosters <- read.csv(file = "../../../../fumbbl_datasets/datasets/current/df_rosters_road_to_malta.csv")
+df_rosters <- read.csv(file = "../datasets/v0.7/df_rosters_road_to_malta.csv")
 
 races <- unique(df_rosters$roster.name)
 
