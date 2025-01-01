@@ -1,3 +1,7 @@
+# v0.8 fumbbl datasets
+
+Dec 28th update. Fix bug with incomplete HTML scraped data.
+
 # v0.7 fumbbl datasets
 
 December 2024 update. Transition to hosting datasets only. Scraping code lives elsewhere from now on.
