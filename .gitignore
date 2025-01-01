@@ -17,5 +17,6 @@ datasets/v0.5/v0.5_fumbbl_data_h5.zip
 *.pyc
 *.txt
 raw/*
-datasets/v0.7/*
+datasets/v0.7/*.csv
 roster_plots/road_to_malta/*
+datasets/v0.8/*.csv
