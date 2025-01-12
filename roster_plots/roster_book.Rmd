@@ -22,7 +22,7 @@ group_name <- "EB25 training"
 for (i in 1:length(races)) {
   
   race_name <- races[i]
-  plotname <- paste0("road_to_malta/", group_name, "_roster_plot_", race_name, ".png")
+  plotname <- paste0("EB25/", group_name, "_roster_plot_", race_name, ".png")
   cat(paste0("![](", gsub(" ", "_", plotname), ")"))
   
   cat("\n\n\\newpage\n")
