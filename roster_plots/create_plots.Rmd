@@ -61,7 +61,7 @@ extra_stuff <- unique(df_rosters %>%
     filter(cnt > 0) %>%
     mutate(position = name) %>%
     select(group_name, team_id, roster.name, coach_name, position, cnt) %>%
-    mutate(team_name = "") %>%
+    # mutate(team_name = "") %>%
     mutate(player_id = 99999999) %>%
     mutate(number = 99) %>%
     mutate(skill_id = NA) %>%
