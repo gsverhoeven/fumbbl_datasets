@@ -1,7 +1,7 @@
 ---
 title: "Roster book FUMBBL Eurobowl 2025 training"
 author: "Hiliadan & Gertjan Verhoeven"
-date: '2025-01-10'
+date: '2025-01-19'
 output: pdf_document
 classoption: landscape
 ---
@@ -14,6 +14,7 @@ knitr::include_graphics("EB25.jpg")
 df_rosters <- read.csv(file = "../datasets/v0.7/df_rosters_eb2025.csv")
 
 races <- unique(df_rosters$roster.name)
+races <- sort(races)
 
 group_name <- "EB25 training"
 ```
