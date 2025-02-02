@@ -1,7 +1,7 @@
 ---
 title: 'Create Blood Bowl roster plots'
 author: "Gertjan Verhoeven & Hiliadan"
-date: '2025-01-11'
+date: '2025-01-26'
 ---
 
 ```{r setup, include=FALSE}
@@ -31,6 +31,8 @@ library(tidyverse)
 library(ggfortify)
 library(ggrepel)
 library(readODS)
+library(gridExtra)
+library(stringr)
 ```
 
 
@@ -45,6 +47,8 @@ df_rosters1 <- read.csv(file = "../datasets/v0.7/df_rosters_eb2025.csv")
 df_rosters1$group_name <- "EB25 training"
 
 group_name <- "EB25 training"
+
+tournament_ruleset <- "EB25"
 
 df_rosters <- df_rosters1 %>%
   filter(position != "") %>%
@@ -72,36 +76,106 @@ df_rosters <- df_rosters %>%
   select(-c(X, rerolls, assistantCoaches, cheerleaders, apothecary))
 
 df_rosters <- rbind(df_rosters, extra_stuff)
+```
 
-# exclude non valid EB25 rosters
+
+
+# Filter out "illegal" teams
+
+
+```{r remove-illegal-teams}
+# Exclude non valid rosters according to the ruleset
+
+# Open the ruleset settings
+allowed_inducements <- read_ods("bb_tournament_settings.ods", sheet="allowed_inducements") %>% 
+  filter(Ruleset == tournament_ruleset)
+
+banned_star_players <- read_ods("bb_tournament_settings.ods", sheet="banned_star_players") %>% 
+  filter(Ruleset == tournament_ruleset)
+
+other_settings <- read_ods("bb_tournament_settings.ods", sheet="other-settings") %>% 
+  filter(Ruleset == tournament_ruleset)
+
+max_skills <- other_settings %>%
+  filter(`Other settings` == "Maximum number of same skill") %>%
+  pull(Value) %>%
+  as.numeric()
+
+# Identify illegal teams
+
+# ---  Due to banned star players ---
+# Create a list of team_ids associated with banned star players
+banned_teams_due_to_star_players <- df_rosters %>%
+  semi_join(banned_star_players, by = c("position" = "Banned star players")) %>%
+  distinct(team_id)
+
+# Add a "banned" column to df_rosters and fill it
+df_rosters <- df_rosters %>%
+  left_join(banned_teams_due_to_star_players %>% mutate(banned_due_to_star_player = TRUE), by = "team_id")
+
+# ---  Due to inducements not in the list ---
+# Create a regex pattern from allowed inducements
+allowed_patterns <- paste(allowed_inducements$Inducements, collapse = "|")
+
+# Create a list of team_ids associated with inducements not allowed
+banned_teams_due_to_other_inducements <- df_rosters %>%
+  # Keep only rows which are inducements, i.e. i) number = 99, ii) not empty, iii) is not a star player 
+  filter(number == 99 & !is.na(position) & !startsWith(position, "Star player")) %>% 
+  # If the inducement name (stored in position) is not within the allowed_patterns, then it's illegal
+  filter(is.na(str_extract(position, regex(allowed_patterns, ignore_case = TRUE)))) 
+
+# Inducements not allowed spotted
+print(banned_teams_due_to_other_inducements %>% distinct(position))
+
+
+banned_teams_due_to_other_inducements <- banned_teams_due_to_other_inducements %>%
+  distinct(team_id)
+
+head(banned_teams_due_to_other_inducements,20)
+
+
+# Fill the "banned" column in df_rosters
+df_rosters <- df_rosters %>%
+  left_join(banned_teams_due_to_other_inducements %>% mutate(banned_due_to_inducements = TRUE), by = "team_id")
+
+
+display <- df_rosters %>% filter(banned_due_to_inducements == TRUE)
+head(display, 20)
+
+# ---  Due to number of illegal number of skills ---
+# Would need to be improved to look at inherent skills AND "purchased" skills. Currently only look at "purchased" skills.
+
+# Count the number of skills "purchased" per team
+n_skills_per_team <- df_rosters %>%
+  group_by(team_id, skill_name) %>% 
+  filter(skill_name != "") %>% 
+  summarize(n_skills = n(), .groups = "drop")
+
+head(n_skills_per_team)
+
+banned_teams_due_to_number_of_skills <- n_skills_per_team %>%
+  filter(n_skills > max_skills) %>%
+  distinct(team_id)
+
+head(banned_teams_due_to_number_of_skills)
+
+# Fill the "banned" column in df_rosters
+df_rosters <- df_rosters %>%
+  left_join(banned_teams_due_to_number_of_skills %>% mutate(banned_due_to_number_of_skills = TRUE), by = "team_id")
+
+
+# --- Exclusion by hand (to deprecate) ---
 df_rosters <- df_rosters %>%
   filter(!(team_id %in% c(1206955, 1209079)))
 
-df_rosters <- df_rosters %>%
-  filter(position != "the White Dwarf")
 
-
-```
-
-
-
-# filter out BB2016 teams (Bretonnian)
-
-
-```{r}
+# Filter out BB2016 teams (Bretonnian)
 df_rosters <- df_rosters %>%
   filter(roster.name != "Bretonnian")
+
 ```
 
 # Label old and new amazon, and old and new norse rosters
-
-amazon team with old/new mix 5141 roster. roster contains positionals from old and new!!!
-
-```{r}
-# # drop old amazon team in WC training
-# df_rosters <- df_rosters %>%
-#   filter(team_id != 836802)
-```
 
 
 ```{r}
@@ -151,8 +225,6 @@ df_rosters %>%
   group_by(group_name) %>%
   summarise(perc = mean(has_skills))
 ```
-<!-- So the superleague has missing skills. -->
-<!-- Hypothesis : teams that only played in round 0 Q2 2022 have missing skills? -->
 
 # Drop teams without skills.
 
@@ -212,18 +284,7 @@ df_rosters <- df_rosters %>%
   mutate(position = ifelse(grepl("bribes", position), "1 bribe", position)) 
 ```
 
-
-# create color table
-
-```{r eval = FALSE}
-skill_colors <- df_rosters %>%
-  group_by(skill_name) %>%
-  summarise(n = n())
-
-write_ods(skill_colors, "skill_colors.ods")
-```
-
-# Add skill color table
+# Open the skill color table
 
 ```{r}
 skill_colors <- read_ods("230218 bb_skill_colors.ods")
@@ -232,6 +293,21 @@ skill_colors <- skill_colors %>%
   mutate(skill_name = replace_na(skill_name, "")) %>%
   select(-n)
 ```
+
+# Produce stats on the number of skills in the teams assessed and check missing color in the color table
+
+The skill_colors.ods should then be checked manually for any NA (or empty) in the color column. The rows concerned should be added to 230218 bb_skill_colors.ods
+
+```{r}
+skill_stats_and_missing_colors <- df_rosters %>%
+  group_by(skill_name) %>%
+  summarise(n = n()) %>% 
+  full_join(skill_colors, by = "skill_name")
+
+
+write_ods(skill_stats_and_missing_colors, "skill_colors.ods")
+```
+
 
 
 # create code list with roster cost
@@ -378,67 +454,24 @@ df_rosters <- df_rosters %>%
 dataprep for HC.
 
 ```{r}
-df <- df_rosters %>% 
-  filter(roster.name == "Orc") %>%
-  filter(!(position %in% c("cheerleaders", "assistantCoaches"))) %>%
-  group_by(team_id, coach_name, player_id, position, sort_order, number, skill_name, color) %>% # skill stacking
-  summarise(cnt = max(cnt), cost = max(cost)) %>%
-  group_by(team_id, coach_name, player_id, position, sort_order, skill_name, color) %>%
-  summarise(n = sum(cnt), cost = cost * sum(cnt)) %>%
-  group_by(team_id, coach_name, position, sort_order, n) %>%
-  summarise(nr = row_number(), skill_name = skill_name, color = color, cost = cost)
-
-df
-```
-
-Check the matrix that will form the basis of the clustering through eyeballing.
-
-```{r}
-df %>% 
-  ungroup() %>%
-  select(team_id, position, nr, cost) %>%
-  pivot_wider(
-    names_from = team_id, 
-    values_from = cost,
-    values_fill = 0,
-    values_fn = sum
-  ) #%>% select(-position) 
-```
-Ok, so we have multiple teams per coach, so lets work with coach_name_team_id.
-
-Ready for hierarchical clustering. We use `ggoheatmap::hclust_order()` to perform the actual clustering.
-
-```{r}
-#devtools::install_github("gsverhoeven/ggoheatmap")
-library(ggoheatmap)
-
-df_order <- df %>%
-  mutate(position_unique = paste0(position, "_", nr)) %>%
-  mutate(team_id_char = as.character(team_id)) %>%
-  ungroup() %>%
-  hclust_order(xvar = "team_id_char", 
-               yvar = "position_unique", 
-               value_var = "cost", dcast_fill = 1) %>%
-  select(team_id, cluster_order) %>%
-  distinct() %>%
-  right_join(df, by = "team_id")
-```
-
-
-```{r}
 dir.create("EB25")
 ```
 
    
 # Create heatmap plots
 
-```{r message = F, fig.width= 10}
+```{r heatmap}
+# Uncomment to install on first use
+#devtools::install_github("gsverhoeven/ggoheatmap")
+library(ggoheatmap)
+
 races <- unique(df_rosters$roster.name)
 
 for(i in 1:length(races)){
   race_name <- races[i]
 
   df <- df_rosters %>% 
+    filter(is.na(banned_due_to_star_player) & is.na(banned_due_to_inducements) & is.na(banned_due_to_number_of_skills)) %>%
     filter(roster.name == race_name) %>%
     filter(!(position %in% c("cheerleaders", "assistantCoaches"))) %>%
     group_by(team_id, coach_name, player_id, position, sort_order, number, skill_name, color) %>% # skill stacking
@@ -467,24 +500,84 @@ for(i in 1:length(races)){
   df$coach_team_id <- paste0(df$coach_name, "_", str_sub(as.character(df$team_id)))
   # df$coach_team_id <- df$coach_name
   
+  # Wrap title to ensure it does not overlap with caption (e.g. for Imperial Nobility)
+  plot_title <- stringr::str_wrap(paste0("FUMBBL ", group_name, " ", race_name, " rosters"), width = 35)
+  
+  
   gp <- ggplot(df, aes(x = reorder(factor(coach_team_id), cluster_order), y = reorder(paste(position, nr), -sort_order))) +
     geom_tile(aes(fill = color), color = "black") +
     geom_text(aes(label = n), color = "white") +
-    scale_fill_identity(name = "Skills",
-                        breaks = c(df$color),
-                        labels = c(df$skill_name),
-                        guide = "legend") +
-    #scale_fill_gradient(low = "light blue", high = "blue", na.value = "white") +
+    scale_fill_identity(breaks = c(df$color),
+                        labels = c(df$skill_name)) +
     coord_fixed() +
-    #theme(legend.position = "none") +
-    ggtitle(paste0("FUMBBL ", group_name, " ", race_name, " rosters")) + 
+    theme(legend.position = "none") +
+    ggtitle(plot_title) + 
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
     theme(panel.background = element_rect(fill = "white")) +
+    theme(plot.margin = margin(l = 0)) + # Set left margin to 0 to try to move to the left
     labs(x = "", y = "")
+
+  print(gp)
+  
+  # Sort skills alphabetically to display them sorted in the caption
+  df <- df %>%
+    arrange(skill_name)
+  
+  # Create a data frame for the legend
+  legend_df <- df  %>%
+    ungroup() %>% 
+    select(skill_name, color) %>% 
+    distinct(skill_name, color) 
+    
+  
+  print(legend_df)
+  
+    # Calculate the number of skills displayed to adapt the height for the ggsave (see below) and the width of the legend
+  n_legend_items <- n_distinct(df$skill_name)
+  
+  # Generate a custom legend using ggplot
+  legend_plot <- ggplot(legend_df, aes(x = 1, y = skill_name, fill = color)) +
+    # The width is proportional to the number of items to display because for some reasons, the more the items, the smaller the width becomes in default settings
+    geom_tile(color = "black", width = 2.8*n_legend_items/11) +
+    # Add a shadow to make white (added on the following line) readable on light background. The nudge_x offset is there because for some reasons, the text is not aligned left, despite hjust = 0. It is proportional to the number of items because the bigger the width (proportional to the number of items), the bigger the disalignment
+    geom_text(aes(label = skill_name), hjust = 0, color = "black", nudge_x = -1.4*n_legend_items/11-0.02, nudge_7 = -0.02) + 
+    geom_text(aes(label = skill_name), hjust = 0, color = "white", nudge_x = -1.4*n_legend_items/11) +
+    scale_fill_identity() +
+    coord_fixed() +
+    theme_void() +
+    theme(
+      legend.position = "none",
+      axis.text.y = element_blank(),
+      axis.title = element_blank()
+    )
+
+  print(legend_plot)
+
+  print("final plot")
+  
+  # Combine the main plot and custom legend
+  final_plot <- grid.arrange(
+    gp,                      # Main plot
+    legend_plot,             # Custom legend
+    ncol = 2,                # Arrange side by side
+    widths = c(3, 1)         # Adjust width proportions
+  )
+  
+
   
   plotname <- paste0("EB25/", group_name, "_roster_plot_", race_name, ".png")
   print(plotname)
-  ggsave(gsub(" ", "_", plotname), gp, width = 10)
+  
+  # Set dynamic height: Base height + extra height per legend item
+  # 1 = 300 px, usually a race requires 1500px to be displayed properly
+  base_height <- 6.25
+  # A skill requires about 75px or 0.25 to be properly displayed
+  extra_height_per_item <- 0.25
+  # The base height of 6.25 allows to display properly about 20 skills (+ "Skills")
+  dynamic_height <- base_height + max((n_legend_items-20), 0) * extra_height_per_item
+  print(dynamic_height)
+
+  ggsave(gsub(" ", "_", plotname), final_plot, width = 10, height = dynamic_height)
 }
 ```
 
