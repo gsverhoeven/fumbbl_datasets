@@ -72,6 +72,11 @@ extra_stuff <- unique(df_rosters %>%
     mutate(name = NA)) %>%
     rename(skill_name = name)
 
+if ("team_name" %in% colnames(df_rosters)){ 
+  extra_stuff <- extra_stuff %>%
+    mutate(team_name = "")
+}
+
 df_rosters <- df_rosters %>%
   select(-c(X, rerolls, assistantCoaches, cheerleaders, apothecary))
 
