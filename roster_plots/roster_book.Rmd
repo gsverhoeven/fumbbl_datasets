@@ -1,9 +1,11 @@
 ---
-title: "Roster book FUMBBL Eurobowl 2025 training"
+title: "Roster book FUMBBL `r params$group_name`"
 author: "Hiliadan & Gertjan Verhoeven"
-date: '2025-01-19'
+date: '2025-03-03'
 output: pdf_document
 classoption: landscape
+params:
+    group_name: "EB25 training"
 ---
 ```{r echo = FALSE, fig.align="center" ,  out.width = "150%"}
 
@@ -11,12 +13,17 @@ knitr::include_graphics("EB25.jpg")
 ```
 
 ```{r, include=FALSE}
-df_rosters <- read.csv(file = "../datasets/v0.7/df_rosters_eb2025.csv")
+group_name <- params$group_name
+
+if(group_name == "EB25 training") {
+  df_rosters <- read.csv(file = "../datasets/v0.7/df_rosters_eb2025.csv")
+} else if (group_name == "Super League S6") {
+  df_rosters <- read.csv(file = "../datasets/v0.8/df_rosters_super_league_s6.csv")
+}
 
 races <- unique(df_rosters$roster.name)
 races <- sort(races)
 
-group_name <- "EB25 training"
 ```
 
 ```{r, echo=FALSE, results='asis', out.width = "150%", fig.align = "center"}
