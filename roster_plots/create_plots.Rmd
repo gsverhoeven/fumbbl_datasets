@@ -60,6 +60,30 @@ df_rosters1$group_name <- group_name
 # Cf. bb_tournament_settings.ods
 tournament_ruleset <- params$tournament_ruleset
 
+## Load the data downloaded from https://member.thenaf.net/glicko/nafstat-tmp-name.zip. They will be used for stats on ELO ranking etc.
+NAF_coachranking_variant <- read.csv(file = "../datasets/NAF-dump/naf_coachranking_variant.csv", sep = ";")
+NAF_race <- read.csv(file = "../datasets/NAF-dump/naf_race.csv", sep = ";")
+NAF_variant <- read.csv(file = "../datasets/NAF-dump/naf_variants.csv", sep = ";")
+
+
+# Open the ruleset settings
+allowed_inducements <- read_ods("bb_tournament_settings.ods", sheet="allowed_inducements") %>% 
+  filter(Ruleset == tournament_ruleset)
+
+banned_star_players <- read_ods("bb_tournament_settings.ods", sheet="banned_star_players") %>% 
+  filter(Ruleset == tournament_ruleset)
+
+other_settings <- read_ods("bb_tournament_settings.ods", sheet="other-settings") %>% 
+  filter(Ruleset == tournament_ruleset)
+
+max_skills <- other_settings %>%
+  filter(`Other settings` == "Maximum number of same skill") %>%
+  pull(Value) %>%
+  as.numeric()
+
+variant <- other_settings %>%
+  filter(`Other settings` == "Variant") %>%
+  pull(Value)
 ```
 # II. Data cleaning
 ## Beginning of data cleaning
@@ -69,7 +93,11 @@ df_rosters <- df_rosters1 %>%
   filter(position != "") %>%
   mutate(cnt = 1) %>%
   rename(skill_name = name)
+```
 
+
+## Adding info on inducements etc
+```{r}
 # add xtra stuff
 extra_stuff <- unique(df_rosters %>% 
                     mutate(apothecary = ifelse(apothecary == "Yes", 1, 0)) %>%
@@ -108,21 +136,6 @@ df_rosters <- rbind(df_rosters, extra_stuff)
 
 ```{r remove-illegal-teams}
 # Exclude non valid rosters according to the ruleset
-
-# Open the ruleset settings
-allowed_inducements <- read_ods("bb_tournament_settings.ods", sheet="allowed_inducements") %>% 
-  filter(Ruleset == tournament_ruleset)
-
-banned_star_players <- read_ods("bb_tournament_settings.ods", sheet="banned_star_players") %>% 
-  filter(Ruleset == tournament_ruleset)
-
-other_settings <- read_ods("bb_tournament_settings.ods", sheet="other-settings") %>% 
-  filter(Ruleset == tournament_ruleset)
-
-max_skills <- other_settings %>%
-  filter(`Other settings` == "Maximum number of same skill") %>%
-  pull(Value) %>%
-  as.numeric()
 
 # Identify illegal teams
 
@@ -331,6 +344,46 @@ skill_stats_and_missing_colors <- df_rosters %>%
 write_ods(skill_stats_and_missing_colors, "skill_colors.ods")
 ```
 
+## Produce stats of ELO values of coaches by tournament
+```{r}
+# Get coach's NAF ID ranking from NAF data for all the coaches in the roster dataset
+df_coach_per_tournament <- unique(df_rosters1 %>%
+                                    select(coach_name, tournament_name, roster.name)) %>%
+  left_join(df_naf_ids, by = c("coach_name" = "fumbbl_coach_name"))
+
+# Get variant's ID corresponding to the tournament's variant
+variant_id <- NAF_variant %>% 
+  filter(variantname == variant) %>% 
+  select(variantid) %>% 
+  as.numeric()
+
+# Get coach's ELO score for the race played in the tournament from NAF data
+df_ELO_for_played_race_per_coach <- df_coach_per_tournament %>% 
+  left_join(NAF_race, by = c("roster.name" = "name")) %>% 
+  left_join(NAF_coachranking_variant %>% 
+              filter(variantID == variant_id), 
+            by = c("naf_id" = "coachID", "raceid" = "raceID")) %>% 
+  arrange(tournament_name, -ranking) %>% 
+  select(coach_name, tournament_name, roster.name, naf_id, ranking)
+  
+
+# Get coach's best ELO score across all races
+best_ELO_per_coach <- NAF_coachranking_variant %>%
+  filter(variantID == variant_id) %>%
+  group_by(coachID) %>%
+  slice_max(ranking, n = 1, with_ties = FALSE) %>%
+  ungroup() %>% 
+  select(coachID, ranking) %>% 
+  rename(best_ranking = ranking)
+
+# Add that best ELO to df_ELO_for_played_race_per_coach
+df_ELO_for_played_race_per_coach <- df_ELO_for_played_race_per_coach %>% 
+  right_join(best_ELO_per_coach, by = c("naf_id" = "coachID"))
+
+write_ods(df_ELO_for_played_race_per_coach, "ELO_for_played_race_per_coach.ods")
+
+
+```
 
 # IV. Preparation of display
 ## create code list with roster cost
@@ -523,11 +576,7 @@ for(i in 1:length(races)){
   }
   df$coach_team_id <- paste0(df$coach_name, "_", str_sub(as.character(df$team_id)))
   
-  # Get the ELO points of the coach for this race (if a match between his name and NAF name can be made) based on data from https://member.thenaf.net/glicko/nafstat-tmp-name.zip
-  
-  
-  # df$coach_team_id <- df$coach_name
-  
+
   # Wrap title to ensure it does not overlap with caption (e.g. for Imperial Nobility)
   plot_title <- stringr::str_wrap(paste0("FUMBBL ", group_name, " ", race_name, " rosters"), width = 35)
   
