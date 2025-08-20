@@ -65,6 +65,8 @@ NAF_coachranking_variant <- read.csv(file = "../datasets/NAF-dump/naf_coachranki
 NAF_race <- read.csv(file = "../datasets/NAF-dump/naf_race.csv", sep = ";")
 NAF_variant <- read.csv(file = "../datasets/NAF-dump/naf_variants.csv", sep = ";")
 
+## Load the global ELO from https://bloodbowl.dk/coach-rating/, provided by Tripleskull
+globalcoachranking <- read.table(file = "../datasets/dk-ranking/WorldCR.txt", header = TRUE, sep = ";")
 
 # Open the ruleset settings
 allowed_inducements <- read_ods("bb_tournament_settings.ods", sheet="allowed_inducements") %>% 
@@ -84,6 +86,8 @@ max_skills <- other_settings %>%
 variant <- other_settings %>%
   filter(`Other settings` == "Variant") %>%
   pull(Value)
+
+tournament_ordering <- read_ods("bb_tournament_settings.ods", sheet="tournament_structure")
 ```
 # II. Data cleaning
 ## Beginning of data cleaning
@@ -348,8 +352,14 @@ write_ods(skill_stats_and_missing_colors, "skill_colors.ods")
 ```{r}
 # Get coach's NAF ID ranking from NAF data for all the coaches in the roster dataset
 df_coach_per_tournament <- unique(df_rosters1 %>%
+                                    filter(group_name == group_name) %>% 
                                     select(coach_name, tournament_name, roster.name)) %>%
-  left_join(df_naf_ids, by = c("coach_name" = "fumbbl_coach_name"))
+  left_join(df_naf_ids, by = c("coach_name" = "fumbbl_coach_name")) %>% 
+  # Remove coaches not in a tournament_name (probably joined a group but didn't apply for a tournament)
+  filter(tournament_name != "") %>% 
+  # Rename "Super League S6 EU Swiss B R2-7" into "Super League S6 EU Swiss B" as apparently coaches are either in one or the other in the data
+  mutate(tournament_name = ifelse(tournament_name == "Super League S6 EU Swiss B R2-7", "Super League S6 EU Swiss B", tournament_name))
+
 
 # Get variant's ID corresponding to the tournament's variant
 variant_id <- NAF_variant %>% 
@@ -378,12 +388,16 @@ best_ELO_per_coach <- NAF_coachranking_variant %>%
 
 # Add that best ELO to df_ELO_for_played_race_per_coach
 df_ELO_for_played_race_per_coach <- df_ELO_for_played_race_per_coach %>% 
-  right_join(best_ELO_per_coach, by = c("naf_id" = "coachID"))
+  left_join(best_ELO_per_coach, by = c("naf_id" = "coachID")) %>% 
+  # Add global ranking too
+  left_join(globalcoachranking, by  = c("naf_id" = "Naf.ID")) %>% 
+  left_join(tournament_ordering, by  = c("tournament_name" = "tournament_name"))
 
-write_ods(df_ELO_for_played_race_per_coach, "ELO_for_played_race_per_coach.ods")
-
+write.csv(df_ELO_for_played_race_per_coach, "../SL6_ELO-stats/ELO_for_played_race_per_coach.csv")
 
 ```
+
+
 
 # IV. Preparation of display
 ## create code list with roster cost

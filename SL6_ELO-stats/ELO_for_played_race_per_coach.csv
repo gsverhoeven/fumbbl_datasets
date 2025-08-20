@@ -1,0 +1,235 @@
+"","coach_name","tournament_name","roster.name","naf_id","ranking","best_ranking","X","Naf.nick","Coach.rating","Year.high","Country","Alltime.high","Current.streak.without.loss","Longest.streak.without.loss","Naf.games.played","Win.procent","order"
+"1","Jokaero","Super League S6 EU Championship A","Dwarf",2785,257.49,257.49,NA,"Jokaero",258.18,313.06,"Switzerland",313.06,3,18,"563 (327/131/105)",69.72,101
+"2","helborg","Super League S6 EU Championship A","High Elf",22470,221.07,259.36,NA,"Helborg",288.37,319.22,"France",319.22,3,21,"463 (257/115/91)",67.93,101
+"3","doclystria","Super League S6 EU Championship A","Necromantic Horror",2808,208.34,233.18,NA,"Miko",277.59,286.19,"Germany",286.19,3,19,"377 (211/84/82)",67.11,101
+"4","Stimme","Super League S6 EU Championship A","Human",17245,180.87,247.33,NA,"Stimme",261.01,278.7,"Germany",278.7,0,35,"709 (398/179/132)",68.76,101
+"5","fabienL","Super League S6 EU Championship A","Chaos Renegade",33562,178.41,185.08,NA,"FabienL",249.54,249.54,"France",249.54,10,11,"49 (30/13/6)",74.49,101
+"6","Hovring","Super League S6 EU Championship A","Orc",34738,178.22,254.04,NA,"hovring",266.07,266.07,"Denmark",266.07,12,19,"54 (31/16/7)",72.22,101
+"7","Endrophil","Super League S6 EU Championship A","Goblin",19682,174.06,196,NA,"Endro",229.91,230.42,"Germany",237.83,7,10,"177 (89/35/53)",60.17,101
+"8","Junior84","Super League S6 EU Championship A","Dwarf",20857,165.45,259.21,NA,"Junior84",279.12,285.4,"Germany",285.4,0,28,"437 (237/124/76)",68.42,101
+"9","KFoged","Super League S6 EU Championship B","Slann",10691,240.04,278.05,NA,"KFoged",262.44,284.13,"England",291.02,0,27,"732 (439/151/142)",70.29,102
+"10","geggster","Super League S6 EU Championship B","Dwarf",70,223.8,240.69,NA,"Geggster",264.53,265.59,"England",278.83,2,19,"1142 (628/275/239)",67.03,102
+"11","silkoun","Super League S6 EU Championship B","Wood Elf",14616,222.68,222.68,NA,"silkoun",252.52,257.32,"France",283.04,1,19,"346 (184/92/70)",66.47,102
+"12","Tripleskull","Super League S6 EU Championship B","Amazon",9524,198.77,220.04,NA,"Tripleskull",254.84,261.59,"Denmark",272.11,2,20,"434 (239/109/86)",67.63,102
+"13","Tschirgant","Super League S6 EU Championship B","Necromantic Horror",32633,179.77,238.75,NA,"Tschirgant",266.33,271.87,"Germany",271.87,3,18,"172 (102/43/27)",71.8,102
+"14","Zelmor","Super League S6 EU Championship B","Dwarf",35956,NA,148.07,NA,"Zelmor",152.44,152.44,"Netherlands",154.41,2,3,"15 (6/3/6)",50,102
+"15","LargoFL","Super League S6 EU Championship B","Dwarf",28291,NA,208.28,NA,"LargoFL",192.64,224.38,"Germany",246.32,1,11,"111 (55/28/28)",62.16,102
+"16","SideshowBob","Super League S6 EU Championship B","Halfling",30799,NA,168.54,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,102
+"17","olivierdulac","Super League S6 EU Div 1A","Skaven",18901,288.43,288.43,NA,"Olivierdulac",295.12,306.68,"France",331.11,1,28,"497 (315/81/101)",71.53,201
+"18","freud","Super League S6 EU Div 1A","Lizardmen",13280,224.88,224.88,NA,"Freud",248.78,248.92,"Italy",258.74,8,10,"447 (203/111/133)",57.83,201
+"19","Budmilka","Super League S6 EU Div 1A","Dwarf",20320,181.69,211.82,NA,"Budmilka",199.81,217.36,"France",242.24,3,11,"562 (231/147/184)",54.18,201
+"20","Solaris","Super League S6 EU Div 1A","Vampire",22731,165.18,174.62,NA,"Solaris_7",200.72,202.6,"Germany",202.6,1,9,"39 (18/13/8)",62.82,201
+"21","Jelmer","Super League S6 EU Div 1A","Human",129,160.37,216.09,NA,"jelmer",201.23,225.91,"Netherlands",261.05,3,19,"753 (358/163/232)",58.37,201
+"22","Hugo21_","Super League S6 EU Div 1A","Shambling Undead",33563,159.92,165.54,NA,"Hugo21",177.28,177.28,"France",177.28,3,5,"52 (18/17/17)",50.96,201
+"23","spelledaren","Super League S6 EU Div 1A","Snotling",34660,NA,190.24,NA,"spelledaren",193.52,193.52,"Sweden",193.52,2,8,"22 (11/6/5)",63.64,201
+"24","happygrue","Super League S6 EU Div 1A","Vampire",16876,NA,199.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,201
+"25","Fol","Super League S6 EU Div 1B","Shambling Undead",21766,224.78,224.78,NA,"fol82",264.86,264.86,"Spain",264.86,7,15,"295 (134/78/83)",58.64,202
+"26","JLeav","Super League S6 EU Div 1B","Vampire",33751,222.56,222.56,NA,"jleav",267.42,267.76,"United States of America",267.76,3,25,"113 (81/17/15)",79.2,202
+"27","Leonek","Super League S6 EU Div 1B","Amazon",22375,208.63,208.63,NA,"Leonek",265.99,272.03,"Poland",272.03,0,12,"210 (117/44/49)",66.19,202
+"28","Jayward","Super League S6 EU Div 1B","Orc",28662,205.12,205.12,NA,"jayward",249.39,256.55,"Wales",256.55,0,19,"107 (60/27/20)",68.69,202
+"29","Yuri_the_Scourge","Super League S6 EU Div 1B","Amazon",25299,180.2,217.45,NA,"Yurinator",224.76,241.76,"Netherlands",241.76,1,15,"198 (103/44/51)",63.13,202
+"30","dragou","Super League S6 EU Div 1B","Shambling Undead",32757,176.12,207.92,NA,"Dragou",254.89,260.9,"Belgium",260.9,1,22,"58 (38/14/6)",77.59,202
+"31","Lewdgrip","Super League S6 EU Div 1B","Old World Alliance",21163,139.1,199.6,NA,"lewdgrip",219.83,222.03,"Austria",228.81,3,7,"101 (52/18/31)",60.4,202
+"32","cymob","Super League S6 EU Div 1B","Tomb Kings",29533,NA,205.74,NA,"cymob",248.1,254.97,"Norway",254.97,1,13,"99 (47/25/27)",60.1,202
+"33","prodigal_son","Super League S6 EU Div 1C","Necromantic Horror",27369,215.72,215.72,NA,"prodigal_son",192.61,202.04,"Finland",202.04,4,12,"49 (21/18/10)",61.22,203
+"34","Beltroniko","Super League S6 EU Div 1C","Vampire",36563,195.01,205.31,NA,"Beltroniko",190.58,190.58,"Portugal",190.58,4,6,"25 (13/5/7)",62,203
+"35","DrHellboy_","Super League S6 EU Div 1C","Lizardmen",26611,193.62,193.62,NA,"DrHellboy_",207.04,239.24,"Wales",239.24,1,17,"177 (79/52/46)",59.32,203
+"36","Tuga","Super League S6 EU Div 1C","Orc",24918,193.28,205.64,NA,"marcosgrande",218.68,218.68,"Portugal",226.48,2,11,"79 (34/25/20)",58.86,203
+"37","Candlejack","Super League S6 EU Div 1C","Shambling Undead",5844,191.39,215.21,NA,"Candlejack",221.15,267.33,"Germany",275.32,0,13,"775 (408/140/227)",61.68,203
+"38","HRNSUP","Super League S6 EU Div 1C","Vampire",22063,176.72,202.14,NA,"horns_up",214.27,220.51,"United States of America",237.35,2,13,"169 (88/37/44)",63.02,203
+"39","LemonheadWallenstein","Super League S6 EU Div 1C","Norse",22662,168.53,170.29,NA,"Lemonhead_Wallenstein",191.59,200.72,"Tonga",200.72,0,11,"98 (36/30/32)",52.04,203
+"40","jonno","Super League S6 EU Div 1C","Elven Union",20251,NA,195.64,NA,"Jonno",202.53,208.68,"Denmark",208.68,0,11,"216 (75/60/81)",48.61,203
+"41","Grzechu","Super League S6 EU Div 1D","Wood Elf",30403,243.51,243.51,NA,"Grzechu",224.17,237.06,"Poland",237.06,3,22,"124 (58/40/26)",62.9,204
+"42","Valen","Super League S6 EU Div 1D","Dwarf",1538,202.18,207.31,NA,"Valen",236.56,242.58,"Scotland",242.99,0,14,"626 (326/110/190)",60.86,204
+"43","HenningEksteen","Super League S6 EU Div 1D","Orc",33351,200.65,200.65,NA,"henningeksteen",208.42,216.21,"Netherlands",216.21,1,15,"96 (42/26/28)",57.29,204
+"44","Bazakastine","Super League S6 EU Div 1D","Amazon",29474,178.83,198.3,NA,"bazakastine",244.89,273.4,"United States of America",273.4,8,13,"78 (53/15/10)",77.56,204
+"45","MacHurto","Super League S6 EU Div 1D","Vampire",24314,161.96,196.32,NA,"machurto",238.38,238.96,"Denmark",242.91,8,8,"118 (57/33/28)",62.29,204
+"46","rodvil","Super League S6 EU Div 1D","Underworld Denizens",24496,156.9,176.88,NA,"rodvil",186.01,205.86,"Portugal",205.86,0,15,"133 (48/39/46)",50.75,204
+"47","Sharkrudi","Super League S6 EU Div 1D","Lizardmen",16542,136.41,165.36,NA,"sharkrudi",160.47,161.67,"France",161.67,2,5,"37 (10/13/14)",44.59,204
+"48","Al_Daz","Super League S6 EU Div 1D","Elven Union",32763,NA,190.09,NA,"Al_Daz",171.39,223.92,"France",223.92,0,8,"74 (27/21/26)",50.68,204
+"49","seanh1986","Super League S6 EU Div 2A","Amazon",23461,211.29,215.79,NA,"seanh1986",250.56,276.77,"Canada",276.77,0,13,"312 (175/73/64)",67.79,301
+"50","cyg-Obsidian","Super League S6 EU Div 2A","Vampire",21201,184.63,230.37,NA,"obsidian",262.22,279.03,"France",279.03,0,21,"417 (211/106/100)",63.31,301
+"51","Bingoman","Super League S6 EU Div 2A","Necromantic Horror",29666,176.76,176.76,NA,"Bingoman",189.64,194.92,"Germany",194.92,0,6,"72 (26/14/32)",45.83,301
+"52","ClayInfinity","Super League S6 EU Div 2A","Old World Alliance",8442,146.25,197.94,NA,"ClayInfinity",206.98,241.2,"Australia",241.2,0,16,"187 (93/43/51)",61.23,301
+"53","cdassak","Super League S6 EU Div 2A","Old World Alliance",26050,NA,205.78,NA,"cdassak",237.91,239.72,"Greece",245.64,11,22,"86 (52/24/10)",74.42,301
+"54","Rubick","Super League S6 EU Div 2A","Chaos Renegade",17243,NA,210.41,NA,"Rubick",221.15,228.22,"Wales",233.15,1,13,"496 (240/117/139)",60.18,301
+"55","Hal976","Super League S6 EU Div 2A","High Elf",33257,NA,147.61,NA,"hal976",130.41,132.51,"Italy",146.6,0,2,"12 (0/5/7)",20.83,301
+"56","uncertain","Super League S6 EU Div 2A","Elven Union",13715,NA,204.21,NA,"Narok",210.2,239.66,"Germany",239.66,2,13,"249 (113/63/73)",58.03,301
+"57","speedingbullet","Super League S6 EU Div 2B","Wood Elf",16845,206.38,206.38,NA,"speedingbullet",220.4,244.17,"England",246.46,3,12,"255 (130/60/65)",62.75,302
+"58","Bojo","Super League S6 EU Div 2B","Tomb Kings",7539,160.89,219.07,NA,"Lord_Bojo",197.39,241.47,"Guadeloupe",248.43,1,22,"678 (306/182/190)",58.55,302
+"59","Dodge22","Super League S6 EU Div 2B","Orc",32391,160.03,189.15,NA,"dodge22",194.87,210.97,"England",210.97,0,11,"122 (54/30/38)",56.56,302
+"60","Rhag","Super League S6 EU Div 2B","Dark Elf",34689,157.55,180.8,NA,"Rhag",162.93,162.93,"Finland",162.93,2,5,"46 (15/13/18)",46.74,302
+"61","Thernlow","Super League S6 EU Div 2B","High Elf",25614,153.73,161.65,NA,"Thernlow",185.5,199.76,"Norway",199.76,6,11,"113 (42/37/34)",53.54,302
+"62","Topas","Super League S6 EU Div 2B","Chaos Chosen",22100,146.45,205.71,NA,"topas",204.62,229.49,"Germany",229.76,0,19,"256 (117/71/68)",59.57,302
+"63","outcaarst","Super League S6 EU Div 2B","High Elf",15546,144.69,190.64,NA,"outcaarst",197.21,213.15,"Austria",213.15,0,7,"180 (79/38/63)",54.44,302
+"64","chaoskopp","Super League S6 EU Div 2B","Vampire",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,302
+"65","Tonalt","Super League S6 EU Div 2C","Amazon",7503,236.6,236.6,NA,"Tonalt",238.22,258.98,"Finland",258.98,2,13,"195 (94/65/36)",64.87,303
+"66","ratogre","Super League S6 EU Div 2C","Shambling Undead",22007,213,213,NA,"RatOgre",217.61,224.85,"Finland",224.85,1,15,"225 (91/68/66)",55.56,303
+"67","GreenskinPhil","Super League S6 EU Div 2C","Slann",31674,197.52,197.52,NA,"greenskinphil",231.47,233.02,"England",233.02,1,15,"245 (102/74/69)",56.73,303
+"68","Bashto","Super League S6 EU Div 2C","Amazon",32021,173.71,229.91,NA,"Bashto",245.04,250.62,"England",250.62,0,7,"112 (57/22/33)",60.71,303
+"69","Jblackmane","Super League S6 EU Div 2C","Orc",31370,161.98,174.03,NA,"jblackmane",194.99,203.65,"Netherlands",203.65,0,5,"62 (31/10/21)",58.06,303
+"70","bjarnefar","Super League S6 EU Div 2C","Orc",30624,157.17,168.09,NA,"bjarnefar",176.38,188.4,"Denmark",188.4,1,6,"39 (18/7/14)",55.13,303
+"71","paperbag4","Super League S6 EU Div 2C","Dwarf",17898,149.26,167.34,NA,"paperbag4",200.25,200.25,"United States of America",200.25,7,7,"63 (29/8/26)",52.38,303
+"72","Nime_l_Ancien","Super League S6 EU Div 2C","Elven Union",17768,NA,212.75,NA,"Nîme_l_Ancien",232.97,256.07,"France",256.07,1,19,"194 (91/47/56)",59.02,303
+"73","yudlugar","Super League S6 EU Div 2D","Goblin",28903,210.61,210.61,NA,"Yudlugar",205.02,224.89,"England",224.89,2,9,"167 (74/51/42)",59.58,304
+"74","Mind_Locker","Super League S6 EU Div 2D","Necromantic Horror",29192,194.52,194.52,NA,"Mind_Locker",206.55,206.55,"Greece",206.55,9,9,"77 (32/25/20)",57.79,304
+"75","Sandune","Super League S6 EU Div 2D","Orc",15142,190.3,220.46,NA,"Sandune",260.5,275,"New Zealand",275,5,15,"251 (149/58/44)",70.92,304
+"76","dragonborn","Super League S6 EU Div 2D","Amazon",22580,183.36,183.36,NA,"dragonborn",196.46,206.94,"England",224.62,1,18,"106 (44/28/34)",54.72,304
+"77","Edwin","Super League S6 EU Div 2D","Human",25301,174.7,199.99,NA,"Edwin",233.29,252.96,"Netherlands",252.96,0,11,"244 (117/57/70)",59.63,304
+"78","Schwifty","Super League S6 EU Div 2D","Skaven",2714,136.47,196.24,NA,"Schwifty",239.93,239.93,"Netherlands",239.93,5,11,"678 (295/128/255)",52.95,304
+"79","Farandole","Super League S6 EU Div 2D","Tomb Kings",33363,NA,206.59,NA,"half",228.94,230.79,"France",230.79,1,7,"39 (26/3/10)",70.51,304
+"80","Christian","Super League S6 EU Div 2D","Elven Union",16955,NA,199.56,NA,"Waterboy",200.83,210.32,"Denmark",218.4,0,17,"106 (44/32/30)",56.6,304
+"81","Oventa","Super League S6 EU Div 3A","Dwarf",9610,212.14,212.14,NA,"Oventa",226.82,233.6,"Germany",252.44,1,14,"414 (211/98/105)",62.8,401
+"82","AmazingGaze","Super League S6 EU Div 3A","Vampire",32634,201.08,201.08,NA,"AmazingGaze",220.71,220.71,"Germany",220.71,4,9,"57 (26/18/13)",61.4,401
+"83","Jopotzuki","Super League S6 EU Div 3A","Vampire",20783,169.01,180.55,NA,"jopotzuki",196.41,214.97,"Finland",214.97,1,9,"299 (117/73/109)",51.34,401
+"84","pedro_fgomes","Super League S6 EU Div 3A","Orc",26033,155.48,179.16,NA,"karnuss",179.84,205.99,"Portugal",205.99,0,7,"130 (54/35/41)",55,401
+"85","Padster61","Super League S6 EU Div 3A","Nurgle",26810,138.99,173,NA,"Padster",162.1,192.56,"North Ireland",192.56,0,11,"321 (105/93/123)",47.2,401
+"86","Coewolf","Super League S6 EU Div 3A","Elven Union",23332,NA,183.81,NA,"coewolf",202.81,209.64,"Czech Republic",221.53,0,8,"211 (81/49/81)",50,401
+"87","Widram","Super League S6 EU Div 3A","Gnome",26904,NA,167.79,NA,"Widram",150.69,195.84,"Wales",195.84,1,9,"117 (41/26/50)",46.15,401
+"88","Doc_Grotznik","Super League S6 EU Div 3A","Imperial Nobility",9659,NA,178.26,NA,"Doc_Grotznik",169.49,183.79,"France",210.09,0,8,"231 (77/49/105)",43.94,401
+"89","Bignaites","Super League S6 EU Div 3B","Necromantic Horror",31447,180.64,205.34,NA,"PedroR",226.93,235.25,"Portugal",235.25,1,16,"77 (42/16/19)",64.94,402
+"90","raiksnn","Super League S6 EU Div 3B","Shambling Undead",30774,169.48,169.48,NA,"raiksnn",154.04,164.16,"Germany",164.16,1,7,"29 (10/5/14)",43.1,402
+"91","Professeur","Super League S6 EU Div 3B","Dark Elf",32210,154.44,165.01,NA,"professeur",181.17,193.71,"France",193.71,2,9,"167 (47/43/77)",41.02,402
+"92","MONGOR79","Super League S6 EU Div 3B","Orc",25820,142.98,142.98,NA,"MONGOR",153.26,172.39,"Greece",172.39,0,6,"50 (16/11/23)",43,402
+"93","MerryZ","Super League S6 EU Div 3B","Old World Alliance",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,402
+"94","Xialth","Super League S6 EU Div 3B","Necromantic Horror",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,402
+"95","Rijssiej","Super League S6 EU Div 3B","Shambling Undead",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,402
+"96","Palmu","Super League S6 EU Div 3B","Elven Union",31978,NA,162.65,NA,"palmu",172.62,172.62,"Finland",172.62,4,8,"24 (12/5/7)",60.42,402
+"97","Arioso","Super League S6 EU Div 3C","Amazon",18378,218.64,218.64,NA,"arioso",251.5,279.16,"Germany",279.16,4,18,"801 (393/213/195)",62.36,403
+"98","PurpleChest","Super League S6 EU Div 3C","Dark Elf",24645,209.17,216.66,NA,"PurpleChest",279.93,284.41,"England",284.41,8,20,"153 (91/39/23)",72.22,403
+"99","PeteW","Super League S6 EU Div 3C","Necromantic Horror",7769,183.98,246.02,NA,"PeteW",285.1,312.52,"England",312.52,6,20,"364 (221/75/68)",71.02,403
+"100","xtapodias","Super League S6 EU Div 3C","Shambling Undead",28002,169.95,170.86,NA,"xtapodias",183,198.88,"Greece",198.88,0,14,"72 (27/21/24)",52.08,403
+"101","Fatzke","Super League S6 EU Div 3C","Skaven",26463,137.04,142.34,NA,"fatzke423",134.66,140.98,"Germany",151.21,0,3,"30 (9/5/16)",38.33,403
+"102","historic","Super League S6 EU Div 3C","Dark Elf",22667,NA,190.42,NA,"Historic",194.3,227.93,"France",252.99,2,15,"181 (87/38/56)",58.56,403
+"103","Boneripper","Super League S6 EU Div 3C","Wood Elf",33612,NA,144.35,NA,"BoneRipper",109.64,118.07,"Malta",145.5,1,3,"47 (10/9/28)",30.85,403
+"104","Maveho","Super League S6 EU Div 3C","Necromantic Horror",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,403
+"105","realmalteser2","Super League S6 EU Div 3D","Tomb Kings",21409,189.62,189.62,NA,"RealMalteser",211.57,230.06,"Malta",230.06,1,13,"336 (158/85/93)",59.67,404
+"106","Raztout","Super League S6 EU Div 3D","Dark Elf",16824,188.64,239.05,NA,"Raztout",252.32,262.21,"France",289.65,4,19,"406 (195/114/97)",62.07,404
+"107","Supa","Super League S6 EU Div 3D","Necromantic Horror",28354,161.24,168.89,NA,"supa",180.72,180.72,"Finland",180.72,9,9,"26 (15/6/5)",69.23,404
+"108","Ion","Super League S6 EU Div 3D","Skaven",30099,154.49,164.27,NA,"ion",188.02,192.87,"Malta",192.87,0,7,"161 (51/53/57)",48.14,404
+"109","Akorus","Super League S6 EU Div 3D","Vampire",29907,153.14,164.57,NA,"akorus",168.66,169.78,"Germany",169.78,1,6,"48 (17/13/18)",48.96,404
+"110","fienoss","Super League S6 EU Div 3D","Amazon",29892,150.54,169.86,NA,"fienoss",194.34,209.78,"Greece",209.78,2,14,"85 (32/30/23)",55.29,404
+"111","Dynamix","Super League S6 EU Div 3D","Dark Elf",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,404
+"112","Wynters_Dad","Super League S6 EU Div 3D","Chaos Dwarf",30943,NA,159.53,NA,"Wynters_Dad",159.58,165,"England",165,0,5,"62 (17/15/30)",39.52,404
+"113","siggi","Super League S6 EU Premier League","Orc",25971,237.33,251.1,NA,"siggi",294.54,302.12,"Switzerland",302.12,0,16,"386 (242/71/73)",71.89,0
+"114","Purplegoo","Super League S6 EU Premier League","Shambling Undead",11777,217.81,272.75,NA,"Purplegoo",252.33,267.67,"England",292.06,0,24,"1075 (616/266/193)",69.67,0
+"115","Thot","Super League S6 EU Premier League","Shambling Undead",19526,208.97,209.57,NA,"Thot",266.86,267.98,"France",267.98,19,19,"435 (246/88/101)",66.67,0
+"116","Baki","Super League S6 EU Premier League","Chaos Chosen",19064,191.77,237.9,NA,"Baki",225.87,260.23,"Germany",261.25,0,14,"259 (139/65/55)",66.22,0
+"117","Strider84","Super League S6 EU Premier League","Human",14113,183.38,258.36,NA,"strider84",259.92,259.92,"Switzerland",268.14,7,18,"270 (148/62/60)",66.3,0
+"118","straume","Super League S6 EU Premier League","Chaos Renegade",20685,175.96,247.22,NA,"Straume",284.11,286.89,"Norway",299.1,7,37,"406 (221/121/64)",69.33,0
+"119","JB","Super League S6 EU Premier League","Dwarf",28280,173.38,216.04,NA,"jb",267.38,267.38,"Ladonia",267.38,24,24,"108 (58/33/17)",68.98,0
+"120","Grumplekins","Super League S6 EU Premier League","Shambling Undead",26358,163.37,210.9,NA,"grumplekins",223.31,240.63,"Sweden",240.63,5,12,"210 (91/61/58)",57.86,0
+"121","joeseph","Super League S6 EU Swiss A","Necromantic Horror",38195,220.11,220.11,NA,"joeseph",217.01,227.77,"Wales",227.77,1,10,"40 (23/10/7)",70,501
+"122","camelchops","Super League S6 EU Swiss A","Skaven",32575,214.04,214.04,NA,"camelchops",230.17,237.31,"Scotland",237.31,17,17,"89 (46/29/14)",67.98,501
+"123","rayhell","Super League S6 EU Swiss A","Vampire",30281,213.6,213.6,NA,"rayhell",205.69,220.91,"Poland",247.48,3,13,"137 (68/32/37)",61.31,501
+"124","beastquest","Super League S6 EU Swiss A","Lizardmen",27095,212.75,212.75,NA,"NightSword",239.1,239.1,"Malta",239.1,5,11,"202 (74/57/71)",50.74,501
+"125","nonumber","Super League S6 EU Swiss A","Shambling Undead",8923,209.49,217.43,NA,"Nonumber",234.82,260.43,"Wales",260.43,0,21,"574 (242/143/189)",54.62,501
+"126","Rone13169","Super League S6 EU Swiss A","Amazon",24110,204.46,204.46,NA,"rone",214.02,247.43,"Malta",247.43,0,12,"219 (103/46/70)",57.53,501
+"127","mepmuff_2","Super League S6 EU Swiss A","Norse",6123,201.72,201.72,NA,"Mepmuff",219.82,223.91,"Netherlands",234.32,0,9,"509 (226/116/167)",55.8,501
+"128","Wolter","Super League S6 EU Swiss A","Chaos Chosen",29078,199.27,199.55,NA,"jew",219.9,226.45,"Denmark",226.45,1,9,"150 (65/35/50)",55,501
+"129","Monitor4321","Super League S6 EU Swiss A","Old World Alliance",33726,195.74,230.56,NA,"monitor",233.61,242.5,"On a deserted island",242.5,0,14,"91 (46/25/20)",64.29,501
+"130","2Gutta","Super League S6 EU Swiss A","Tomb Kings",24787,185.3,185.3,NA,"2GUTTA",147.77,156.49,"Poland",169.09,0,6,"28 (10/7/11)",48.21,501
+"131","ABF","Super League S6 EU Swiss A","Khorne",32674,179.75,179.75,NA,"abf",154.41,154.46,"Colombia",171.51,4,5,"36 (14/8/14)",50,501
+"132","Ironbreaker","Super League S6 EU Swiss A","Shambling Undead",25312,176.26,199.03,NA,"ironbreaker",200.29,211.89,"Portugal",226.09,0,13,"157 (78/35/44)",60.83,501
+"133","starnovi","Super League S6 EU Swiss A","Norse",31896,174.03,174.03,NA,"Novi",178.92,197.42,"Slovenia",197.42,0,7,"57 (27/11/19)",57.02,501
+"134","Shriyke","Super League S6 EU Swiss A","Skaven",30033,169.78,210.98,NA,"shriyke",175.23,224.64,"Scotland",224.64,2,11,"145 (67/29/49)",56.21,501
+"135","SteelyKnife","Super League S6 EU Swiss A","Shambling Undead",17473,169.66,169.66,NA,"SteelyKnife",191.83,192.64,"Denmark",192.64,1,10,"137 (48/33/56)",47.08,501
+"136","Bugrum","Super League S6 EU Swiss A","Skaven",21410,163.16,215.88,NA,"Janninu",234.18,243.38,"Malta",269.85,2,16,"484 (238/121/125)",61.67,501
+"137","MarkyMarc","Super League S6 EU Swiss A","Slann",25254,161.35,217.76,NA,"Markymarc",246.25,261.48,"Scotland",261.48,0,13,"237 (125/57/55)",64.77,501
+"138","Crowdog09","Super League S6 EU Swiss A","Vampire",25747,160.83,177.57,NA,"crowdog09",203.42,221.18,"Ireland",221.18,1,12,"67 (32/19/16)",61.94,501
+"139","Rib-Goaty","Super League S6 EU Swiss A","Old World Alliance",40225,160.39,160.39,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,501
+"140","Purdindas","Super League S6 EU Swiss A","High Elf",10831,159.05,188.3,NA,"Purdindas",193.71,199.3,"Scotland",223.96,3,13,"575 (236/135/204)",52.78,501
+"141","Faskill","Super League S6 EU Swiss A","Necromantic Horror",39913,156.61,173.58,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,501
+"142","Piogele","Super League S6 EU Swiss A","Dwarf",27730,155.33,181.95,NA,"piogele",181.7,227.77,"Switzerland",227.77,0,9,"61 (27/9/25)",51.64,501
+"143","tripio","Super League S6 EU Swiss A","Wood Elf",39874,155.16,160.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,501
+"144","DrClaes","Super League S6 EU Swiss A","Snotling",29945,154.78,154.78,NA,"drclaes",135.24,146.5,"On a deserted island",146.5,0,1,"5 (0/1/4)",10,501
+"145","docminiature","Super League S6 EU Swiss A","Shambling Undead",30923,154.35,160.83,NA,"docminiature",169.75,182.48,"England",182.48,7,11,"137 (53/29/55)",49.27,501
+"146","WiIfred","Super League S6 EU Swiss A","Shambling Undead",29172,154.28,187.01,NA,"Wilfred",211.82,224.43,"Denmark",224.43,1,11,"61 (30/16/15)",62.3,501
+"147","YangZubr","Super League S6 EU Swiss A","Orc",38993,153.32,153.32,NA,"yangzubr",150.33,150.34,"Ukraine",150.34,2,2,"3 (1/1/1)",50,501
+"148","DoubleEdge","Super League S6 EU Swiss A","Amazon",26575,151.24,156.98,NA,"Orca",151.29,159.92,"Malta",174.75,0,9,"168 (53/45/70)",44.94,501
+"149","FL0","Super League S6 EU Swiss A","Khorne",30447,145.35,145.35,NA,"FL0",139.16,149.86,"France",158.7,0,5,"68 (19/15/34)",38.97,501
+"150","tyler_swaft","Super League S6 EU Swiss A","Wood Elf",33323,141.04,218.42,NA,"Tyler_swaft",231.06,234.25,"England",234.25,1,15,"66 (33/22/11)",66.67,501
+"151","razmus","Super League S6 EU Swiss A","Elven Union",24325,NA,154.15,NA,"razmus",160.62,161.79,"United States of America",161.79,0,3,"26 (11/4/11)",50,501
+"152","Evomot","Super League S6 EU Swiss A","Orc",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,501
+"153","jvidix","Super League S6 EU Swiss A","Dark Elf",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,501
+"154","MurkyWater","Super League S6 EU Swiss A","Necromantic Horror",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,501
+"155","giorngiovanna","Super League S6 EU Swiss A","Amazon",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,501
+"156","gsverhoeven","Super League S6 EU Swiss A","Amazon",29736,NA,157.49,NA,"gsverhoeven",108.42,126.18,"Netherlands",151.34,0,4,"75 (16/19/40)",34,501
+"157","cornishwoon","Super League S6 EU Swiss A","Vampire",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,501
+"158","M1le","Super League S6 EU Swiss A","Skaven",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,501
+"159","bicycleboywill","Super League S6 EU Swiss A","Shambling Undead",31685,NA,169.35,NA,"BBWill",155.61,155.61,"England",155.61,2,4,"22 (6/5/11)",38.64,501
+"160","TheArtemisBlack","Super League S6 EU Swiss A","Dwarf",27588,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,501
+"161","thulean","Super League S6 EU Swiss B","Amazon",28239,221.55,221.55,NA,"thulean",244.56,252.5,"England",252.5,1,7,"184 (101/34/49)",64.13,9999
+"162","sann0638","Super League S6 EU Swiss B","Amazon",8866,214.27,217.99,NA,"sann0638",246.78,246.78,"Scotland",255.61,7,18,"607 (306/127/174)",60.87,9999
+"163","Fuel","Super League S6 EU Swiss B","Dwarf",28517,209.66,209.66,NA,"Fuel",205.51,206.2,"Lithuania",206.2,2,10,"45 (24/12/9)",66.67,9999
+"164","jd2rbnds","Super League S6 EU Swiss B","Chaos Chosen",32817,208.88,208.88,NA,"Rupert",211.67,218.58,"Poland",218.58,1,11,"94 (41/25/28)",56.91,9999
+"165","Undress_","Super League S6 EU Swiss B","Slann",29927,204.48,204.48,NA,"undress_",224.08,248.61,"On a deserted island",248.61,7,17,"127 (65/35/27)",64.96,9999
+"166","dementor42","Super League S6 EU Swiss B","Amazon",21143,203.78,209.88,NA,"Pegleg",253.3,260.77,"Wales",260.77,3,16,"319 (114/69/136)",46.55,9999
+"167","TalonBay","Super League S6 EU Swiss B","Underworld Denizens",6858,201.84,201.84,NA,"TalonBay",224.9,237.41,"Scotland",237.41,0,9,"189 (97/30/62)",59.26,9999
+"168","Dadde","Super League S6 EU Swiss B","Vampire",15027,198.21,198.21,NA,"dadde",211.95,217.69,"Italy",217.69,1,9,"103 (44/22/37)",53.4,9999
+"169","spoboyle","Super League S6 EU Swiss B","Amazon",22121,186.46,186.46,NA,"spob",190.15,203.17,"England",203.17,0,8,"147 (59/34/54)",51.7,9999
+"170","WoZoI","Super League S6 EU Swiss B","Dark Elf",30779,184.62,184.62,NA,"wozoi",202.49,202.49,"France",207.42,5,6,"138 (49/37/52)",48.91,9999
+"171","MontelGee","Super League S6 EU Swiss B","Orc",35493,179.22,179.22,NA,"montelleke",193.37,193.37,"Belgium",193.37,4,5,"25 (14/6/5)",68,9999
+"172","stikman","Super League S6 EU Swiss B","Dwarf",23806,177.77,177.77,NA,"Stikman",158.73,199.17,"Poland",199.17,0,11,"129 (48/29/52)",48.45,9999
+"173","palmtaiga","Super League S6 EU Swiss B","Vampire",27077,171.68,171.68,NA,"Palmtaiga",163.55,163.55,"Malta",163.55,1,6,"160 (47/37/76)",40.94,9999
+"174","brinu","Super League S6 EU Swiss B","Shambling Undead",30476,171.27,184.08,NA,"Brinu",196.93,196.93,"Malta",196.93,2,10,"69 (26/17/26)",50,9999
+"175","Oren","Super League S6 EU Swiss B","Shambling Undead",26068,170.2,191.75,NA,"Oren",226.49,240.97,"Poland",240.97,0,8,"218 (91/49/78)",52.98,9999
+"176","graysonstark","Super League S6 EU Swiss B","Necromantic Horror",33608,169.28,169.28,NA,"graysonstark",194.23,194.23,"Ukraine",194.23,11,11,"57 (22/17/18)",53.51,9999
+"177","Waschik","Super League S6 EU Swiss B","Chaos Dwarf",31728,160.54,176.2,NA,"Waschik",175.45,181.91,"Czech Republic",181.91,0,8,"101 (42/18/41)",50.5,9999
+"178","Zazu_87","Super League S6 EU Swiss B","Necromantic Horror",34604,159.83,159.83,NA,"Zazu",172.12,177.52,"Malta",177.52,1,8,"90 (25/30/35)",44.44,9999
+"179","Dakyrus","Super League S6 EU Swiss B","Necromantic Horror",25478,159.06,170.1,NA,"Dakyrus",184.14,203.64,"North Ireland",203.64,1,8,"69 (29/21/19)",57.25,9999
+"180","Ragrati","Super League S6 EU Swiss B","Vampire",36237,158.63,165.33,NA,"ragrati",175.71,181.23,"France",181.23,2,6,"27 (13/5/9)",57.41,9999
+"181","elplanet4","Super League S6 EU Swiss B","Chaos Renegade",30428,156.18,214.95,NA,"elplanet4",238.72,288,"England",288,0,29,"192 (109/54/29)",70.83,9999
+"182","naytsyrhc","Super League S6 EU Swiss B","Vampire",27808,155.26,188.6,NA,"naytsyrhc",171.67,175.34,"Germany",182.38,0,5,"83 (33/16/34)",49.4,9999
+"183","il-Fieres","Super League S6 EU Swiss B","Chaos Dwarf",26579,152.79,156.53,NA,"Fieres",168.87,176.25,"Malta",184.19,0,10,"152 (48/56/48)",50,9999
+"184","kosmo","Super League S6 EU Swiss B","Shambling Undead",39313,151.55,186.04,NA,"Kosmo",138.07,154.52,"Poland",154.52,0,1,"6 (1/1/4)",25,9999
+"185","bamfuzi","Super League S6 EU Swiss B","Orc",29314,149.59,151.76,NA,"bamfuzi",122.62,126.22,"Austria",144.29,0,0,"7 (0/0/7)",0,9999
+"186","Ferra76","Super League S6 EU Swiss B","Skaven",20226,144.49,176.84,NA,"ferra",204.16,224.97,"Italy",234.06,0,10,"395 (143/118/134)",51.14,9999
+"187","elodius","Super League S6 EU Swiss B","Wood Elf",26080,141.31,165.37,NA,"elodius",142.65,157.56,"Belgium",175.74,3,6,"63 (23/13/27)",46.83,9999
+"188","Gallo","Super League S6 EU Swiss B","Chaos Chosen",20999,138.86,198.25,NA,"Gallo",213.07,231.64,"Italy",231.64,0,10,"288 (104/87/97)",51.22,9999
+"189","Elkantar","Super League S6 EU Swiss B","Orc",22316,123.27,169.11,NA,"Elkantar",176.72,176.72,"Germany",178.35,2,7,"165 (53/36/76)",43.03,9999
+"190","RobinFern","Super League S6 EU Swiss B","Chaos Renegade",37141,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9999
+"191","gumbi","Super League S6 EU Swiss B","Elven Union",9259,NA,192.45,NA,"gumbi",225.07,231.92,"Australia",231.92,5,9,"165 (71/40/54)",55.15,9999
+"192","aggborough","Super League S6 EU Swiss B","Imperial Nobility",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,9999
+"193","Baaalthazar","Super League S6 EU Swiss B","Vampire",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,9999
+"194","Pastigon","Super League S6 EU Swiss B","Skaven",40777,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,9999
+"195","Hiliadan","Super League S6 EU Swiss B","Dark Elf",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,9999
+"196","Mournival","Super League S6 EU Swiss B","Human",23496,NA,209.83,NA,"Mournival",176.83,213.69,"Scotland",213.69,4,11,"190 (75/50/65)",52.63,9999
+"197","roxana","Super League S6 EU Swiss B","Shambling Undead",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,9999
+"198","Chicken23","Super League S6 EU Swiss B","Black Orc",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,9999
+"199","Jäärä","Super League S6 EU Swiss B","Norse",17371,NA,163.53,NA,"Jäärä",171.05,171.05,"Finland",176.45,3,9,"80 (30/20/30)",50,9999
+"200","mudarra93","Super League S6 EU Swiss B","Slann",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,9999
+"201","Grither","Super League S6 NA Swiss","Dwarf",10904,207.82,253.71,NA,"Grither",248.91,269.89,"United States of America",301.3,1,22,"653 (438/111/104)",75.57,1000
+"202","g0nez0","Super League S6 NA Swiss","Wood Elf",37132,204.95,204.95,NA,"G0NEZ0",136.16,153.41,"Canada",153.41,0,3,"16 (4/2/10)",31.25,1000
+"203","warpstone","Super League S6 NA Swiss","Skaven",13205,203.89,235.8,NA,"Warpstone",247.97,276.46,"Canada",276.46,3,21,"142 (89/31/22)",73.59,1000
+"204","AmazingGaze","Super League S6 NA Swiss","Vampire",32634,201.08,201.08,NA,"AmazingGaze",220.71,220.71,"Germany",220.71,4,9,"57 (26/18/13)",61.4,1000
+"205","JLeav","Super League S6 NA Swiss","Amazon",33751,197.6,222.56,NA,"jleav",267.42,267.76,"United States of America",267.76,3,25,"113 (81/17/15)",79.2,1000
+"206","Laika123","Super League S6 NA Swiss","Amazon",33566,189.01,189.01,NA,"laika",223.68,223.68,"Canada",223.68,8,8,"49 (30/8/11)",69.39,1000
+"207","Xtreme","Super League S6 NA Swiss","Dwarf",1315,187.5,187.5,NA,"Xtreme",217.42,221.65,"United States of America",221.65,2,13,"476 (231/103/142)",59.35,1000
+"208","seanh1986","Super League S6 NA Swiss","Shambling Undead",23461,186.01,215.79,NA,"seanh1986",250.56,276.77,"Canada",276.77,0,13,"312 (175/73/64)",67.79,1000
+"209","russcastronovo","Super League S6 NA Swiss","Amazon",18550,182.82,190.52,NA,"russcastronovo",240.2,240.2,"United States of America",240.2,3,15,"170 (76/39/55)",56.18,1000
+"210","Xanzian","Super League S6 NA Swiss","Chaos Dwarf",6193,179.82,200.01,NA,"szrlm",199.81,214.33,"United States of America",223.91,3,10,"438 (170/79/189)",47.83,1000
+"211","Bazakastine","Super League S6 NA Swiss","Vampire",29474,178.86,198.3,NA,"bazakastine",244.89,273.4,"United States of America",273.4,8,13,"78 (53/15/10)",77.56,1000
+"212","Jogrenaught","Super League S6 NA Swiss","Khorne",22460,178.04,208.33,NA,"Jogrenaut",202.44,241.89,"United States of America",244.15,2,14,"286 (151/68/67)",64.69,1000
+"213","DaCrusha","Super League S6 NA Swiss","Amazon",16105,173.52,173.52,NA,"DaCrusha",146.62,162.24,"United States of America",191.55,0,4,"90 (32/21/37)",47.22,1000
+"214","Meerkul","Super League S6 NA Swiss","Orc",28335,173.05,208.5,NA,"Meerkul",222.9,222.91,"Canada",223.71,7,10,"204 (95/48/61)",58.33,1000
+"215","Pauladin","Super League S6 NA Swiss","Vampire",24875,172.75,228.03,NA,"pauladin",228.31,236.45,"United States of America",236.45,9,14,"149 (80/25/44)",62.08,1000
+"216","guitwiz","Super League S6 NA Swiss","Dwarf",33710,169.81,190.75,NA,"guitamasta",206.22,206.22,"Canada",206.22,8,8,"86 (37/18/31)",53.49,1000
+"217","Grimfoe","Super League S6 NA Swiss","Vampire",24873,169.15,189.37,NA,"grimfoe",215.36,216.25,"United States of America",216.25,6,11,"142 (74/33/35)",63.73,1000
+"218","TheRedoubt","Super League S6 NA Swiss","Nurgle",37895,169.01,169.01,NA,"theredoubt",175.59,175.59,"On a deserted island",175.59,6,6,"6 (5/1/0)",91.67,1000
+"219","Midris","Super League S6 NA Swiss","Vampire",31166,155.14,174.68,NA,"midris",176.03,176.03,"United States of America",180.92,2,6,"45 (24/5/16)",58.89,1000
+"220","DiscoJones","Super League S6 NA Swiss","Shambling Undead",37410,150.94,150.94,NA,"discojones",153.84,153.84,"On a deserted island",153.84,1,1,"4 (2/0/2)",50,1000
+"221","paulc899","Super League S6 NA Swiss","Shambling Undead",6654,149.58,179.82,NA,"Paul",173.54,173.54,"Canada",187.56,4,7,"60 (31/8/21)",58.33,1000
+"222","paperbag4","Super League S6 NA Swiss","Dwarf",17898,149.26,167.34,NA,"paperbag4",200.25,200.25,"United States of America",200.25,7,7,"63 (29/8/26)",52.38,1000
+"223","Supernintendochalmer","Super League S6 NA Swiss","Dwarf",31366,147.41,151.56,NA,"supernintendochalmer",142.4,151.1,"Canada",170.46,1,5,"94 (31/11/52)",38.83,1000
+"224","CoachBB","Super League S6 NA Swiss","High Elf",18958,142.18,166.37,NA,"coachbb",146.72,150.35,"United States of America",160.11,1,4,"62 (23/10/29)",45.16,1000
+"225","Runbad","Super League S6 NA Swiss","Norse",33324,137.55,226.96,NA,"runbad",200.76,211.16,"Canada",211.16,3,8,"115 (50/28/37)",55.65,1000
+"226","Chuk","Super League S6 NA Swiss","Elven Union",38058,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1000
+"227","simplysutphin","Super League S6 NA Swiss","Slann",29783,NA,164.4,NA,"Sutphin",128.8,128.8,"United States of America",148.92,1,3,"21 (4/3/14)",26.19,1000
+"228","trefenwyd","Super League S6 NA Swiss","Shambling Undead",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,1000
+"229","HouseBlackfyre","Super League S6 NA Swiss","Elven Union",28534,NA,186.11,NA,"houseblackfyre",194.46,231.26,"United States of America",231.26,0,14,"304 (147/73/84)",60.36,1000
+"230","ogjaylowe","Super League S6 NA Swiss","Vampire",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,1000
+"231","Drakenspear","Super League S6 NA Swiss","Elven Union",28841,NA,223.33,NA,"Drakenspear",218.81,262.55,"Canada",262.55,5,21,"189 (102/45/42)",65.87,1000
+"232","Dirtygit","Super League S6 NA Swiss","Elven Union",19152,NA,220.31,NA,"Bastich",226.63,262.16,"Canada",262.16,1,26,"107 (67/22/18)",72.9,1000
+"233","happygrue","Super League S6 NA Swiss","Vampire",16876,NA,199.4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1000
+"234","Thorven23","Super League S6 NA Swiss","Human",NA,NA,NA,NA,"",NA,NA,"",NA,NA,NA,"",NA,1000
