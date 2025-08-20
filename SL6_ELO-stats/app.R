@@ -4,6 +4,7 @@ library(shiny)
 library(dplyr)
 library(reactable)
 library(ggplot2)
+library(plotly)
 
 
 
@@ -57,34 +58,12 @@ ui <- fluidPage(
       column(
         width = 7,
         h3(textOutput("elo_title")),
-        plotOutput("elo_plot", height = "600px")
+        plotlyOutput("elo_plot", height = "600px"),
+        plotlyOutput("elo_plot_per_division", height = "600px")
       )
     )
   )
 )
-  
-  # sidebarLayout(
-  #   sidebarPanel(
-  #     selectInput("division", "Select Division:",
-  #                 choices = NULL),  # filled in server
-  #     
-  #     selectInput("elo_type", "Select ELO Type for Chart:",
-  #                 choices = c("Race ELO" = "ranking",
-  #                             "Best ELO" = "best_ranking",
-  #                             "Global ELO" = "Coach.rating"),
-  #                 selected = "ranking")
-  #   ),
-  #   
-  #   mainPanel(
-  #     h3(textOutput("division_title")),
-  #     uiOutput("division_summary"),
-  #     reactableOutput("division_table"),
-  #     hr(),
-  #     h3(textOutput("elo_title")),
-  #     plotOutput("elo_plot", height = "600px")
-  #   )
-  # )
-# )
 
 
 server <- function(input, output, session) {
@@ -123,7 +102,7 @@ server <- function(input, output, session) {
                     "ranking" = "Race ELO",
                     "best_ranking" = "Best ELO",
                     "Coach.rating" = "Global ELO")
-    paste("Distribution of", label, "per Division")
+    paste("Distribution of", label )
   })
   
   # Summary line
@@ -158,33 +137,91 @@ server <- function(input, output, session) {
         `Race ELO`   = colDef(format = colFormat(digits = 1)),
         `Best ELO`   = colDef(format = colFormat(digits = 1)),
         `Global ELO` = colDef(format = colFormat(digits = 1))
+      ),
+      theme = reactableTheme(
+        stripedColor = "darkgrey" 
       )
     )
   })
   
-  # ELO distribution plot
-  output$elo_plot <- renderPlot({
+  # ELO distribution plot per tournament
+  output$elo_plot <- renderPlotly({
     req(input$elo_type)
     
-    ggplot(df_ELO_for_played_race_per_coach,
-           aes(x = reorder(tournament_label, order),
-               y = .data[[input$elo_type]])) +
-      geom_jitter(alpha = 0.5, width = 0.2, color = "steelblue") +
-      geom_boxplot(alpha = 0.2, outlier.shape = NA) +
-      labs(
-        x = "Tournament Division",
-        y = names(which(c(ranking = "Race ELO",
-                          best_ranking = "Best ELO",
-                          `Coach.rating` = "Global ELO") == input$elo_type)),
-        title = paste("Distribution of",  
-                      switch(input$elo_type,
-                                                 "ranking" = "Race ELO",
-                                                 "best_ranking" = "Best ELO",
-                                                 "Coach.rating" = "Global ELO"), 
-                      "across Divisions")
-      ) +
-      theme_minimal() +
-      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    plot_ly(
+      df_ELO_for_played_race_per_coach,
+      x = ~reorder(tournament_label, order),
+      y = ~.data[[input$elo_type]],
+      type = "scatter",
+      showlegend = FALSE,       # hides it from the legend
+      boxpoints = "all",   # shows jittered points
+      jitter = 0.2,
+      pointpos = 0,
+      marker = list(size = 6, opacity = 0.6),
+      # line = list(color = "lightgray"),
+      # fillcolor = "white",
+      text = ~paste(
+        "Coach:", coach_name,
+        "<br>Race ELO:", round(ranking,1),
+        "<br>Best ELO:", round(best_ranking,1),
+        "<br>Global ELO:", round(Coach.rating,1)
+      ),
+      hoverinfo = "text",
+      boxmean = TRUE # Add the mean
+    ) %>% 
+      layout(
+        xaxis = list(title = "Tournament"),
+        yaxis = list(title = switch(input$elo_type,
+                                    "ranking" = "Race ELO",
+                                    "best_ranking" = "Best ELO",
+                                    "Coach.rating" = "Global ELO"))
+      ) %>% 
+      add_trace(
+        type = "box",
+        boxpoints = FALSE,   # no points
+        hoverinfo = "y",     # will display Q1, median, Q3
+        line = list(color = "lightgray"),
+        fillcolor = "white"
+      )
+  })
+  
+  # ELO distribution plot per division
+  output$elo_plot_per_division <- renderPlotly({
+    req(input$elo_type)
+    
+    plot_ly(
+      df_ELO_for_played_race_per_coach,
+      x = ~division,
+      y = ~.data[[input$elo_type]],
+      type = "scatter",
+      showlegend = FALSE,       # hides it from the legend
+      boxpoints = "all",   # shows jittered points
+      jitter = 0.2,
+      pointpos = 0,
+      marker = list(size = 6, opacity = 0.6),
+      text = ~paste(
+        "Coach:", coach_name,
+        "<br>Race ELO:", round(ranking,1),
+        "<br>Best ELO:", round(best_ranking,1),
+        "<br>Global ELO:", round(Coach.rating,1)
+      ),
+      hoverinfo = "text",
+      boxmean = TRUE # Add the mean
+    ) %>% 
+      layout(
+        xaxis = list(title = "Division"),
+        yaxis = list(title = switch(input$elo_type,
+                                    "ranking" = "Race ELO",
+                                    "best_ranking" = "Best ELO",
+                                    "Coach.rating" = "Global ELO"))
+      ) %>% 
+      add_trace(
+        type = "box",
+        boxpoints = FALSE,   # no points
+        hoverinfo = "y",     # will display Q1, median, Q3
+        line = list(color = "lightgray"),
+        fillcolor = "white"
+      )
   })
 }
 
