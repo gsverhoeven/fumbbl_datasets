@@ -29,17 +29,46 @@ df_ELO_for_played_race_per_coach <- df_ELO_for_played_race_per_coach %>%
 
 # User interface
 ui <- fluidPage(
+  # CSS Style
+  # Put the "summary" tag in underlined blue, to highlight it can be clicked.
+  tags$head(
+    tags$style(HTML("
+    details > summary {
+      cursor: pointer;
+      color: #0073e6;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-top: 10px;
+    }
+    details > summary:hover {
+      color: #005bb5;
+    }
+    details {
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+  "))
+  ),
+  
+  
   titlePanel("Super League ELO Dashboard"),
   
   mainPanel(
     fluidRow(
       column(
-        width = 5,
+        width = 4,
         selectInput("division", "Select Division:",
                                      choices = NULL),  # filled in server
       ),
       column(
-        width = 7,
+        width = 8,
+        tags$details(
+          tags$summary(HTML(sprintf("<b>How to understand ELO (click to expand)</b>"))),
+          p("In short, a higher ELO means a stronger coach."),
+          p("A difference of 10 in ELO means 54% chance of victory for the stronger coach, a difference of 50 means 68%."),
+          HTML(sprintf("See <a href='https://www.thenaf.net/tournaments/rankings/elo-ranking/'>details</a> on how ELO are calculated by the NAF."))
+        ),
+        br(),
         (textOutput("division_title")),
         uiOutput("division_summary"),
         reactableOutput("division_table"),
@@ -48,7 +77,7 @@ ui <- fluidPage(
     ),
     fluidRow(
       column(
-        width = 5,
+        width = 4,
         selectInput("elo_type", "Select ELO Type for Chart:",
                                     choices = c("Race ELO" = "ranking",
                                                 "Best ELO" = "best_ranking",
@@ -56,7 +85,20 @@ ui <- fluidPage(
                                     selected = "ranking")
       ),
       column(
-        width = 7,
+        width = 8,
+        
+        tags$details(
+          tags$summary(HTML(sprintf("<b>How to read boxplots (click to expand)</b>"))),
+          p("The charts show how ELO scores are distributed across coaches per tournament/division:"),
+          tags$ul(
+            tags$li("The dashed line inside the box is the mean (average), , gives the overall central value, which can be shifted by extreme cases."),
+            tags$li("The thick line inside the box is the median (half the values are above, half below)."),
+            tags$li("The bottom and top of the box show the first (Q1) and third (Q3) quartiles — together they cover the middle 50% of the data."),
+            tags$li("The 'whiskers' (lines extending from the box) show the range of most values."),
+            tags$li("Points outside the whiskers (if shown) are unusually high or low values (outliers)."),
+          )
+        ),
+        br(),
         h3(textOutput("elo_title")),
         plotlyOutput("elo_plot", height = "600px"),
         plotlyOutput("elo_plot_per_division", height = "600px")
@@ -157,9 +199,7 @@ server <- function(input, output, session) {
       boxpoints = "all",   # shows jittered points
       jitter = 0.2,
       pointpos = 0,
-      marker = list(size = 6, opacity = 0.6),
-      # line = list(color = "lightgray"),
-      # fillcolor = "white",
+      marker = list(size = 6, opacity = 0.3),
       text = ~paste(
         "Coach:", coach_name,
         "<br>Race ELO:", round(ranking,1),
@@ -198,7 +238,7 @@ server <- function(input, output, session) {
       boxpoints = "all",   # shows jittered points
       jitter = 0.2,
       pointpos = 0,
-      marker = list(size = 6, opacity = 0.6),
+      marker = list(size = 6, opacity = 0.3),
       text = ~paste(
         "Coach:", coach_name,
         "<br>Race ELO:", round(ranking,1),
