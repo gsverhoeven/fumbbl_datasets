@@ -393,7 +393,7 @@ df_ELO_for_played_race_per_coach <- df_ELO_for_played_race_per_coach %>%
   left_join(globalcoachranking, by  = c("naf_id" = "Naf.ID")) %>% 
   left_join(tournament_ordering, by  = c("tournament_name" = "tournament_name"))
 
-write.csv(df_ELO_for_played_race_per_coach, "../SL6_ELO-stats/ELO_for_played_race_per_coach.csv")
+write.csv(df_ELO_for_played_race_per_coach, "../shinyapps/SL6_ELO-stats/ELO_for_played_race_per_coach.csv")
 
 ```
 
