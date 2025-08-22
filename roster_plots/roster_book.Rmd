@@ -1,11 +1,12 @@
 ---
 title: "Roster book FUMBBL `r params$group_name`"
 author: "Hiliadan & Gertjan Verhoeven"
-date: '2025-03-03'
+date: '2025-08-22'
 output: pdf_document
 classoption: landscape
 params:
-    group_name: "EB25 training"
+  group_name: "Super League S6"
+  tournament_ruleset: "EB25"
 ---
 ```{r echo = FALSE, fig.align="center" ,  out.width = "150%"}
 
@@ -14,6 +15,7 @@ knitr::include_graphics("EB25.jpg")
 
 ```{r, include=FALSE}
 group_name <- params$group_name
+tournament_ruleset <- params$tournament_ruleset
 
 if(group_name == "EB25 training") {
   df_rosters <- read.csv(file = "../datasets/v0.7/df_rosters_eb2025.csv")
@@ -28,10 +30,18 @@ races <- sort(races)
 
 ```{r, echo=FALSE, results='asis', out.width = "150%", fig.align = "center"}
 for (i in 1:length(races)) {
-  
+  # race_name <- "High Elf"
   race_name <- races[i]
-  plotname <- paste0("EB25/", group_name, "_roster_plot_", race_name, ".png")
+  plotname <- paste0(tournament_ruleset, "/", group_name, "_roster_plot_", race_name, ".png")
   cat(paste0("![](", gsub(" ", "_", plotname), ")"))
+  
+  cat("\n\n\\newpage\n")
+  
+  plotname <- paste0(tournament_ruleset, "/", group_name, "_", "percentage-stat_plot_", race_name, ".png")
+  cat(paste0("![](", gsub(" ", "_", plotname), ")"))
+  
+  # plotname <- paste0(tournament_ruleset, "/", group_name, "_", "team-stat_plot_", race_name, ".png")
+  # cat(paste0("![](", gsub(" ", "_", plotname), ")"))
   
   cat("\n\n\\newpage\n")
 
