@@ -2,18 +2,22 @@
 title: "Roster book FUMBBL `r params$group_name`"
 author: "Hiliadan & Gertjan Verhoeven"
 date: '2025-08-22'
-output: pdf_document
+output:
+  pdf_document:
+    latex_engine: xelatex
+header-includes:
+  - \usepackage{float}
 classoption: landscape
 params:
   group_name: "Super League S6"
   tournament_ruleset: "EB25"
 ---
-```{r echo = FALSE, fig.align="center" ,  out.width = "150%"}
+```{r logo, echo = FALSE, fig.align="center" ,  out.width = "150%"}
 
 knitr::include_graphics("EB25.jpg")
 ```
 
-```{r, include=FALSE}
+```{r preparation, include=FALSE}
 group_name <- params$group_name
 tournament_ruleset <- params$tournament_ruleset
 
@@ -28,23 +32,38 @@ races <- sort(races)
 
 ```
 
-```{r, echo=FALSE, results='asis', out.width = "150%", fig.align = "center"}
-for (i in 1:length(races)) {
-  # race_name <- "High Elf"
-  race_name <- races[i]
-  plotname <- paste0(tournament_ruleset, "/", group_name, "_roster_plot_", race_name, ".png")
-  cat(paste0("![](", gsub(" ", "_", plotname), ")"))
-  
-  cat("\n\n\\newpage\n")
-  
-  plotname <- paste0(tournament_ruleset, "/", group_name, "_", "percentage-stat_plot_", race_name, ".png")
-  cat(paste0("![](", gsub(" ", "_", plotname), ")"))
-  
-  # plotname <- paste0(tournament_ruleset, "/", group_name, "_", "team-stat_plot_", race_name, ".png")
-  # cat(paste0("![](", gsub(" ", "_", plotname), ")"))
-  
-  cat("\n\n\\newpage\n")
+```{r display, echo=FALSE, results='asis'}
+esc <- function(x) gsub("%", "\\\\%", x)
 
+out <- character(0)
+for (race_name in races) {
+  roster <- paste0(tournament_ruleset, "/", group_name, "_roster_plot_", race_name, ".png")
+  perc   <- paste0(tournament_ruleset, "/", group_name, "_percentage-stat_plot_", race_name, ".png")
+  team   <- paste0(tournament_ruleset, "/", group_name, "_team-stat_plot_", race_name, ".png")
+
+  out <- c(out, sprintf(
+    "\\begin{figure}[H]\n\\centering\n\\includegraphics[width=1.2\\textwidth]{%s}\n\\caption{%s}\n\\end{figure}\n\\newpage\n",
+    gsub(" ", "_", roster),
+    esc(sprintf("FUMBBL %s %s – Roster overview.", group_name, race_name))
+  ))
+
+  out <- c(out, sprintf(
+    "\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.8\\textwidth]{%s}\n\\caption{%s}\n\\end{figure}\n\\newpage\n",
+    gsub(" ", "_", perc),
+    esc(sprintf(
+      "FUMBBL %s %s – Percentage of skill pick by position. The chart displays the %% of players by position (type) which have a certain skill or no skill. If the total %% is above 100%%, it means some skill stacking is happening.",
+      group_name, race_name
+    ))
+  ))
+
+  out <- c(out, sprintf(
+    "\\begin{figure}[H]\n\\centering\n\\includegraphics[width=0.8\\textwidth]{%s}\n\\caption{%s}\n\\end{figure}\n\\newpage\n",
+    gsub(" ", "_", team),
+    esc(sprintf(
+      "FUMBBL %s %s – Distribution of team skills by position. The chart displays the average number of skills per position. The total should be equal to the maximum number of skills for the roster.",
+      group_name, race_name
+    ))
+  ))
 }
-
+knitr::asis_output(out)
 ```

@@ -553,20 +553,36 @@ build_table <- function(data, type, save) {
       desc(Total)
     )
   
+  # Round because save_reactable() otherwise messes up the formating of digits
+  if (type == "percentage") {
+    data <- data %>% mutate(across(where(is.numeric), ~ round(., 0)))
+  } else {
+    data <- data %>% mutate(across(where(is.numeric), ~ round(., 1)))
+  }
+  
+  default_col_format <- if (type == "percentage") {
+    colFormat(digits = 0, suffix = "%")
+  } else if (type == "team") {
+    colFormat(digits = 1) # no % suffix
+  } else {
+    colFormat() # fallback
+  }
+  
   table <- reactable(
     data %>% select(-Total), # select to remove for team_table (to be done)
-    searchable = TRUE,
+    # searchable = TRUE,
     sortable = TRUE,
-    filterable = TRUE,
+    # filterable = TRUE,
     striped = TRUE,
     highlight = TRUE,
     columns = list(
       Skill = colDef(align = "left"),  # no % suffix here
-      format = colFormat(suffix = "")
+      format = colFormat(suffix = "") # does not work at this stage
     ),
     defaultColDef = colDef(           # <- not .default !
       align = "center",
-      format = colFormat(digits = 0, suffix = "%")
+      format = default_col_format
+      
     ),
     defaultPageSize = 20,
     bordered = TRUE,
@@ -584,7 +600,8 @@ build_table <- function(data, type, save) {
   )
 
   if(save == TRUE) {
-    save_reactable_test(table, gsub(" ", "_", paste0(tournament_ruleset, "/", group_name, "_", type, "-stat_plot_", race_name, ".png")))
+    save_reactable_test(table, 
+                        gsub(" ", "_", paste0(tournament_ruleset, "/", group_name, "_", type, "-stat_plot_", race_name, ".png")))
   }
   
   return(table)
@@ -624,20 +641,17 @@ make_skill_table <- function(roster_filter) {
     
   team_table <- df %>%
     select(-percentage_picks) %>% 
+    filter(Skill != "No skill") %>% 
     pivot_wider(
       names_from = position,
       values_from = team_picks,
       values_fill = list(team_picks = 0)
     )
   
-return(  tagList(
-  build_table(percentage_table, "percentage", TRUE),
-  build_table(team_table, "team", TRUE)
-))
-    # return(
-    #   build_table(percentage_table, "percentage", TRUE)
-    # )
-    
+  return(  tagList(
+    build_table(percentage_table, "percentage", TRUE),
+    build_table(team_table, "team", TRUE)
+  ))
 }
 ```
 
@@ -663,8 +677,8 @@ library(ggoheatmap)
 races <- unique(df_rosters$roster.name)
 # Initialize a list to store the skill tables
 skill_table_list <- list()
-for(i in 1:1){
-# for(i in 1:length(races)){
+# for(i in 1:1){
+for(i in 1:length(races)){
   race_name <- races[i]
 
   df <- df_rosters %>% 
@@ -784,5 +798,4 @@ for(i in 1:1){
 htmltools::browsable(
   do.call(tagList, skill_table_list)
 )
-# print(htmltools::browsable(skill_table_list))
 ```
