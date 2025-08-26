@@ -104,6 +104,7 @@ ui <- fluidPage(
             tags$li("The bottom and top of the box show the first (Q1) and third (Q3) quartiles — together they cover the middle 50% of the data. So basically the Q3 is the lower bound of the level of most players."),
             tags$li("The 'whiskers' (lines extending from the box) show the range of most values."),
             tags$li("Points outside the whiskers (if shown) are unusually high or low values (outliers)."),
+            tags$li("The % in brackets after the name of each tournament / division are the % of coaches with links to their NAF profile on Fumbbl.")
           )
         ),
         br(),
