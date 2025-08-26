@@ -7,9 +7,13 @@ library(ggplot2)
 library(plotly)
 
 
+# Info to update manually at this stage
+global_ELO_last_update <- as.Date("20/08/2025", "%d/%m/%Y")
+NAF_ELO_last_update <- as.Date("19/08/2025", "%d/%m/%Y")
 
-# Load data
+# Load data (data are created by create_plots.Rmd)
 df_ELO_for_played_race_per_coach <- read.csv(file ="ELO_for_played_race_per_coach.csv")
+
 
 # Calculate % of coaches without ranking data
 df_labels <- df_ELO_for_played_race_per_coach %>%
@@ -51,7 +55,7 @@ ui <- fluidPage(
   ),
   
   
-  titlePanel("Super League ELO Dashboard"),
+  titlePanel("Super League - Season 6 - ELO Dashboard"),
   
   mainPanel(
     fluidRow(
@@ -66,7 +70,11 @@ ui <- fluidPage(
           tags$summary(HTML(sprintf("<b>How to understand ELO (click to expand)</b>"))),
           p("In short, a higher ELO means a stronger coach."),
           p("A difference of 10 in ELO means 54% chance of victory for the stronger coach, a difference of 50 means 68%."),
-          HTML(sprintf("See <a href='https://www.thenaf.net/tournaments/rankings/elo-ranking/'>details</a> on how ELO are calculated by the NAF."))
+          HTML(sprintf("<p>See <a href='https://www.thenaf.net/tournaments/rankings/elo-ranking/'>details</a> on how ELO are calculated by the NAF.</p>")),
+          p("3 types of ELO are displayed on this page:"),
+          HTML(sprintf("<p><b>Race ELO</b> (last update: %s): the NAF ELO score of the coach for the race played for the Super League</p>", NAF_ELO_last_update)),
+          HTML(sprintf("<p><b>Best ELO</b> (last update: %s): the best NAF ELO score of the coach across all the races they ever played</p>", NAF_ELO_last_update)),
+          HTML(sprintf("<p><b>Global ELO</b> (last update: %s): an ELO score calculated with the same formula as the one used by the NAF but including all matches, irrespective of races played (so being good at more than one race increases further the ELO score for instance). Comes from <a href='https://bloodbowl.dk/coach-rating/'>https://bloodbowl.dk/coach-rating/</a></p>", global_ELO_last_update)),
         ),
         br(),
         (textOutput("division_title")),
@@ -92,8 +100,8 @@ ui <- fluidPage(
           p("The charts show how ELO scores are distributed across coaches per tournament/division:"),
           tags$ul(
             tags$li("The dashed line inside the box is the mean (average), , gives the overall central value, which can be shifted by extreme cases."),
-            tags$li("The thick line inside the box is the median (half the values are above, half below)."),
-            tags$li("The bottom and top of the box show the first (Q1) and third (Q3) quartiles — together they cover the middle 50% of the data."),
+            tags$li("The thick line inside the box is the median (half the values are above, half below). For most divisions, that more or less shows the minimum level required to stay within the division (since half of coaches are relegated)."),
+            tags$li("The bottom and top of the box show the first (Q1) and third (Q3) quartiles — together they cover the middle 50% of the data. So basically the Q3 is the lower bound of the level of most players."),
             tags$li("The 'whiskers' (lines extending from the box) show the range of most values."),
             tags$li("Points outside the whiskers (if shown) are unusually high or low values (outliers)."),
           )
