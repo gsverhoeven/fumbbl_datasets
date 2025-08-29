@@ -21,3 +21,4 @@ datasets/v0.7/*.csv
 roster_plots/road_to_malta/*
 datasets/v0.8/*.csv
 /roster_plots/EB25
+/naf_statdump
