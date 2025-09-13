@@ -37,7 +37,10 @@ library(stringr)
 library(janitor)
 library(reactable)
 library(htmltools) # for tagList()
-library(reactablefmtr) # to use save_reactable()
+library(reactablefmtr) # DO NOT USE THE CRAN VERSION IT IS OUTDATED
+#webshot::install_phantomjs()
+#Sys.setenv(OPENSSL_CONF="/dev/null") 
+#devtools::install_github("kcuilla/reactablefmtr") THIS VERSION ALSO HAS A BUG WITH A PR FIX OPEN
 ```
 
 
@@ -53,7 +56,7 @@ if(group_name == "EB25 training") {
   df_rosters1 <- read.csv(file = "../datasets/v0.7/df_rosters_eb2025.csv")
 } else if (group_name == "Super League S6") {
   df_rosters1 <- read.csv(file = "../datasets/v0.8/df_rosters_super_league_s6.csv")
-  df_naf_ids <- read.csv(file = "../datasets/v0.8/df_rosters_super_league_s6__naf_ids.csv")
+  df_naf_ids <- read.csv(file = "../datasets/v0.8/df_rosters_super_league_s6_naf_ids.csv")
 }
 
 df_rosters1$group_name <- group_name
@@ -599,8 +602,8 @@ build_table <- function(data, type, save) {
     )
   )
 
-  if(save == TRUE) {
-    save_reactable_test(table, 
+  if(save == TRUE) { 
+    save_reactable(table, 
                         gsub(" ", "_", paste0(tournament_ruleset, "/", group_name, "_", type, "-stat_plot_", race_name, ".png")))
   }
   
@@ -664,6 +667,80 @@ dataprep for HC.
 # Delete the folder then recreates it, to ensure old pictures are not confused with the latest data
 unlink(tournament_ruleset, recursive = TRUE)
 dir.create(tournament_ruleset)
+```
+
+```{r}
+save_reactable <- function(input,
+                           output,
+                           ...) {
+
+  if (typeof(input) != "character" && attr(input, "class")[1] != "reactable" || typeof(input) != "character" && is.null(attr(input, "class")[1])) {
+
+    stop("input must be either a reactable table, .html file, or .Rmd file")
+  }
+
+  '%notin%' <- Negate('%in%')
+
+  if (typeof(input) == "character" && tools::file_ext(input) %notin% c("html", "Rmd") == TRUE) {
+
+    stop("input must be either a reactable table, .html file, or .Rmd file")
+  }
+
+  if (tools::file_ext(output) %notin% c("png", "html") == TRUE) {
+
+    stop("output must be either a .png or .html file")
+  }
+
+  if (tools::file_ext(output) == "html") {
+
+    htmlwidgets::saveWidget(widget = input, file = output, selfcontained = TRUE)
+
+    message("html file saved to ", getwd(), "/", output)
+
+  } else if (tools::file_ext(output) == "png" && all(tools::file_ext(input) != "Rmd") && all(tools::file_ext(input) != "html")) {
+
+    temp_html <- tempfile(
+      pattern = tools::file_path_sans_ext(basename(output)),
+      fileext = ".html")
+
+    htmlwidgets::saveWidget(widget = input, file = temp_html, selfcontained = TRUE)
+
+    webshot2::webshot(url = temp_html,
+                      file = output,
+                      zoom = 2,
+                      delay = 1,
+                      ...)
+
+    invisible(file.remove(temp_html))
+
+    message("image saved to ", getwd(), "/", output)
+
+  } else if (tools::file_ext(input) == "Rmd") {
+
+    message("Knitting R Markdown document...")
+
+    webshot2::rmdshot(doc = input,
+                      file = output,
+                      zoom = 2,
+                      delay = 1,
+                      ...)
+
+    message("image saved to ", getwd(), "/", output)
+
+  } else if (tools::file_ext(input) == "html" && tools::file_ext(output) == "png") {
+
+    webshot2::webshot(url = input,
+                      file = output,
+                      zoom = 2,
+                      delay = 1,
+                      ...)
+
+    message("image saved to ", getwd(), "/", output)
+
+  } else stop("please make sure input is either a reactable table, .html file, or .Rmd file,
+              and output is either a .png or .html file")
+
+}
 ```
 
    
@@ -751,7 +828,7 @@ for(i in 1:length(races)){
     # The width is proportional to the number of items to display because for some reasons, the more the items, the smaller the width becomes in default settings
     geom_tile(color = "black", width = 2.8*n_legend_items/11) +
     # Add a shadow to make white (added on the following line) readable on light background. The nudge_x offset is there because for some reasons, the text is not aligned left, despite hjust = 0. It is proportional to the number of items because the bigger the width (proportional to the number of items), the bigger the disalignment
-    geom_text(aes(label = skill_name), hjust = 0, color = "black", nudge_x = -1.4*n_legend_items/11-0.02, nudge_7 = -0.02) + 
+    geom_text(aes(label = skill_name), hjust = 0, color = "black", nudge_x = -1.4*n_legend_items/11-0.02, nudge_y = -0.02) + 
     geom_text(aes(label = skill_name), hjust = 0, color = "white", nudge_x = -1.4*n_legend_items/11) +
     scale_fill_identity() +
     coord_fixed() +
@@ -792,10 +869,11 @@ for(i in 1:length(races)){
   
   
   # Store skill tables for the race in a list (they can't be displayed within a for loop), they'll be displayed outside the loop all at once
-  skill_table_list[[i]] <- make_skill_table(race_name)
+  skill_table_list[[i]] <- make_skill_table(race_name) # results in error: Error in tools::file_ext(output) == "png" && tools::file_ext(input) !=  : 
+  #'length = 8' in coercion to 'logical(1)': fixed using https://github.com/kcuilla/reactablefmtr/pull/59/commits/99cf8129c8975ec404a995d0d44a15d096fda603
 }
 # Display all the skill tables
-htmltools::browsable(
-  do.call(tagList, skill_table_list)
-)
+#htmltools::browsable(
+#  do.call(tagList, skill_table_list)
+#)
 ```
