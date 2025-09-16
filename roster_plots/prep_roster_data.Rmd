@@ -550,5 +550,7 @@ duplicated(skill_colors$skill_name)
 
 ```{r}
 saveRDS(df_rosters, "work/df_rosters_prepped_data.rds")
+saveRDS(df_rosters1, "work/df_rosters1_raw_data.rds")
+
 ```
 

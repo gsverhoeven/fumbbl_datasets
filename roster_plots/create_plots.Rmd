@@ -48,7 +48,7 @@ source("helper_functions.R")
 
 ```{r}
 df_rosters <- readRDS("work/df_rosters_prepped_data.rds")
-
+df_rosters1 <- readRDS("work/df_rosters1_raw_data.rds")
 group_name <- params$group_name
 tournament_ruleset <- params$tournament_ruleset
 ```
@@ -184,7 +184,7 @@ for(i in 1:length(races)){
   
   
   # Store skill tables for the race in a list (they can't be displayed within a for loop), they'll be displayed outside the loop all at once
-  skill_table_list[[i]] <- make_skill_table(race_name) 
+  skill_table_list[[i]] <- make_skill_table(race_name, df_rosters1) 
 }
 
 ```
