@@ -29,11 +29,7 @@ I used `ggplot` create the final plots. For ease of sharing, I created `roster_b
 ```{r}
 # Load packages
 library(tidyverse)
-library(ggfortify)
-library(ggrepel)
-library(readODS)
 library(gridExtra)
-library(stringr)
 library(janitor)
 library(reactable)
 library(htmltools) # for tagList()
@@ -51,6 +47,7 @@ df_rosters <- readRDS("work/df_rosters_prepped_data.rds")
 df_rosters1 <- readRDS("work/df_rosters1_raw_data.rds")
 group_name <- params$group_name
 tournament_ruleset <- params$tournament_ruleset
+races <- unique(df_rosters$roster.name)
 ```
 
 # V. Display
@@ -59,18 +56,15 @@ tournament_ruleset <- params$tournament_ruleset
 Delete the folder then recreates it, to ensure old pictures are not confused with the latest data
 
 ```{r folder cleaning}
-unlink(tournament_ruleset, recursive = TRUE)
-dir.create(tournament_ruleset)
+#unlink(tournament_ruleset, recursive = TRUE)
+#dir.create(tournament_ruleset)
 ```
 
 ## Create heatmap plots & add skill tables
 
 ```{r heatmap}
-races <- unique(df_rosters$roster.name)
-# Initialize a list to store the skill tables
-skill_table_list <- list()
-# for(i in 1:1){
-for(i in 1:length(races)){
+for(i in 1:1){
+#for(i in 1:length(races)){
   race_name <- races[i]
 
   df <- df_rosters %>% 
@@ -84,7 +78,7 @@ for(i in 1:length(races)){
     group_by(team_id, coach_name, position, sort_order, n) %>%
     summarise(nr = row_number(), skill_name = skill_name, color = color, cost = cost)
 
-  # check on at least 2 teams
+  # need at least two teams for clustering
   if(n_distinct(df$team_id) > 1 & n_distinct(df$cost) > 1){ # do clustering
     df <- df %>%
       mutate(position_unique = paste0(position, "_", nr)) %>%
@@ -120,7 +114,7 @@ for(i in 1:length(races)){
     theme(plot.margin = ggplot2::margin(l = 0)) + # Set left margin to 0 to try to move to the left
     labs(x = "", y = "")
 
-  print(gp)
+  #print(gp)
   
   # Sort skills alphabetically to display them sorted in the caption
   df <- df %>%
@@ -133,7 +127,7 @@ for(i in 1:length(races)){
     distinct(skill_name, color) 
     
   
-  print(legend_df)
+  #print(legend_df)
   
     # Calculate the number of skills displayed to adapt the height for the ggsave (see below) and the width of the legend
   n_legend_items <- n_distinct(df$skill_name)
@@ -154,12 +148,10 @@ for(i in 1:length(races)){
       axis.title = element_blank()
     )
 
-  print(legend_plot)
-
   print("final plot")
   
   # Combine the main plot and custom legend
-  final_plot <- grid.arrange(
+  final_plot <- gridExtra::grid.arrange(
     gp,                      # Main plot
     legend_plot,             # Custom legend
     ncol = 2,                # Arrange side by side
@@ -181,10 +173,17 @@ for(i in 1:length(races)){
   print(dynamic_height)
 
   ggsave(gsub(" ", "_", plotname), final_plot, width = 10, height = dynamic_height)
-  
-  
-  # Store skill tables for the race in a list (they can't be displayed within a for loop), they'll be displayed outside the loop all at once
-  skill_table_list[[i]] <- make_skill_table(race_name, df_rosters1) 
 }
-
 ```
+
+```{r}
+# Initialize a list to store the skill tables
+skill_table_list <- list()
+
+for(i in 1:length(races)){
+  race_name <- races[i]
+  # Store skill tables for the race in a list (they can't be displayed within a for loop), they'll be displayed outside the loop all at once
+  skill_table_list[[i]] <- make_skill_table(race_name, df_rosters1)
+}
+```
+
