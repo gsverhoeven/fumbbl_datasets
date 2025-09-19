@@ -176,13 +176,16 @@ for(i in 1:1){
 }
 ```
 
+# For skill tables we need the dataset without stacked skills
+
 ```{r}
 # Initialize a list to store the skill tables
 skill_table_list <- list()
 
-for(i in 1:length(races)){
+for(i in 1:1){
+#for(i in 1:length(races)){
   race_name <- races[i]
-  # Store skill tables for the race in a list (they can't be displayed within a for loop), they'll be displayed outside the loop all at once
+  # Store skill tables for the race in a list (so they can be displayed outside the loop all at once)
   skill_table_list[[i]] <- make_skill_table(race_name, df_rosters1)
 }
 ```
