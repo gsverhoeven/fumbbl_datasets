@@ -101,7 +101,7 @@ for(i in 1:1){
   plot_title <- stringr::str_wrap(paste0("FUMBBL ", group_name, " ", race_name, " rosters"), width = 35)
   
   
-  gp <- ggplot(df, aes(x = reorder(factor(coach_team_id), cluster_order), y = reorder(paste(position, nr), -sort_order))) +
+  main_plot <- ggplot(df, aes(x = reorder(factor(coach_team_id), cluster_order), y = reorder(paste(position, nr), -sort_order))) +
     geom_tile(aes(fill = color), color = "black") +
     geom_text(aes(label = n), color = "white") +
     scale_fill_identity(breaks = c(df$color),
@@ -113,8 +113,6 @@ for(i in 1:1){
     theme(panel.background = element_rect(fill = "white")) +
     theme(plot.margin = ggplot2::margin(l = 0)) + # Set left margin to 0 to try to move to the left
     labs(x = "", y = "")
-
-  #print(gp)
   
   # Sort skills alphabetically to display them sorted in the caption
   df <- df %>%
@@ -125,11 +123,8 @@ for(i in 1:1){
     ungroup() %>% 
     select(skill_name, color) %>% 
     distinct(skill_name, color) 
-    
   
-  #print(legend_df)
-  
-    # Calculate the number of skills displayed to adapt the height for the ggsave (see below) and the width of the legend
+  # Calculate the number of skills displayed to adapt the height for the ggsave (see below) and the width of the legend
   n_legend_items <- n_distinct(df$skill_name)
   
   # Generate a custom legend using ggplot
@@ -147,17 +142,14 @@ for(i in 1:1){
       axis.text.y = element_blank(),
       axis.title = element_blank()
     )
-
-  print("final plot")
   
   # Combine the main plot and custom legend
-  final_plot <- gridExtra::grid.arrange(
-    gp,                      # Main plot
+  final_plot <- gridExtra::arrangeGrob(
+    main_plot,                      # Main plot
     legend_plot,             # Custom legend
     ncol = 2,                # Arrange side by side
     widths = c(3, 1)         # Adjust width proportions
   )
-  
 
   
   plotname <- paste0(tournament_ruleset, "/", group_name, "_roster_plot_", race_name, ".png")
@@ -170,9 +162,9 @@ for(i in 1:1){
   extra_height_per_item <- 0.25
   # The base height of 6.25 allows to display properly about 20 skills (+ "Skills")
   dynamic_height <- base_height + max((n_legend_items-20), 0) * extra_height_per_item
-  print(dynamic_height)
 
   ggsave(gsub(" ", "_", plotname), final_plot, width = 10, height = dynamic_height)
+  
 }
 ```
 
