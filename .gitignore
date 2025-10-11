@@ -25,3 +25,8 @@ datasets/v0.8/*.csv
 /datasets/v0.8/fumbbl_data_v0.8_pt1
 /datasets/v0.8/fumbbl_data_v0.8_pt2
 /roster_plots/work
+/datasets/v0.9
+/prepare_roster_data/202503_superleague_S6/EB25
+/prepare_roster_data/202510_eurobowl_2025/EB25
+/prepare_roster_data/202510_eurobowl_2025/EB25_eurobowl
+/prepare_roster_data/202510_eurobowl_2025/EB25_europen
