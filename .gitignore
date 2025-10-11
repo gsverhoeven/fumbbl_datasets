@@ -31,3 +31,5 @@ datasets/v0.8/*.csv
 /prepare_roster_data/202510_eurobowl_2025/EB25_eurobowl
 /prepare_roster_data/202510_eurobowl_2025/EB25_europen
 /prepare_roster_data/202209_road_to_malta
+/prepare_roster_data/202503_superleague_S6/inputdata_notused
+/prepare_roster_data/202503_superleague_S6/output
