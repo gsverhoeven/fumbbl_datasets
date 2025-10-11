@@ -1,0 +1,104 @@
+---
+title: "Prep EB25 data from Tableau"
+format: html
+editor: source
+---
+
+```{r}
+library(bbrosterplots)
+library(tidyverse)
+```
+
+# load example data
+```{r}
+data("df_rosters")
+df_rosters <- add_roster_metadata(df_rosters)
+```
+
+# load EB25 dump from Tableau
+
+need to transform this to mimic the example data
+
+```{r}
+eb25 <- read.csv("Coach List_Full Data_data.csv")
+
+eb25 <- eb25 %>%
+  select(Description, Race, Team, NAF.name, Tournament, Skill)
+
+colnames(eb25) <- c("position", "roster.name", "team_id", "coach_name", "group_name", "skill_name")
+
+eb25 <- eb25 %>%
+  mutate(cnt = ifelse(stringr::str_detect(skill_name , "^[:digit:]+$"), as.integer(skill_name), 1)) %>%
+  mutate(player_id = row_number()) %>%
+  mutate(team_id = as.integer(as.factor(paste0(team_id, coach_name)))) %>%
+  group_by(team_id) %>%
+  mutate(number = row_number()) %>%
+  ungroup() %>%
+  mutate(number = ifelse(stringr::str_detect(skill_name , "^[:digit:]+$"), 99, number)) %>%
+  mutate(skill_name = ifelse(stringr::str_detect(skill_name , "^[:digit:]+$"), "", skill_name)) %>%
+  mutate(skill_name = stringr::str_replace(skill_name, " \\s*\\([^\\)]+\\)", "")) %>%
+  mutate(skill_name = stringr::str_replace(skill_name, '\\*', '')) %>%
+  mutate(skill_name = stringr::str_replace(skill_name, '\\,', '')) %>%
+  mutate(skill_name = stringr::str_replace_all(skill_name, fixed(" "), "")) %>%
+  mutate(skill_name = if_else(skill_name == "Sidestep", "SideStep", skill_name)) #%>%
+  #mutate(skill_name = if_else(skill_name == "", NA, skill_name))  
+  
+roster_cost <- eb25 %>%
+  group_by(position, roster.name) %>%
+  summarise(cnt = n())
+
+
+```
+
+# Roster cost
+
+```{r}
+library(readr)
+ref_bb_rosters_cost <- read_delim(system.file("extdata", "ref_bb_rosters_cost.csv", package = "bbrosterplots"), 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE)
+#View(ref_bb_rosters_cost)
+```
+
+# Skill names
+
+```{r}
+skill_colors <- eb25 %>%
+  group_by(skill_name) %>%
+  summarise(cnt = n())
+```
+
+
+```{r}
+eb25 <- add_roster_metadata(eb25)
+```
+
+# Creae the pdf rosterbooks
+
+```{r}
+create_rosterplot(eb25 %>% filter(group_name == "Europen"), group_name = "EB25_europen", tournament_ruleset = "EB25_europen")
+```
+
+```{r}
+render_rosterbook(params = list(group_name = "EB25_eurobowl", 
+                                tournament_ruleset = "EB25_eurobowl", 
+                                cover_image = "EB25.jpg",
+                                scale_cover_perc = "100%",
+                                races = sort(eb25 %>% filter(group_name == "Eurobowl") %>% distinct(roster.name) %>% pull()),
+                                perc = FALSE, 
+                                team = FALSE), refresh_rmd = TRUE)
+
+# PM change output PDF filename 
+```
+
+```{r}
+render_rosterbook(params = list(group_name = "EB25_europen", 
+                                tournament_ruleset = "EB25_europen", 
+                                cover_image = "EB25.jpg",
+                                scale_cover_perc = "100%",
+                                races = sort(eb25 %>% filter(group_name == "Europen") %>% distinct(roster.name) %>% pull()),
+                                perc = FALSE, 
+                                team = FALSE), refresh_rmd = TRUE)
+```
+
+
+
