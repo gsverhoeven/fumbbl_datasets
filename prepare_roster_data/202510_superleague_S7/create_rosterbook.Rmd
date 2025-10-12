@@ -62,7 +62,7 @@ extra_stuff <- unique(df_rosters %>%
     mutate(number = 99) %>%
     mutate(skill_id = NA) %>%
     mutate(name = NA)) %>%
-    rename(skill_name = name)
+    rename(skill_name = name) 
 
 df_rosters <- df_rosters %>%
   select(-c(X, rerolls, assistantCoaches, cheerleaders, apothecary))
@@ -71,6 +71,9 @@ df_rosters <- df_rosters %>%
   select(-c(team_name, tournament_id, tournament_name))
 
 df_rosters <- rbind(df_rosters, extra_stuff)
+
+df_rosters <- df_rosters %>%
+  mutate(skill_name = if_else(skill_name == "NA", "", skill_name))
 ```
 
 ## Check rosters without skills
@@ -84,6 +87,16 @@ df_rosters %>%
   group_by(group_name) %>%
   summarise(perc = mean(has_skills))
 ```
+
+```{r}
+# fix wrong inducement
+
+df_rosters <- df_rosters %>%
+  filter(!(position %in% c("1 part-time assistant coach", "1 temp agency cheerleader")))
+
+
+```
+
 
 ## Drop teams without skills.
 
@@ -106,10 +119,10 @@ df_rosters <- df_rosters %>%
 ## Cleanup the skill names
 
 ```{r}
-# df_rosters <- df_rosters %>%
-#   mutate(skill_name = str_replace_all(skill_name, 
-#             pattern = "^_", replacement = "")) %>%
-#   mutate(skill_name = replace_na(skill_name, ""))
+df_rosters <- df_rosters %>%
+  mutate(skill_name = str_replace_all(skill_name,
+            pattern = "^_", replacement = "")) %>%
+  mutate(skill_name = replace_na(skill_name, ""))
 ```
 
 ## condense skill stacking rows
@@ -150,6 +163,12 @@ library(bbrosterplots)
 
 df_rosters <- df_rosters %>% select(-player_id) %>% ungroup() # PM BUGFIX
 df_rosters <- bbrosterplots::add_roster_metadata(df_rosters)
+```
+```{r}
+write.csv2(df_rosters %>%
+  filter(is.na(cost)) %>%
+  group_by(position, roster.name) %>%
+  summarise(cnt = sum(cnt)), "test.csv" )
 ```
 
 
@@ -198,8 +217,8 @@ df_rosters %>%
 ```{r}
 # remove the get the ref bribes
 
-df_rosters <- df_rosters %>%
-  mutate(cnt = ifelse(team_id %in% teams_get_the_ref & position == "1 bribe", cnt - 1, cnt))
+#df_rosters <- df_rosters %>%
+#  mutate(cnt = ifelse(team_id %in% teams_get_the_ref & position == "1 bribe", cnt - 1, cnt))
 
 ```
 
@@ -214,8 +233,8 @@ check!
 drop rows with cnt 0
 
 ```{r}
-df_rosters <- df_rosters %>% 
-  filter(cnt != 0)
+#df_rosters <- df_rosters %>% 
+#  filter(cnt != 0)
 ```
 
 
@@ -230,13 +249,26 @@ res <- df_rosters %>%
   summarise() %>%
   group_by(team_id, coach_name, roster.name) %>%
   summarise(team_cost = sum(tot_cost)) %>%
-  filter(!is.na(team_cost ))
+  filter(!is.na(team_cost )) %>%
+  ungroup() %>%
+  group_by(roster.name) %>%
+  mutate(med_cost = median(team_cost)) %>%
+  mutate(delta = team_cost - med_cost)
 
 summary(res$team_cost)
 ```
 
 ```{r}
-res %>% filter(team_cost < 1135)
+res %>% arrange(roster.name, team_cost, med_cost)
+```
+algorithm:
+check deviation within roster.
+use team specific cost of bribe (ie 100 or 50)
+use only when n > 2
+
+```{r}
+#df_rosters <- df_rosters %>% 
+#  filter(!(position %in% c("cheerleaders", "assistantCoaches")))
 ```
 
 
@@ -265,8 +297,8 @@ render_rosterbook(params = list(group_name = "Super League S7",
 ```
 # PM need fixing
 
-Get the ref bribe (Juiblex). No cheerleaders? and 2 coaches ? vs 1 cheerleader and 1 coach
-NA for rerolls and apo
-missing bribe for the black orc teams
-Gnome fix grombrindal the white dwarf
-add star players ie Maple
+fix bribes -> implement get the ref algorithm
+fix grombrindal the white dwarf
+
+owenz51 did not induce his bribe
+few others also did not induce their keg
