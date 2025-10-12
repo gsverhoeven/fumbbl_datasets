@@ -63,7 +63,11 @@ df_rosters1$group_name <- group_name
 
 # Cf. bb_tournament_settings.ods
 tournament_ruleset <- params$tournament_ruleset
+```
 
+# NAF data
+
+```{r}
 ## Load the data downloaded from https://member.thenaf.net/glicko/nafstat-tmp-name.zip. They will be used for stats on ELO ranking etc.
 NAF_coachranking_variant <- read.csv(file = "../../datasets/NAF-dump/naf_coachranking_variant.csv", sep = ";")
 NAF_race <- read.csv(file = "../../datasets/NAF-dump/naf_race.csv", sep = ";")
@@ -71,7 +75,11 @@ NAF_variant <- read.csv(file = "../../datasets/NAF-dump/naf_variants.csv", sep =
 
 ## Load the global ELO from https://bloodbowl.dk/coach-rating/, provided by Tripleskull
 globalcoachranking <- read.table(file = "../../datasets/dk-ranking/WorldCR.txt", header = TRUE, sep = ";")
+```
 
+# bb_tournament_settings.ods
+
+```{r}
 # Open the ruleset settings
 allowed_inducements <- read_ods("bb_tournament_settings.ods", sheet="allowed_inducements") %>% 
   filter(Ruleset == tournament_ruleset)
