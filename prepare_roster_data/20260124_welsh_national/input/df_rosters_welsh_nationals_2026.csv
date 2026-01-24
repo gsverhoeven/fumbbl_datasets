@@ -1,0 +1,1448 @@
+,number,position,skills,cnt,team_id,coach_name,tournament_name,roster.name
+0,1,Altern Forest Treeman,Guard,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+1,2,Dwarf Blitzer,Guard,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+2,3,Troll Slayer,Guard,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+3,4,Human Blitzer,Mighty Blow,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+4,6,Human Thrower,Block,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+5,7,Human Catcher,Block,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+6,8,Dwarf Lineman,,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+7,11,Dwarf Lineman,,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+8,12,Dwarf Lineman,,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+9,9,Human Lineman,Wrestle,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+10,5,Human Lineman,,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+11,10,Halfling Hopeful,,1,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+12,99,rerolls,,3,167856,Chuck-Dredd,Welsh National Championship 2026,Old World Alliance
+13,1,Altern Forest Treeman,Guard,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+14,2,Dwarf Blitzer,Guard,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+15,3,Troll Slayer,Guard,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+16,4,Human Blitzer,Mighty Blow,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+17,5,Human Thrower,Block,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+18,6,Human Catcher,Block,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+19,7,Dwarf Lineman,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+20,8,Dwarf Lineman,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+21,9,Dwarf Lineman,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+22,10,Dwarf Runner,Leader,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+23,11,Human Lineman,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+24,12,Human Lineman,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+25,13,Halfling Hopeful,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+26,14,Halfling Hopeful,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+27,99,rerolls,,2,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+28,99,assistant_coaches,,1,164038,Jacob T,Welsh National Championship 2026,Old World Alliance
+29,1,Troll,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+30,2,Big Un Blocker,Block,1,169360,Rubick84,Welsh National Championship 2026,Orc
+31,3,Big Un Blocker,Block,1,169360,Rubick84,Welsh National Championship 2026,Orc
+32,4,Orc Blitzer,Guard,1,169360,Rubick84,Welsh National Championship 2026,Orc
+33,5,Orc Blitzer,Guard,1,169360,Rubick84,Welsh National Championship 2026,Orc
+34,6,Orc Thrower,Block,1,169360,Rubick84,Welsh National Championship 2026,Orc
+35,7,Orc Thrower,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+36,8,Goblin Lineman,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+37,9,Orc Lineman,Guard,1,169360,Rubick84,Welsh National Championship 2026,Orc
+38,10,Orc Lineman,Guard,1,169360,Rubick84,Welsh National Championship 2026,Orc
+39,11,Orc Lineman,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+40,12,Orc Lineman,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+41,13,Orc Lineman,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+42,99,rerolls,,3,169360,Rubick84,Welsh National Championship 2026,Orc
+43,99,dedicated_fans,,1,169360,Rubick84,Welsh National Championship 2026,Orc
+44,1,Witch Elf,Block,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+45,2,Witch Elf,Wrestle,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+46,3,Dark Elf Blitzer,Dodge,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+47,4,Dark Elf Blitzer,Dodge,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+48,5,Dark Elf Assassin,Dodge,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+49,6,Dark Elf Assassin,Dodge,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+50,7,Dark Elf Lineman,Kick,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+51,8,Dark Elf Lineman,,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+52,9,Dark Elf Lineman,,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+53,10,Dark Elf Lineman,,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+54,11,Dark Elf Lineman,,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+55,12,Dark Elf Lineman,,1,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+56,99,rerolls,,3,165399,TomTheOwl,Welsh National Championship 2026,Dark Elf
+57,1,Skaven Thrower,Block,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+58,2,Skaven Blitzer,Two Heads,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+59,3,Gutter Runner,Block,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+60,4,Skaven Clanrat,Wrestle,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+61,5,Skaven Clanrat,Wrestle,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+62,6,Skaven Clanrat,Wrestle,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+63,7,Rat Ogre,Juggernaut,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+64,8,Goblin Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+65,9,Goblin Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+66,10,Goblin Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+67,12,Snotling Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+68,11,Snotling Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+69,13,Snotling Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+70,14,Snotling Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+71,15,Snotling Lineman,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+72,99,rerolls,,3,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+73,99,assistant_coaches,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+74,99,Bribes,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+75,99,DodgyLeagueRep,,1,176148,Coach,Welsh National Championship 2026,Underworld Denizens
+76,1,Flesh Golem,Guard,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+77,2,Flesh Golem,Guard,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+78,3,Werewolf,Block,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+79,4,Werewolf,Block,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+80,5,Wraith,Guard,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+81,6,Wraith,Guard,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+82,7,Ghoul Runner,Block,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+83,8,Ghoul Runner,,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+84,9,Zombie Lineman,,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+85,10,Zombie Lineman,,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+86,11,Zombie Lineman,,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+87,12,Zombie Lineman,,1,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+88,99,rerolls,,3,164335,camelchops,Welsh National Championship 2026,Necromantic Horror
+89,1,Mummy,Block,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+90,2,Mummy,Guard,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+91,3,Wight Blitzer,Mighty Blow,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+92,4,Wight Blitzer,Guard,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+93,5,Ghoul Runner,Block,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+94,6,Ghoul Runner,Block,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+95,7,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+96,8,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+97,9,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+98,10,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+99,11,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+100,12,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+101,14,Zombie Lineman,,1,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+102,99,rerolls,,4,169292,ceetee,Welsh National Championship 2026,Shambling Undead
+103,1,Wardancer,Strip Ball,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+104,2,Wardancer,Tackle,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+105,3,Loren Forest Treeman,,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+106,4,Wood Elf Catcher,Block,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+107,5,Wood Elf Catcher,Sidestep,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+108,6,Wood Elf Lineman,Dodge,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+109,7,Wood Elf Lineman,Dodge,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+110,8,Wood Elf Lineman,Block,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+111,9,Wood Elf Lineman,,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+112,10,Wood Elf Lineman,,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+113,11,Wood Elf Lineman,,1,171084,Danimal,Welsh National Championship 2026,Wood Elf
+114,99,rerolls,,3,171084,Danimal,Welsh National Championship 2026,Wood Elf
+115,1,Altern Forest Treeman,Pro,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+116,2,Dwarf Blitzer,Guard,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+117,3,Troll Slayer,Mighty Blow,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+118,4,Human Blitzer,Mighty Blow,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+119,5,Human Thrower,Leader,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+120,6,Human Catcher,Block,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+121,7,Human Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+122,8,Human Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+123,9,Human Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+124,10,Human Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+125,11,Human Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+126,12,Halfling Hopeful,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+127,13,Human Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+128,14,Dwarf Lineman,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+129,99,rerolls,,2,161245,Salva,Welsh National Championship 2026,Old World Alliance
+130,99,assistant_coaches,,1,161245,Salva,Welsh National Championship 2026,Old World Alliance
+131,1,Mummy,Guard,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+132,2,Mummy,Guard,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+133,3,Wight Blitzer,Guard,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+134,4,Wight Blitzer,Mighty Blow,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+135,6,Ghoul Runner,Block,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+136,5,Ghoul Runner,Block,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+137,7,Zombie Lineman,Kick,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+138,8,Zombie Lineman,,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+139,9,Zombie Lineman,,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+140,10,Zombie Lineman,,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+141,11,Zombie Lineman,,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+142,12,Skeleton Lineman,,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+143,13,Skeleton Lineman,,1,173574,Danny,Welsh National Championship 2026,Shambling Undead
+144,99,rerolls,,4,173574,Danny,Welsh National Championship 2026,Shambling Undead
+145,1,Kroxigor,Guard,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+146,2,Saurus Blocker,Block,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+147,3,Saurus Blocker,Block,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+148,4,Saurus Blocker,Block,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+149,5,Saurus Blocker,Block,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+150,6,Saurus Blocker,Frenzy,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+151,7,Saurus Blocker,Tackle,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+152,8,Chameleon Skink,,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+153,9,Skink Lineman,,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+154,10,Skink Lineman,,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+155,11,Skink Lineman,,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+156,99,rerolls,,2,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+157,99,TempAgencyCheerleaders,,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+158,99,WeatherMage,,1,167208,Owen Crosweller,Welsh National Championship 2026,Lizardmen
+159,1,Mummy,Block,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+160,2,Mummy,Guard,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+161,3,Wight Blitzer,Mighty Blow,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+162,4,Wight Blitzer,Guard,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+163,5,Ghoul Runner,Block,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+164,6,Ghoul Runner,Wrestle,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+165,7,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+166,8,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+167,9,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+168,10,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+169,11,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+170,12,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+171,13,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+172,14,Zombie Lineman,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+173,99,rerolls,,3,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+174,99,TempAgencyCheerleaders,,2,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+175,99,PartTimeAssistanceCoaches,,1,170583,Vulcano,Welsh National Championship 2026,Shambling Undead
+176,1,Ghoul Runner,Block,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+177,2,Ghoul Runner,Wrestle,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+178,3,Wraith,Guard,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+179,4,Wraith,Guard,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+180,5,Flesh Golem,Block,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+181,6,Flesh Golem,Block,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+182,7,Werewolf,Block,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+183,8,Werewolf,,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+184,9,Zombie Lineman,,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+185,10,Zombie Lineman,,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+186,11,Zombie Lineman,,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+187,12,Zombie Lineman,,1,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+188,99,rerolls,,3,171405,Chris Whitehouse,Welsh National Championship 2026,Necromantic Horror
+189,1,Werewolf,Block,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+190,2,Werewolf,Block,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+191,3,Flesh Golem,Block,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+192,4,Flesh Golem,Guard,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+193,5,Wraith,Guard,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+194,6,Wraith,Guard,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+195,7,Ghoul Runner,Block,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+196,8,Ghoul Runner,,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+197,9,Zombie Lineman,,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+198,10,Zombie Lineman,,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+199,11,Zombie Lineman,,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+200,12,Zombie Lineman,,1,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+201,99,rerolls,,3,171171,McFaff,Welsh National Championship 2026,Necromantic Horror
+202,1,Tomb Guardian,Guard,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+203,2,Tomb Guardian,Guard,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+204,3,Tomb Guardian,Mighty Blow,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+205,4,Tomb Guardian,Mighty Blow,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+206,5,Tomb Kings Blitzer,Guard,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+207,6,Tomb Kings Blitzer,Tackle,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+208,7,Tomb Kings Thrower,Block,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+209,8,Tomb Kings Thrower,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+210,9,Skeleton Lineman,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+211,10,Skeleton Lineman,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+212,11,Skeleton Lineman,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+213,12,Skeleton Lineman,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+214,13,Skeleton Lineman,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+215,99,rerolls,,3,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+216,99,assistant_coaches,,1,166629,Blitzy,Welsh National Championship 2026,Tomb Kings
+217,1,Altern Forest Treeman,Guard,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+218,2,Dwarf Blitzer,Guard,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+219,3,Human Blitzer,Mighty Blow,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+220,4,Human Thrower,Leader,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+221,5,Human Catcher,Block,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+222,6,Troll Slayer,Guard,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+223,7,Dwarf Lineman,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+224,8,Dwarf Lineman,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+225,9,Dwarf Lineman,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+226,10,Human Lineman,Wrestle,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+227,11,Human Lineman,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+228,12,Human Lineman,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+229,13,Halfling Hopeful,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+230,99,rerolls,,2,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+231,99,assistant_coaches,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+232,99,dedicated_fans,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+233,99,TempAgencyCheerleaders,,1,168845,Torquemada,Welsh National Championship 2026,Old World Alliance
+234,1,Werewolf,Block,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+235,2,Werewolf,Block,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+236,3,Flesh Golem,Guard,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+237,4,Flesh Golem,Guard,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+238,5,Wraith,Guard,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+239,6,Wraith,Guard,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+240,7,Ghoul Runner,Block,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+241,8,Ghoul Runner,,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+242,9,Zombie Lineman,,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+243,10,Zombie Lineman,,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+244,11,Zombie Lineman,,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+245,12,Zombie Lineman,,1,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+246,99,rerolls,,3,159697,Jon McCarthy,Welsh National Championship 2026,Necromantic Horror
+247,1,Altern Forest Treeman,Guard,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+248,2,Dwarf Lineman,,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+249,3,Dwarf Lineman,,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+250,4,Dwarf Lineman,,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+251,5,Troll Slayer,Guard,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+252,6,Dwarf Blitzer,Guard,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+253,7,Human Blitzer,Mighty Blow,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+254,8,Human Catcher,Block,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+255,9,Human Thrower,Block,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+256,10,Human Lineman,Wrestle,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+257,11,Human Lineman,,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+258,12,Halfling Hopeful,,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+259,13,Human Lineman,,1,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+260,99,rerolls,,3,172085,TalonBay,Welsh National Championship 2026,Old World Alliance
+261,1,Skaven Thrower,Leader,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+262,2,Skaven Blitzer,Break Tackle,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+263,3,Skaven Blitzer,Break Tackle,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+264,4,Skaven Clanrat,Wrestle,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+265,5,Skaven Clanrat,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+266,6,Gutter Runner,Block,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+267,7,Gutter Runner,Block,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+268,8,Skaven Clanrat,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+269,9,Skaven Clanrat,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+270,10,Skaven Clanrat,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+271,11,Rat Ogre,Juggernaut,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+272,12,Skaven Clanrat,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+273,13,Skaven Clanrat,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+274,99,rerolls,,3,159687,GColeman76,Welsh National Championship 2026,Skaven
+275,99,assistant_coaches,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+276,99,dedicated_fans,,1,159687,GColeman76,Welsh National Championship 2026,Skaven
+277,1,Kroxigor,Guard,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+278,2,Saurus Blocker,Block,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+279,3,Saurus Blocker,Block,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+280,4,Saurus Blocker,Block,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+281,5,Saurus Blocker,Block,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+282,6,Saurus Blocker,Frenzy,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+283,7,Saurus Blocker,Tackle,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+284,8,Skink Lineman,,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+285,9,Skink Lineman,,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+286,10,Skink Lineman,,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+287,11,Skink Lineman,,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+288,12,Skink Lineman,,1,159899,steveo,Welsh National Championship 2026,Lizardmen
+289,99,rerolls,,2,159899,steveo,Welsh National Championship 2026,Lizardmen
+290,99,assistant_coaches,,3,159899,steveo,Welsh National Championship 2026,Lizardmen
+291,1,Vampire Thrower,Block,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+292,2,Vampire Thrower,Block,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+293,3,Vampire Runner,Dodge,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+294,4,Vampire Runner,Dodge,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+295,5,Vampire Blitzer,Frenzy,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+296,6,Vampire Blitzer,Strip Ball,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+297,7,Thrall Lineman,Kick,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+298,8,Thrall Lineman,,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+299,9,Thrall Lineman,,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+300,10,Thrall Lineman,,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+301,11,Thrall Lineman,,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+302,12,Thrall Lineman,,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+303,99,rerolls,,4,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+304,99,assistant_coaches,,2,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+305,99,cheerleaders,,1,160436,SamLikesSka,Welsh National Championship 2026,Vampire
+306,1,Troll,Guard,1,171375,Vido,Welsh National Championship 2026,Orc
+307,2,Big Un Blocker,Block,1,171375,Vido,Welsh National Championship 2026,Orc
+308,3,Big Un Blocker,Block,1,171375,Vido,Welsh National Championship 2026,Orc
+309,4,Orc Blitzer,Frenzy,1,171375,Vido,Welsh National Championship 2026,Orc
+310,5,Orc Blitzer,Mighty Blow,1,171375,Vido,Welsh National Championship 2026,Orc
+311,6,Orc Thrower,,1,171375,Vido,Welsh National Championship 2026,Orc
+312,7,Orc Lineman,Guard,1,171375,Vido,Welsh National Championship 2026,Orc
+313,8,Orc Lineman,,1,171375,Vido,Welsh National Championship 2026,Orc
+314,10,Orc Lineman,,1,171375,Vido,Welsh National Championship 2026,Orc
+315,9,Orc Lineman,,1,171375,Vido,Welsh National Championship 2026,Orc
+316,11,Goblin Lineman,Diving Tackle,1,171375,Vido,Welsh National Championship 2026,Orc
+317,12,Goblin Lineman,,1,171375,Vido,Welsh National Championship 2026,Orc
+318,13,Goblin Lineman,,1,171375,Vido,Welsh National Championship 2026,Orc
+319,99,rerolls,,3,171375,Vido,Welsh National Championship 2026,Orc
+320,99,BlitzerBestKeg,,1,171375,Vido,Welsh National Championship 2026,Orc
+321,1,Kroxigor,Guard,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+322,2,Saurus Blocker,Block,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+323,3,Saurus Blocker,Block,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+324,4,Saurus Blocker,Block,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+325,5,Saurus Blocker,Block,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+326,6,Saurus Blocker,Wrestle,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+327,7,Saurus Blocker,Frenzy,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+328,8,Chameleon Skink,,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+329,9,Skink Lineman,,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+330,10,Skink Lineman,,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+331,11,Skink Lineman,,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+332,99,rerolls,,3,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+333,99,assistant_coaches,,1,172292,TheShepherd,Welsh National Championship 2026,Lizardmen
+334,1,Ogre,Block,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+335,2,Dwarf Blitzer,Guard,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+336,3,Troll Slayer,Guard,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+337,4,Human Blitzer,Mighty Blow,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+338,5,Human Thrower,Leader,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+339,6,Human Catcher,Block,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+340,7,Dwarf Lineman,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+341,8,Dwarf Lineman,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+342,9,Dwarf Lineman,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+343,10,Human Lineman,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+344,11,Human Lineman,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+345,12,Human Lineman,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+346,13,Halfling Hopeful,,1,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+347,99,rerolls,,2,159789,8ulldog,Welsh National Championship 2026,Old World Alliance
+348,1,Piranha Warrior,Wrestle,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+349,2,Piranha Warrior,Block,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+350,3,Jaguar Warrior,Guard,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+351,4,Jaguar Warrior,Guard,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+352,5,Eagle Warrior,Block,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+353,6,Eagle Warrior,Block,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+354,7,Eagle Warrior,Block,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+355,8,Eagle Warrior,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+356,9,Eagle Warrior,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+357,10,Eagle Warrior,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+358,11,Eagle Warrior,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+359,12,Eagle Warrior,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+360,13,Eagle Warrior,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+361,99,rerolls,,3,159836,Stuart L,Welsh National Championship 2026,Amazon
+362,99,assistant_coaches,,2,159836,Stuart L,Welsh National Championship 2026,Amazon
+363,99,BlitzerBestKeg,,1,159836,Stuart L,Welsh National Championship 2026,Amazon
+364,1,Troll,,1,167982,Bondy,Welsh National Championship 2026,Orc
+365,2,Big Un Blocker,Block,1,167982,Bondy,Welsh National Championship 2026,Orc
+366,3,Big Un Blocker,Block,1,167982,Bondy,Welsh National Championship 2026,Orc
+367,4,Orc Blitzer,Mighty Blow,1,167982,Bondy,Welsh National Championship 2026,Orc
+368,5,Orc Blitzer,Guard,1,167982,Bondy,Welsh National Championship 2026,Orc
+369,6,Orc Thrower,,1,167982,Bondy,Welsh National Championship 2026,Orc
+370,7,Orc Thrower,,1,167982,Bondy,Welsh National Championship 2026,Orc
+371,8,Orc Lineman,Guard,1,167982,Bondy,Welsh National Championship 2026,Orc
+372,9,Orc Lineman,Guard,1,167982,Bondy,Welsh National Championship 2026,Orc
+373,10,Orc Lineman,,1,167982,Bondy,Welsh National Championship 2026,Orc
+374,11,Orc Lineman,,1,167982,Bondy,Welsh National Championship 2026,Orc
+375,13,Goblin Lineman,Dirty Player,1,167982,Bondy,Welsh National Championship 2026,Orc
+376,12,Goblin Lineman,,1,167982,Bondy,Welsh National Championship 2026,Orc
+377,99,rerolls,,3,167982,Bondy,Welsh National Championship 2026,Orc
+378,99,assistant_coaches,,1,167982,Bondy,Welsh National Championship 2026,Orc
+379,99,dedicated_fans,,1,167982,Bondy,Welsh National Championship 2026,Orc
+380,1,Flesh Golem,Guard,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+381,2,Flesh Golem,Guard,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+382,3,Wraith,Guard,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+383,4,Wraith,Guard,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+384,5,Werewolf,Block,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+385,6,Werewolf,Block,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+386,7,Ghoul Runner,Block,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+387,8,Ghoul Runner,,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+388,9,Zombie Lineman,,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+389,10,Zombie Lineman,,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+390,11,Zombie Lineman,,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+391,12,Zombie Lineman,,1,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+392,99,rerolls,,3,171780,AndyDavo,Welsh National Championship 2026,Necromantic Horror
+393,1,Rat Ogre,Juggernaut,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+394,2,Skaven Blitzer,Mighty Blow,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+395,4,Gutter Runner,Wrestle,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+396,3,Skaven Blitzer,Tackle,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+397,5,Gutter Runner,Block,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+398,9,Skaven Clanrat,Dirty Player,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+399,6,Skaven Thrower,Leader,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+400,7,Skaven Clanrat,,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+401,8,Skaven Clanrat,,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+402,10,Skaven Clanrat,,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+403,11,Skaven Clanrat,,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+404,12,Skaven Clanrat,,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+405,13,Skaven Clanrat,,1,171109,Alloallo,Welsh National Championship 2026,Skaven
+406,99,rerolls,,3,171109,Alloallo,Welsh National Championship 2026,Skaven
+407,99,assistant_coaches,,2,171109,Alloallo,Welsh National Championship 2026,Skaven
+408,1,Werewolf,Block,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+409,2,Werewolf,Wrestle,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+410,3,Flesh Golem,Guard,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+411,4,Flesh Golem,Guard,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+412,5,Wraith,Guard,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+413,6,Wraith,Guard,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+414,7,Ghoul Runner,,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+415,8,Ghoul Runner,Block,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+416,9,Zombie Lineman,,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+417,10,Zombie Lineman,,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+418,11,Zombie Lineman,,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+419,12,Zombie Lineman,,1,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+420,99,rerolls,,3,169576,Jim (SalonTiger),Welsh National Championship 2026,Necromantic Horror
+421,1,Piranha Warrior,Block,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+422,2,Piranha Warrior,Wrestle,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+423,3,Jaguar Warrior,Guard,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+424,4,Jaguar Warrior,Block,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+425,5,Eagle Warrior,Block,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+426,6,Eagle Warrior,Block,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+427,7,Eagle Warrior,Wrestle,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+428,8,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+429,9,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+430,10,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+431,11,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+432,12,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+433,13,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+434,14,Eagle Warrior,,1,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+435,99,rerolls,,3,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+436,99,assistant_coaches,,2,172667,Littleleadperson,Welsh National Championship 2026,Amazon
+437,1,Werewolf,Block,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+438,2,Werewolf,Block,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+439,3,Flesh Golem,Guard,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+440,4,Flesh Golem,Guard,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+441,5,Wraith,Guard,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+442,6,Wraith,Guard,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+443,7,Ghoul Runner,Block,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+444,8,Ghoul Runner,,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+445,9,Zombie Lineman,,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+446,10,Zombie Lineman,,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+447,11,Zombie Lineman,,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+448,12,Zombie Lineman,,1,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+449,99,rerolls,,3,164156,Fated,Welsh National Championship 2026,Necromantic Horror
+450,1,Dark Elf Blitzer,Dodge,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+451,2,Dark Elf Blitzer,Dodge,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+452,3,Witch Elf,Block,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+453,4,Witch Elf,Wrestle,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+454,5,Dark Elf Lineman,Block,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+455,6,Dark Elf Lineman,Dodge,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+456,7,Dark Elf Lineman,Dodge,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+457,8,Dark Elf Lineman,,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+458,9,Dark Elf Lineman,,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+459,10,Dark Elf Lineman,,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+460,11,Dark Elf Lineman,,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+461,12,Dark Elf Lineman,,1,164595,Jairo,Welsh National Championship 2026,Dark Elf
+462,99,rerolls,,3,164595,Jairo,Welsh National Championship 2026,Dark Elf
+463,1,Altern Forest Treeman,Guard,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+464,2,Dwarf Blitzer,Guard,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+465,3,Troll Slayer,Guard,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+466,4,Human Blitzer,Mighty Blow,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+467,5,Human Catcher,Block,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+468,6,Human Thrower,Leader,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+469,7,Dwarf Lineman,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+470,8,Dwarf Lineman,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+471,9,Dwarf Lineman,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+472,10,Human Lineman,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+473,11,Human Lineman,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+474,12,Human Lineman,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+475,13,Halfling Hopeful,Sure Feet,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+476,99,rerolls,,2,175830,juck101,Welsh National Championship 2026,Old World Alliance
+477,99,assistant_coaches,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+478,99,cheerleaders,,1,175830,juck101,Welsh National Championship 2026,Old World Alliance
+479,1,Dwarf Lineman,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+480,2,Dwarf Lineman,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+481,3,Dwarf Lineman,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+482,4,Troll Slayer,Guard,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+483,5,Dwarf Blitzer,Stand Firm,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+484,6,Ogre,Block,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+485,7,Human Thrower,Leader,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+486,8,Human Catcher,Block,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+487,9,Human Blitzer,Guard,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+488,10,Human Lineman,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+489,11,Human Lineman,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+490,12,Halfling Hopeful,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+491,13,Human Lineman,,1,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+492,99,rerolls,,2,167538,cornish (Chris),Welsh National Championship 2026,Old World Alliance
+493,1,Orc Blitzer,Frenzy,1,160607,David Usher,Welsh National Championship 2026,Orc
+494,2,Orc Blitzer,Tackle,1,160607,David Usher,Welsh National Championship 2026,Orc
+495,3,Big Un Blocker,Block,1,160607,David Usher,Welsh National Championship 2026,Orc
+496,4,Big Un Blocker,Block,1,160607,David Usher,Welsh National Championship 2026,Orc
+497,5,Troll,,1,160607,David Usher,Welsh National Championship 2026,Orc
+498,6,Orc Thrower,Block,1,160607,David Usher,Welsh National Championship 2026,Orc
+499,7,Orc Lineman,,1,160607,David Usher,Welsh National Championship 2026,Orc
+500,8,Orc Lineman,Guard,1,160607,David Usher,Welsh National Championship 2026,Orc
+501,9,Orc Lineman,Guard,1,160607,David Usher,Welsh National Championship 2026,Orc
+502,10,Orc Lineman,,1,160607,David Usher,Welsh National Championship 2026,Orc
+503,11,Orc Lineman,,1,160607,David Usher,Welsh National Championship 2026,Orc
+504,12,Goblin Lineman,,1,160607,David Usher,Welsh National Championship 2026,Orc
+505,13,Goblin Lineman,,1,160607,David Usher,Welsh National Championship 2026,Orc
+506,14,Goblin Lineman,,1,160607,David Usher,Welsh National Championship 2026,Orc
+507,99,rerolls,,3,160607,David Usher,Welsh National Championship 2026,Orc
+508,1,Ogre,Break Tackle,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+509,2,Imperial Thrower,,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+510,3,Imperial Thrower,,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+511,4,Bodyguard,Guard,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+512,5,Bodyguard,Guard,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+513,6,Bodyguard,Guard,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+514,7,Bodyguard,Guard,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+515,8,Noble Blitzer,Dodge,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+516,9,Noble Blitzer,Dodge,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+517,10,Imperial Retainer,,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+518,11,Imperial Retainer,,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+519,12,Imperial Retainer,,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+520,99,rerolls,,2,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+521,99,assistant_coaches,,3,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+522,99,dedicated_fans,,1,171415,SilentKnight,Welsh National Championship 2026,Imperial Nobility
+523,1,Tomb Guardian,Mighty Blow,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+524,2,Tomb Guardian,Guard,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+525,3,Tomb Guardian,Guard,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+526,4,Tomb Guardian,Guard,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+527,5,Tomb Kings Blitzer,Mighty Blow,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+528,6,Tomb Kings Blitzer,Tackle,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+529,7,Tomb Kings Thrower,Block,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+530,8,Tomb Kings Thrower,,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+531,9,Skeleton Lineman,,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+532,10,Skeleton Lineman,,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+533,11,Skeleton Lineman,,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+534,12,Skeleton Lineman,,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+535,13,Skeleton Lineman,,1,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+536,99,rerolls,,3,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+537,99,dedicated_fans,,2,175381,Dalyo,Welsh National Championship 2026,Tomb Kings
+538,1,Snotling Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+539,2,Gutter Runner,Block,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+540,3,Snotling Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+541,4,Skaven Blitzer,Tackle,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+542,5,Snotling Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+543,6,Skaven Clanrat,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+544,7,Skaven Thrower,Leader,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+545,8,Skaven Clanrat,Wrestle,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+546,9,Goblin Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+547,10,Skaven Clanrat,Wrestle,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+548,11,Snotling Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+549,12,Goblin Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+550,13,Snotling Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+551,14,Rat Ogre,Block,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+552,15,Snotling Lineman,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+553,99,rerolls,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+554,99,dedicated_fans,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+555,99,Bribes,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+556,99,HalflingMasterChef,,1,170170,Ulvardar,Welsh National Championship 2026,Underworld Denizens
+557,1,Rotspawn,Guard,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+558,2,Bloater,Block,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+559,3,Bloater,Block,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+560,4,Bloater,Guard,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+561,5,Bloater,Guard,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+562,6,Pestigor,Block,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+563,7,Pestigor,Block,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+564,10,Rotter Lineman,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+565,11,Rotter Lineman,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+566,12,Rotter Lineman,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+567,13,Rotter Lineman,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+568,14,Rotter Lineman,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+569,15,Rotter Lineman,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+570,99,rerolls,,3,174090,The_GC,Welsh National Championship 2026,Nurgle
+571,99,assistant_coaches,,1,174090,The_GC,Welsh National Championship 2026,Nurgle
+572,1,Jaguar Warrior,Block,1,171533,haychdee,Welsh National Championship 2026,Amazon
+573,2,Jaguar Warrior,Guard,1,171533,haychdee,Welsh National Championship 2026,Amazon
+574,3,Piranha Warrior,Block,1,171533,haychdee,Welsh National Championship 2026,Amazon
+575,4,Piranha Warrior,Block,1,171533,haychdee,Welsh National Championship 2026,Amazon
+576,5,Eagle Warrior,Block,1,171533,haychdee,Welsh National Championship 2026,Amazon
+577,6,Eagle Warrior,Wrestle,1,171533,haychdee,Welsh National Championship 2026,Amazon
+578,7,Eagle Warrior,Wrestle,1,171533,haychdee,Welsh National Championship 2026,Amazon
+579,8,Eagle Warrior,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+580,9,Eagle Warrior,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+581,10,Eagle Warrior,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+582,11,Eagle Warrior,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+583,12,Eagle Warrior,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+584,13,Eagle Warrior,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+585,99,rerolls,,4,171533,haychdee,Welsh National Championship 2026,Amazon
+586,99,assistant_coaches,,1,171533,haychdee,Welsh National Championship 2026,Amazon
+587,1,Chaos Dwarf Blocker,,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+588,2,Chaos Dwarf Blocker,Tackle,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+589,3,Chaos Dwarf Blocker,Guard,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+590,4,Chaos Dwarf Blocker,Guard,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+591,5,Bull Centaur,Break Tackle,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+592,6,Bull Centaur,Block,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+593,7,Minotaur,Block,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+594,8,Hobgoblin Lineman,,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+595,9,Hobgoblin Lineman,,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+596,10,Hobgoblin Lineman,,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+597,11,Hobgoblin Lineman,,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+598,12,Sneaky Stabba,,1,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+599,99,rerolls,,3,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+600,99,assistant_coaches,,2,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+601,99,dedicated_fans,,2,171545,Everbodys dead dave/steve,Welsh National Championship 2026,Chaos Dwarf
+602,1,Wardancer,Strip Ball,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+603,2,Wardancer,Tackle,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+604,3,Wood Elf Catcher,Block,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+605,4,Wood Elf Catcher,Sidestep,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+606,7,Wood Elf Thrower,Leader,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+607,8,Wood Elf Lineman,Dodge,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+608,9,Wood Elf Lineman,Dodge,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+609,10,Wood Elf Lineman,,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+610,11,Wood Elf Lineman,,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+611,12,Wood Elf Lineman,,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+612,13,Wood Elf Lineman,,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+613,16,Loren Forest Treeman,,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+614,99,rerolls,,2,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+615,99,assistant_coaches,,1,170494,Martin Wodehouse,Welsh National Championship 2026,Wood Elf
+616,1,Dwarf Blitzer,Stand Firm,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+617,2,Dwarf Blitzer,Guard,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+618,3,Troll Slayer,Mighty Blow,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+619,4,Troll Slayer,,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+620,6,Dwarf Runner,Block,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+621,5,Dwarf Runner,Leader,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+622,7,Dwarf Lineman,Put the Boot In,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+623,8,Dwarf Lineman,Dirty Player,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+624,9,Dwarf Lineman,,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+625,10,Dwarf Lineman,,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+626,11,Dwarf Lineman,,1,171329,Barnacles,Welsh National Championship 2026,Dwarf
+627,99,rerolls,,2,171329,Barnacles,Welsh National Championship 2026,Dwarf
+628,99,assistant_coaches,,3,171329,Barnacles,Welsh National Championship 2026,Dwarf
+629,99,Bribes,,2,171329,Barnacles,Welsh National Championship 2026,Dwarf
+630,1,Rat Ogre,Block,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+631,2,Skaven Blitzer,Guard,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+632,3,Skaven Blitzer,Guard,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+633,4,Gutter Runner,Block,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+634,5,Gutter Runner,Block,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+635,6,Skaven Thrower,Cannoneer,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+636,7,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+637,8,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+638,9,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+639,10,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+640,11,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+641,12,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+642,13,Skaven Clanrat,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+643,99,rerolls,,3,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+644,99,assistant_coaches,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+645,99,cheerleaders,,1,170715,Gareth Juliff,Welsh National Championship 2026,Skaven
+646,1,Troll,Guard,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+647,2,Goblin Lineman,,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+648,3,Orc Blitzer,Tackle,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+649,4,Orc Blitzer,Guard,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+650,5,Orc Thrower,Block,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+651,6,Orc Thrower,Block,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+652,7,Orc Lineman,,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+653,8,Orc Lineman,,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+654,10,Orc Lineman,,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+655,9,Orc Lineman,,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+656,11,Big Un Blocker,Block,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+657,12,Big Un Blocker,Block,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+658,13,Orc Lineman,,1,171198,El_Spoonio,Welsh National Championship 2026,Orc
+659,99,rerolls,,3,171198,El_Spoonio,Welsh National Championship 2026,Orc
+660,1,Wood Elf Thrower,Leader,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+661,2,Wardancer,Strip Ball,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+662,3,Wardancer,Frenzy,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+663,4,Wood Elf Catcher,Block,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+664,5,Wood Elf Catcher,Block,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+665,6,Loren Forest Treeman,,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+666,7,Wood Elf Lineman,Kick,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+667,8,Wood Elf Lineman,Wrestle,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+668,9,Wood Elf Lineman,,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+669,10,Wood Elf Lineman,,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+670,11,Wood Elf Lineman,,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+671,99,rerolls,,2,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+672,99,assistant_coaches,,2,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+673,99,cheerleaders,,1,165402,Hal 9000,Welsh National Championship 2026,Wood Elf
+674,1,Mummy,Guard,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+675,2,Mummy,Guard,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+676,3,Wight Blitzer,Guard,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+677,4,Wight Blitzer,Guard,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+678,5,Ghoul Runner,Block,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+679,6,Ghoul Runner,Wrestle,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+680,9,Zombie Lineman,Sneaky Git,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+681,10,Zombie Lineman,,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+682,11,Zombie Lineman,,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+683,12,Zombie Lineman,,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+684,13,Zombie Lineman,,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+685,16,Skeleton Lineman,,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+686,99,rerolls,,3,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+687,99,assistant_coaches,,1,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+688,99,BlitzerBestKeg,,2,163339,Dorian,Welsh National Championship 2026,Shambling Undead
+689,1,Jaguar Warrior,Block,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+690,2,Jaguar Warrior,Guard,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+691,3,Piranha Warrior,Block,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+692,4,Piranha Warrior,Block,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+693,5,Python Warrior,Block,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+694,6,Python Warrior,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+695,7,Eagle Warrior,Wrestle,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+696,8,Eagle Warrior,Strip Ball,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+697,9,Eagle Warrior,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+698,10,Eagle Warrior,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+699,11,Eagle Warrior,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+700,12,Eagle Warrior,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+701,13,Eagle Warrior,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+702,99,rerolls,,3,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+703,99,assistant_coaches,,1,166990,Lutz Lichtenberg,Welsh National Championship 2026,Amazon
+704,1,Skaven Thrower,,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+705,2,Skaven Blitzer,Guard,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+706,3,Skaven Blitzer,Mighty Blow,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+707,4,Rat Ogre,Juggernaut,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+708,5,Gutter Runner,Block,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+709,6,Gutter Runner,Block,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+710,7,Skaven Clanrat,Wrestle,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+711,8,Skaven Clanrat,Wrestle,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+712,9,Skaven Clanrat,,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+713,10,Skaven Clanrat,,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+714,11,Skaven Clanrat,,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+715,12,Skaven Clanrat,,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+716,13,Skaven Clanrat,,1,168976,Stelthelf,Welsh National Championship 2026,Skaven
+717,99,rerolls,,3,168976,Stelthelf,Welsh National Championship 2026,Skaven
+718,99,assistant_coaches,,2,168976,Stelthelf,Welsh National Championship 2026,Skaven
+719,1,Jaguar Warrior,Block,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+720,2,Jaguar Warrior,Guard,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+721,3,Piranha Warrior,Block,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+722,4,Piranha Warrior,Block,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+723,5,Python Warrior,Wrestle,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+724,6,Python Warrior,Leader,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+725,7,Eagle Warrior,Tackle,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+726,8,Eagle Warrior,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+727,9,Eagle Warrior,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+728,10,Eagle Warrior,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+729,11,Eagle Warrior,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+730,12,Eagle Warrior,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+731,13,Eagle Warrior,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+732,99,rerolls,,2,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+733,99,assistant_coaches,,2,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+734,99,BlitzerBestKeg,,1,171579,TaureanBeast,Welsh National Championship 2026,Amazon
+735,1,Bull Centaur,Block,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+736,2,Chaos Dwarf Blocker,Guard,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+737,3,Chaos Dwarf Blocker,Guard,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+738,4,Chaos Dwarf Blocker,Guard,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+739,5,Chaos Dwarf Blocker,Guard,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+740,6,Flamesmith,Wrestle,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+741,7,Flamesmith,,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+742,8,Sneaky Stabba,,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+743,9,Sneaky Stabba,,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+744,10,Bull Centaur,Wrestle,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+745,11,Hobgoblin Lineman,,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+746,12,Hobgoblin Lineman,,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+747,13,Hobgoblin Lineman,,1,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+748,99,rerolls,,3,172632,Itchen Masack,Welsh National Championship 2026,Chaos Dwarf
+749,1,Flesh Golem,Block,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+750,2,Flesh Golem,Block,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+751,3,Wraith,Guard,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+752,4,Wraith,Guard,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+753,5,Werewolf,Block,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+754,6,Werewolf,Block,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+755,7,Ghoul Runner,Wrestle,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+756,8,Ghoul Runner,,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+757,9,Zombie Lineman,,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+758,10,Zombie Lineman,,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+759,11,Zombie Lineman,,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+760,12,Zombie Lineman,,1,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+761,99,rerolls,,3,171552,mevans1499,Welsh National Championship 2026,Necromantic Horror
+762,1,Rotspawn,Guard,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+763,2,Bloater,Block,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+764,3,Bloater,Guard,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+765,4,Bloater,Guard,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+766,5,Bloater,Block,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+767,6,Pestigor,Block,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+768,7,Pestigor,Mighty Blow,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+769,8,Rotter Lineman,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+770,9,Rotter Lineman,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+771,10,Rotter Lineman,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+772,11,Rotter Lineman,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+773,12,Rotter Lineman,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+774,13,Rotter Lineman,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+775,99,rerolls,,3,166405,Elysian83,Welsh National Championship 2026,Nurgle
+776,99,assistant_coaches,,1,166405,Elysian83,Welsh National Championship 2026,Nurgle
+777,1,Mummy,Block,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+778,2,Mummy,Brawler,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+779,3,Wight Blitzer,Guard,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+780,4,Wight Blitzer,Guard,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+781,5,Ghoul Runner,Block,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+782,6,Ghoul Runner,Block,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+783,7,Zombie Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+784,8,Zombie Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+785,9,Zombie Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+786,10,Skeleton Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+787,11,Skeleton Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+788,12,Zombie Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+789,13,Skeleton Lineman,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+790,99,rerolls,,3,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+791,99,assistant_coaches,,2,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+792,99,BlitzerBestKeg,,1,172361,scs.sam,Welsh National Championship 2026,Shambling Undead
+793,1,Ogre,Block,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+794,2,Dwarf Blitzer,Guard,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+795,3,Troll Slayer,Mighty Blow,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+796,4,Dwarf Runner,Block,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+797,5,Human Blitzer,Guard,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+798,6,Human Catcher,Block,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+799,7,Dwarf Lineman,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+800,8,Dwarf Lineman,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+801,9,Dwarf Lineman,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+802,10,Human Lineman,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+803,11,Human Lineman,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+804,12,Human Thrower,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+805,13,Halfling Hopeful,,1,170181,centruki,Welsh National Championship 2026,Old World Alliance
+806,99,rerolls,,2,170181,centruki,Welsh National Championship 2026,Old World Alliance
+807,99,assistant_coaches,,2,170181,centruki,Welsh National Championship 2026,Old World Alliance
+808,1,Jaguar Warrior,Block,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+809,2,Jaguar Warrior,Guard,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+810,3,Piranha Warrior,Block,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+811,4,Piranha Warrior,Block,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+812,5,Python Warrior,Leader,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+813,6,Eagle Warrior,Wrestle,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+814,7,Eagle Warrior,Wrestle,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+815,8,Eagle Warrior,,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+816,9,Eagle Warrior,,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+817,10,Eagle Warrior,,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+818,11,Eagle Warrior,,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+819,12,Eagle Warrior,,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+820,13,Eagle Warrior,,1,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+821,99,rerolls,,3,160225,Tom Blandin,Welsh National Championship 2026,Amazon
+822,1,Wardancer,Strip Ball,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+823,2,Wardancer,Frenzy,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+824,3,Wood Elf Catcher,Block,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+825,4,Wood Elf Catcher,Block,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+826,5,Wood Elf Thrower,Leader,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+827,6,Wood Elf Thrower,Dodge,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+828,7,Wood Elf Lineman,Kick,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+829,8,Wood Elf Lineman,,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+830,9,Wood Elf Lineman,,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+831,10,Wood Elf Lineman,,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+832,11,Wood Elf Lineman,,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+833,12,Wood Elf Lineman,,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+834,99,rerolls,,2,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+835,99,BlitzerBestKeg,,1,159768,Gareth Ford,Welsh National Championship 2026,Wood Elf
+836,1,Mummy,Guard,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+837,2,Mummy,Guard,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+838,3,Wight Blitzer,Mighty Blow,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+839,10,Zombie Lineman,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+840,4,Wight Blitzer,Mighty Blow,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+841,5,Ghoul Runner,Block,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+842,6,Ghoul Runner,Block,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+843,7,Zombie Lineman,Dirty Player,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+844,8,Zombie Lineman,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+845,9,Zombie Lineman,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+846,11,Zombie Lineman,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+847,12,Zombie Lineman,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+848,13,Zombie Lineman,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+849,99,rerolls,,3,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+850,99,assistant_coaches,,2,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+851,99,BlitzerBestKeg,,1,159704,Nick Hinder,Welsh National Championship 2026,Shambling Undead
+852,1,Loren Forest Treeman,Grab,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+853,2,Wardancer,Frenzy,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+854,3,Wardancer,Strip Ball,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+855,4,Wood Elf Thrower,Leader,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+856,10,Wood Elf Catcher,Sidestep,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+857,11,Wood Elf Catcher,Kick,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+858,6,Wood Elf Lineman,Dodge,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+859,5,Wood Elf Lineman,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+860,7,Wood Elf Lineman,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+861,8,Wood Elf Lineman,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+862,9,Wood Elf Lineman,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+863,12,Wood Elf Lineman,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+864,99,rerolls,,2,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+865,99,assistant_coaches,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+866,99,dedicated_fans,,1,171351,DaveM94,Welsh National Championship 2026,Wood Elf
+867,1,Vampire Thrower,Block,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+868,2,Vampire Thrower,Leader,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+869,3,Vampire Blitzer,Strip Ball,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+870,4,Vampire Blitzer,Tackle,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+871,5,Vampire Runner,Dodge,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+872,6,Vampire Runner,Dodge,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+873,7,Thrall Lineman,,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+874,8,Thrall Lineman,Kick,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+875,9,Thrall Lineman,,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+876,10,Thrall Lineman,,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+877,11,Thrall Lineman,,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+878,12,Thrall Lineman,,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+879,13,Thrall Lineman,,1,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+880,99,rerolls,,3,159942,IAMBATMAN,Welsh National Championship 2026,Vampire
+881,1,Jaguar Warrior,Guard,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+882,2,Jaguar Warrior,Block,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+883,3,Piranha Warrior,Block,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+884,4,Piranha Warrior,Wrestle,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+885,5,Eagle Warrior,Block,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+886,6,Eagle Warrior,Block,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+887,7,Eagle Warrior,Wrestle,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+888,8,Eagle Warrior,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+889,9,Eagle Warrior,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+890,10,Eagle Warrior,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+891,11,Eagle Warrior,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+892,12,Python Warrior,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+893,13,Python Warrior,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+894,99,rerolls,,3,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+895,99,assistant_coaches,,1,161797,Jonnie Bailey,Welsh National Championship 2026,Amazon
+896,1,Altern Forest Treeman,Pro,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+897,2,Troll Slayer,Mighty Blow,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+898,3,Dwarf Blitzer,Guard,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+899,4,Human Blitzer,Guard,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+900,5,Human Thrower,Leader,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+901,6,Human Catcher,Block,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+902,7,Dwarf Lineman,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+903,8,Dwarf Lineman,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+904,9,Dwarf Lineman,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+905,10,Human Lineman,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+906,11,Human Lineman,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+907,12,Human Lineman,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+908,13,Halfling Hopeful,,1,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+909,99,rerolls,,2,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+910,99,assistant_coaches,,2,161110,Atrellu,Welsh National Championship 2026,Old World Alliance
+911,1,Ghoul Runner,Block,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+912,2,Ghoul Runner,Block,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+913,3,Wight Blitzer,Mighty Blow,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+914,4,Wight Blitzer,Guard,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+915,5,Mummy,Guard,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+916,6,Mummy,Block,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+917,7,Skeleton Lineman,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+918,8,Skeleton Lineman,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+919,9,Zombie Lineman,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+920,10,Zombie Lineman,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+921,11,Zombie Lineman,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+922,12,Zombie Lineman,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+923,99,rerolls,,3,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+924,99,assistant_coaches,,1,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+925,99,BlitzerBestKeg,,2,170196,Zenjo,Welsh National Championship 2026,Shambling Undead
+926,1,Rat Ogre,Juggernaut,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+927,2,Skaven Blitzer,Break Tackle,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+928,3,Skaven Blitzer,Tackle,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+929,4,Gutter Runner,Block,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+930,5,Gutter Runner,Sidestep,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+931,6,Skaven Thrower,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+932,7,Skaven Clanrat,Wrestle,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+933,8,Skaven Clanrat,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+934,9,Skaven Clanrat,Kick,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+935,10,Skaven Clanrat,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+936,11,Skaven Clanrat,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+937,12,Skaven Clanrat,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+938,13,Skaven Clanrat,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+939,99,rerolls,,3,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+940,99,assistant_coaches,,1,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+941,99,TempAgencyCheerleaders,,2,171030,Jason Thorne,Welsh National Championship 2026,Skaven
+942,1,Wardancer,Strip Ball,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+943,2,Wardancer,Tackle,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+944,3,Wood Elf Thrower,Leader,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+945,4,Wood Elf Catcher,Block,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+946,5,Wood Elf Catcher,Block,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+947,6,Wood Elf Lineman,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+948,7,Wood Elf Lineman,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+949,8,Wood Elf Lineman,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+950,9,Wood Elf Lineman,Kick,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+951,10,Wood Elf Lineman,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+952,11,Wood Elf Lineman,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+953,12,Loren Forest Treeman,Grab,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+954,99,rerolls,,2,161715,Sean J,Welsh National Championship 2026,Wood Elf
+955,99,assistant_coaches,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+956,99,dedicated_fans,,1,161715,Sean J,Welsh National Championship 2026,Wood Elf
+957,1,Rat Ogre,Block,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+958,2,Skaven Blitzer,Mighty Blow,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+959,3,Skaven Blitzer,Guard,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+960,4,Gutter Runner,Block,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+961,5,Gutter Runner,Sidestep,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+962,6,Skaven Thrower,Block,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+963,7,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+964,8,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+965,9,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+966,10,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+967,11,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+968,12,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+969,13,Skaven Clanrat,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+970,99,rerolls,,3,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+971,99,assistant_coaches,,1,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+972,99,TempAgencyCheerleaders,,2,161719,ThatOtherAsianGuy,Welsh National Championship 2026,Skaven
+973,1,Dark Elf Blitzer,Dodge,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+974,2,Dark Elf Blitzer,Dodge,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+975,3,Witch Elf,Block,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+976,12,Witch Elf,Wrestle,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+977,4,Dark Elf Assassin,Dodge,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+978,5,Dark Elf Assassin,Dodge,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+979,6,Dark Elf Lineman,,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+980,7,Dark Elf Lineman,,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+981,8,Dark Elf Lineman,,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+982,9,Dark Elf Lineman,,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+983,10,Dark Elf Lineman,,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+984,11,Dark Elf Lineman,Kick,1,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+985,99,rerolls,,2,161844,Noveltyboy,Welsh National Championship 2026,Dark Elf
+986,1,Wardancer,Strip Ball,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+987,2,Wardancer,Frenzy,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+988,5,Wood Elf Thrower,Leader,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+989,3,Wood Elf Catcher,Block,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+990,4,Wood Elf Catcher,Block,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+991,6,Wood Elf Lineman,,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+992,7,Wood Elf Lineman,,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+993,8,Wood Elf Lineman,,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+994,9,Wood Elf Lineman,,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+995,10,Wood Elf Lineman,,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+996,16,Loren Forest Treeman,Block,1,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+997,99,rerolls,,2,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+998,99,assistant_coaches,,3,170889,CheekyJimmy,Welsh National Championship 2026,Wood Elf
+999,1,Zombie Lineman,,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1000,2,Zombie Lineman,,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1001,3,Zombie Lineman,,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1002,4,Zombie Lineman,Dirty Player,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1003,5,Ghoul Runner,Wrestle,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1004,6,Ghoul Runner,Block,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1005,7,Wight Blitzer,Guard,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1006,8,Wight Blitzer,Mighty Blow,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1007,9,Mummy,Guard,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1008,10,Mummy,Guard,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1009,11,Zombie Lineman,,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1010,12,Zombie Lineman,,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1011,13,Zombie Lineman,,1,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1012,99,rerolls,,4,171882,SaltyMurcutt,Welsh National Championship 2026,Shambling Undead
+1013,1,Rotspawn,Block,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1014,2,Pestigor,Block,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1015,3,Pestigor,Block,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1016,4,Bloater,Block,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1017,5,Bloater,Guard,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1018,6,Bloater,Guard,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1019,7,Bloater,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1020,8,Rotter Lineman,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1021,9,Rotter Lineman,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1022,10,Rotter Lineman,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1023,11,Rotter Lineman,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1024,12,Rotter Lineman,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1025,99,rerolls,,3,168146,Leo,Welsh National Championship 2026,Nurgle
+1026,99,BlitzerBestKeg,,1,168146,Leo,Welsh National Championship 2026,Nurgle
+1027,1,Rat Ogre,Juggernaut,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1028,2,Skaven Blitzer,Tackle,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1029,3,Skaven Blitzer,Break Tackle,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1030,4,Gutter Runner,Block,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1031,5,Gutter Runner,Sidestep,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1032,6,Skaven Thrower,Leader,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1033,7,Skaven Clanrat,Dirty Player,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1034,8,Skaven Clanrat,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1035,9,Skaven Clanrat,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1036,10,Skaven Clanrat,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1037,11,Skaven Clanrat,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1038,12,Skaven Clanrat,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1039,13,Skaven Clanrat,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1040,99,rerolls,,3,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1041,99,assistant_coaches,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1042,99,cheerleaders,,1,171344,BamBamBungle,Welsh National Championship 2026,Skaven
+1043,1,Altern Forest Treeman,Guard,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1044,2,Dwarf Blitzer,Guard,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1045,3,Troll Slayer,Guard,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1046,4,Human Blitzer,Mighty Blow,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1047,5,Human Thrower,Leader,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1048,6,Human Catcher,Block,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1049,7,Dwarf Lineman,,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1050,8,Dwarf Lineman,,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1051,9,Dwarf Lineman,,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1052,10,Human Lineman,Wrestle,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1053,11,Human Lineman,,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1054,12,Human Lineman,,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1055,13,Halfling Hopeful,,1,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1056,99,rerolls,,2,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1057,99,assistant_coaches,,2,167229,Dan Brown,Welsh National Championship 2026,Old World Alliance
+1058,1,Ghoul Runner,Block,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1059,2,Ghoul Runner,Block,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1060,3,Wraith,Guard,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1061,4,Wraith,Guard,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1062,5,Flesh Golem,Guard,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1063,6,Flesh Golem,,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1064,7,Werewolf,Block,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1065,8,Werewolf,Block,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1066,9,Zombie Lineman,,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1067,10,Zombie Lineman,,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1068,11,Zombie Lineman,,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1069,12,Zombie Lineman,,1,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1070,99,rerolls,,3,160005,Tatws (Daf),Welsh National Championship 2026,Necromantic Horror
+1071,1,Kroxigor,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1072,2,Saurus Blocker,Block,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1073,3,Saurus Blocker,Block,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1074,4,Saurus Blocker,Block,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1075,5,Saurus Blocker,Block,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1076,6,Saurus Blocker,Break Tackle,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1077,7,Saurus Blocker,Frenzy,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1078,8,Chameleon Skink,Leader,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1079,9,Skink Lineman,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1080,10,Skink Lineman,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1081,11,Skink Lineman,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1082,12,Skink Lineman,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1083,99,rerolls,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1084,99,assistant_coaches,,3,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1085,99,cheerleaders,,1,159744,Roger Milburn ( FluffytheAlien ),Welsh National Championship 2026,Lizardmen
+1086,1,Pestigor,Block,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1087,2,Pestigor,Block,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1088,3,Bloater,Guard,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1089,4,Bloater,Guard,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1090,5,Bloater,Monstrous Mouth,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1091,6,Bloater,Mighty Blow,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1092,7,Rotspawn,Brawler,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1093,8,Rotter Lineman,,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1094,9,Rotter Lineman,,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1095,10,Rotter Lineman,,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1096,11,Rotter Lineman,,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1097,12,Rotter Lineman,,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1098,99,rerolls,,3,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1099,99,BlitzerBestKeg,,1,165596,AngryHobbit,Welsh National Championship 2026,Nurgle
+1100,1,Altern Forest Treeman,Guard,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1101,2,Troll Slayer,Guard,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1102,3,Dwarf Blitzer,Guard,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1103,4,Human Blitzer,Mighty Blow,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1104,5,Dwarf Runner,Leader,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1105,6,Human Catcher,Block,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1106,7,Dwarf Lineman,Taunt,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1107,8,Dwarf Lineman,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1108,9,Dwarf Lineman,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1109,10,Human Lineman,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1110,11,Human Lineman,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1111,12,Human Lineman,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1112,13,Halfling Hopeful,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1113,99,rerolls,,2,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1114,99,assistant_coaches,,1,160070,Fritz_unlucky,Welsh National Championship 2026,Old World Alliance
+1115,1,Bull Centaur,Block,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1116,2,Bull Centaur,Block,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1117,3,Chaos Dwarf Blocker,Mighty Blow,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1118,4,Chaos Dwarf Blocker,Mighty Blow,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1119,5,Chaos Dwarf Blocker,Mighty Blow,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1120,6,Chaos Dwarf Blocker,Mighty Blow,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1121,7,Flamesmith,Tackle,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1122,8,Flamesmith,,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1123,9,Hobgoblin Lineman,,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1124,10,Hobgoblin Lineman,,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1125,12,Sneaky Stabba,,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1126,11,Hobgoblin Lineman,,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1127,13,Sneaky Stabba,,1,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1128,99,rerolls,,3,165039,MorgN_Pawl,Welsh National Championship 2026,Chaos Dwarf
+1129,1,Mummy,Guard,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1130,2,Mummy,Guard,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1131,3,Wight Blitzer,Mighty Blow,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1132,4,Wight Blitzer,Mighty Blow,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1133,5,Ghoul Runner,Block,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1134,6,Ghoul Runner,Block,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1135,7,Zombie Lineman,Dirty Player,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1136,8,Zombie Lineman,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1137,9,Zombie Lineman,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1138,10,Zombie Lineman,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1139,11,Zombie Lineman,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1140,12,Zombie Lineman,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1141,99,rerolls,,3,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1142,99,assistant_coaches,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1143,99,Bribes,,1,159739,Brian Treherne,Welsh National Championship 2026,Shambling Undead
+1144,1,Altern Forest Treeman,Grab,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1145,2,Altern Forest Treeman,Bullseye,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1146,3,Halfling Hefty,Cannoneer,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1147,4,Halfling Hefty,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1148,5,Halfling Catcher,Jump Up,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1149,6,Halfling Catcher,Jump Up,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1150,7,Halfling Hopeful,Dauntless,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1151,8,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1152,9,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1153,10,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1154,11,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1155,12,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1156,13,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1157,14,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1158,15,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1159,16,Halfling Hopeful,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1160,99,rerolls,,4,159757,Stoffer,Welsh National Championship 2026,Halfling
+1161,99,HalflingMasterChef,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1162,99,BlitzerBestKeg,,1,159757,Stoffer,Welsh National Championship 2026,Halfling
+1163,99,TempAgencyCheerleaders,,2,159757,Stoffer,Welsh National Championship 2026,Halfling
+1164,1,Ogre Runt Punter,Leader,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1165,2,Ogre Blocker,Block,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1166,3,Ogre Blocker,Guard,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1167,4,Ogre Blocker,Break Tackle,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1168,5,Ogre Blocker,Bullseye,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1169,6,Gnoblar Lineman,Dirty Player,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1170,7,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1171,8,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1172,9,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1173,10,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1174,11,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1175,12,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1176,13,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1177,14,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1178,15,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1179,16,Gnoblar Lineman,,1,159911,Jonny,Welsh National Championship 2026,Ogre
+1180,99,rerolls,,4,159911,Jonny,Welsh National Championship 2026,Ogre
+1181,1,Altern Forest Treeman,Guard,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1182,2,Dwarf Blitzer,Guard,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1183,3,Troll Slayer,Guard,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1184,4,Human Blitzer,Mighty Blow,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1185,5,Human Thrower,Leader,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1186,6,Human Catcher,Block,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1187,7,Dwarf Lineman,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1188,8,Dwarf Lineman,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1189,9,Dwarf Lineman,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1190,10,Human Lineman,Wrestle,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1191,11,Human Lineman,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1192,12,Human Lineman,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1193,13,Halfling Hopeful,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1194,99,rerolls,,2,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1195,99,assistant_coaches,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1196,99,dedicated_fans,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1197,99,TempAgencyCheerleaders,,1,177582,Mef Spores,Welsh National Championship 2026,Old World Alliance
+1198,1,Chaos Chosen,Brawler,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1199,2,Chaos Chosen,Brawler,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1200,3,Chaos Chosen,Block,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1201,4,Chaos Chosen,Block,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1202,5,Minotaur,Claws,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1203,6,Beastman Lineman,Block,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1204,7,Beastman Lineman,Block,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1205,8,Beastman Lineman,,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1206,9,Beastman Lineman,,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1207,10,Beastman Lineman,,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1208,11,Beastman Lineman,,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1209,12,Beastman Lineman,,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1210,99,rerolls,,4,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1211,99,assistant_coaches,,1,176095,Redshirt15,Welsh National Championship 2026,Chaos Chosen
+1212,1,Flesh Golem,Block,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1213,2,Flesh Golem,Block,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1214,3,Wraith,Guard,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1215,4,Wraith,Guard,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1216,5,Werewolf,Block,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1217,6,Werewolf,Block,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1218,7,Ghoul Runner,Sure Hands,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1219,8,Ghoul Runner,,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1220,9,Zombie Lineman,,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1221,10,Zombie Lineman,,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1222,11,Zombie Lineman,,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1223,12,Zombie Lineman,,1,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1224,99,rerolls,,3,159740,Jay,Welsh National Championship 2026,Necromantic Horror
+1225,1,Rat Ogre,Juggernaut,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1226,2,Skaven Blitzer,Guard,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1227,3,Skaven Blitzer,Break Tackle,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1228,4,Gutter Runner,Block,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1229,5,Gutter Runner,Wrestle,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1230,6,Skaven Thrower,Leader,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1231,7,Skaven Clanrat,Kick,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1232,8,Skaven Clanrat,,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1233,9,Skaven Clanrat,,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1234,10,Skaven Clanrat,,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1235,11,Skaven Clanrat,,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1236,12,Skaven Clanrat,,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1237,13,Skaven Clanrat,,1,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1238,99,rerolls,,3,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1239,99,assistant_coaches,,2,170411,StoneThrowingDevil,Welsh National Championship 2026,Skaven
+1240,1,Yhetee,Block,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1241,2,Ulfwerener,Block,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1242,3,Ulfwerener,Block,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1243,4,Norse Berserker,Guard,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1244,5,Norse Berserker,Tackle,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1245,6,Valkyrie,Wrestle,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1246,8,Norse Raider,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1247,10,Norse Raider,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1248,9,Norse Raider,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1249,11,Beer Boar,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1250,12,Beer Boar,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1251,13,Norse Raider,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1252,7,Norse Raider,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1253,14,Norse Raider,,1,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1254,99,rerolls,,3,170617,Andrew Mr Frodo,Welsh National Championship 2026,Norse
+1255,1,Black Orc,Guard,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1256,2,Black Orc,Guard,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1257,3,Black Orc,Guard,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1258,4,Black Orc,Guard,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1259,5,Black Orc,Mighty Blow,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1260,6,Black Orc,Mighty Blow,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1261,7,Goblin Bruiser,,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1262,8,Goblin Bruiser,,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1263,9,Goblin Bruiser,,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1264,10,Goblin Bruiser,,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1265,11,Goblin Bruiser,,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1266,12,Trained Troll,Strong Arm,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1267,99,rerolls,,3,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1268,99,assistant_coaches,,2,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1269,99,cheerleaders,,2,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1270,99,Bribes,,1,170961,Markthemagnificent,Welsh National Championship 2026,Black Orc
+1271,1,Werewolf,Block,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1272,2,Werewolf,Block,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1273,3,Flesh Golem,Guard,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1274,4,Flesh Golem,Guard,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1275,5,Ghoul Runner,Sure Hands,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1276,6,Ghoul Runner,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1277,7,Wraith,Tackle,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1278,8,Wraith,Strip Ball,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1279,9,Zombie Lineman,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1280,10,Zombie Lineman,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1281,11,Zombie Lineman,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1282,12,Zombie Lineman,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1283,13,Zombie Lineman,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1284,99,rerolls,,2,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1285,99,assistant_coaches,,1,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1286,99,cheerleaders,,2,159776,Stuartt1975,Welsh National Championship 2026,Necromantic Horror
+1287,7,Bull Centaur,Sure Hands,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1288,8,Bull Centaur,Block,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1289,5,Flamesmith,,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1290,6,Flamesmith,,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1291,1,Chaos Dwarf Blocker,Guard,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1292,2,Chaos Dwarf Blocker,Guard,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1293,4,Chaos Dwarf Blocker,Guard,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1294,3,Chaos Dwarf Blocker,Claws,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1295,9,Hobgoblin Lineman,,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1296,11,Hobgoblin Lineman,,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1297,10,Hobgoblin Lineman,,1,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1298,99,rerolls,,4,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1299,99,assistant_coaches,,2,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1300,99,cheerleaders,,2,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1301,99,dedicated_fans,,2,175312,Mr Steal Your Tech,Welsh National Championship 2026,Chaos Dwarf
+1302,1,Trained Troll,Break Tackle,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1303,2,Trained Troll,Multiple Block,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1304,3,Pump Wagon,Frenzy,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1305,4,Pump Wagon,Brawler,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1306,5,Fungus Flinga,Leader,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1307,6,Fungus Flinga,Hail Mary Pass,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1308,7,Stilty Runna,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1309,8,Stilty Runna,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1310,9,Fun-hoppa,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1311,10,Fun-hoppa,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1312,11,Snotling Lineman,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1313,12,Snotling Lineman,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1314,13,Snotling Lineman,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1315,14,Snotling Lineman,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1316,15,Snotling Lineman,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1317,16,Snotling Lineman,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1318,99,rerolls,,2,171501,Neodaud,Welsh National Championship 2026,Snotling
+1319,99,HalflingMasterChef,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1320,99,Bribes,,1,171501,Neodaud,Welsh National Championship 2026,Snotling
+1321,1,Wood Elf Thrower,Leader,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1322,2,Wood Elf Lineman,Wrestle,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1323,11,Wood Elf Lineman,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1324,5,Wood Elf Lineman,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1325,6,Wood Elf Lineman,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1326,10,Wood Elf Lineman,Wrestle,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1327,11,Wood Elf Lineman,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1328,7,Wardancer,Hit and Run,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1329,4,Wood Elf Catcher,Sure Hands,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1330,9,Wardancer,Tackle,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1331,3,Wood Elf Catcher,Sure Feet,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1332,99,rerolls,,2,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1333,99,assistant_coaches,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1334,99,dedicated_fans,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1335,99,DodgyLeagueRep,,1,164863,smurf1917,Welsh National Championship 2026,Wood Elf
+1336,1,Vampire Blitzer,Frenzy,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1337,2,Vampire Blitzer,Strip Ball,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1338,3,Vampire Thrower,Leader,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1339,4,Vampire Thrower,Block,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1340,5,Vampire Runner,Dodge,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1341,6,Vampire Runner,Dodge,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1342,7,Thrall Lineman,Kick,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1343,8,Thrall Lineman,,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1344,9,Thrall Lineman,,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1345,10,Thrall Lineman,,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1346,11,Thrall Lineman,,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1347,12,Thrall Lineman,,1,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1348,99,rerolls,,4,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1349,99,assistant_coaches,,3,159826,Fred Man Walking,Welsh National Championship 2026,Vampire
+1350,1,Dwarf Lineman,Guard,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1351,2,Dwarf Lineman,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1352,3,Dwarf Blitzer,Mighty Blow,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1353,4,Dwarf Runner,Block,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1354,5,Troll Slayer,Guard,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1355,6,Human Lineman,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1356,7,Human Lineman,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1357,8,Human Blitzer,Mighty Blow,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1358,9,Human Thrower,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1359,10,Human Catcher,Block,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1360,11,Halfling Hopeful,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1361,12,Halfling Hopeful,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1362,13,Altern Forest Treeman,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1363,99,rerolls,,3,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1364,99,assistant_coaches,,1,161547,projectjetfire,Welsh National Championship 2026,Old World Alliance
+1365,1,Flesh Golem,Guard,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1366,2,Flesh Golem,Guard,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1367,3,Wraith,Guard,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1368,4,Wraith,Guard,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1369,11,Werewolf,Block,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1370,12,Werewolf,Block,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1371,15,Ghoul Runner,Block,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1372,16,Ghoul Runner,,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1373,17,Zombie Lineman,,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1374,18,Zombie Lineman,,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1375,19,Zombie Lineman,,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1376,20,Zombie Lineman,,1,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1377,99,rerolls,,3,159825,CharlieWooooo,Welsh National Championship 2026,Necromantic Horror
+1378,1,Bloodspawn,Guard,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1379,2,Bloodseeker,Mighty Blow,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1380,3,Bloodseeker,Mighty Blow,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1381,4,Bloodseeker,Mighty Blow,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1382,5,Bloodseeker,Mighty Blow,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1383,6,Khorngor,Sure Hands,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1384,7,Khorngor,Strip Ball,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1385,8,Bloodborn Marauder,,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1386,9,Bloodborn Marauder,,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1387,10,Bloodborn Marauder,,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1388,11,Bloodborn Marauder,,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1389,12,Bloodborn Marauder,,1,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1390,99,rerolls,,3,169897,Son_Of_Wocky (J.W.),Welsh National Championship 2026,Khorne
+1391,2,Wardancer,Sidestep,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1392,3,Wood Elf Catcher,Block,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1393,5,Wood Elf Lineman,,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1394,6,Wood Elf Lineman,,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1395,7,Wood Elf Lineman,,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1396,8,Wood Elf Lineman,Wrestle,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1397,4,Wood Elf Catcher,Block,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1398,11,Wood Elf Lineman,Kick,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1399,10,Wood Elf Thrower,Leader,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1400,12,Wood Elf Thrower,,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1401,9,Wood Elf Lineman,,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1402,1,Wardancer,Strip Ball,1,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1403,99,rerolls,,2,166352,Gompy,Welsh National Championship 2026,Wood Elf
+1404,1,Wardancer,Strip Ball,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1405,2,Wardancer,Tackle,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1406,3,Wood Elf Catcher,Block,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1407,4,Wood Elf Catcher,Sure Feet,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1408,5,Wood Elf Thrower,Cannoneer,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1409,6,Wood Elf Lineman,Guard,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1410,7,Wood Elf Lineman,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1411,8,Wood Elf Lineman,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1412,9,Wood Elf Lineman,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1413,10,Wood Elf Lineman,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1414,11,Wood Elf Lineman,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1415,12,Wood Elf Lineman,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1416,99,rerolls,,2,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1417,99,assistant_coaches,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1418,99,cheerleaders,,1,169301,Steve Smith,Welsh National Championship 2026,Wood Elf
+1419,1,Bull Centaur,Juggernaut,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1420,2,Bull Centaur,Brawler,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1421,3,Chaos Dwarf Blocker,Dauntless,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1422,4,Chaos Dwarf Blocker,Guard,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1423,5,Chaos Dwarf Blocker,,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1424,6,Chaos Dwarf Blocker,,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1425,7,Flamesmith,,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1426,8,Flamesmith,,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1427,9,Sneaky Stabba,,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1428,10,Sneaky Stabba,Sure Hands,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1429,11,Hobgoblin Lineman,Dirty Player,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1430,12,Hobgoblin Lineman,Sneaky Git,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1431,13,Hobgoblin Lineman,,1,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1432,99,rerolls,,3,169429,Barryvalleyboy,Welsh National Championship 2026,Chaos Dwarf
+1433,1,Kroxigor,,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1434,2,Saurus Blocker,Frenzy,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1435,3,Saurus Blocker,Tackle,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1436,4,Saurus Blocker,Guard,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1437,5,Saurus Blocker,Tackle,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1438,6,Saurus Blocker,Guard,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1439,7,Saurus Blocker,Block,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1440,8,Chameleon Skink,Leader,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1441,9,Skink Lineman,,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1442,11,Skink Lineman,,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1443,10,Skink Lineman,,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1444,12,Skink Lineman,,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1445,99,rerolls,,2,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
+1446,99,assistant_coaches,,1,159719,scroogemcgull,Welsh National Championship 2026,Lizardmen
