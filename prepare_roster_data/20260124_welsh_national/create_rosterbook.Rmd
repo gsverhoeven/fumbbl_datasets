@@ -81,19 +81,33 @@ res <- df_rosters %>%
   summarise(cnt = n()) %>%
   arrange(-cnt)
 
-gp <- ggplot(res, aes(x = reorder(roster.name, cnt) ,y = cnt)) +
+gp <- ggplot(res[1:10,], aes(x = reorder(roster.name, cnt) ,y = cnt)) +
   geom_point() +
   expand_limits(y = 0) +
   coord_flip() +
   ylab("# rosters") +
   xlab("") +
-  ggtitle("Welsh Nationals roster popularity")
+  ggtitle("Welsh Nationals 2026 roster popularity (Flat tiering)")
 
-ggsave(gp, filename = "roster_pop_third_season.png")
+ggsave(gp, filename = "roster_pop_welsh_nationals.png")
 
 gp
 ```
 
+```{r}
+res$cumsum <- cumsum(res$cnt)
+gp <- ggplot(res, aes(x = reorder(roster.name, -cumsum) ,y = cumsum)) +
+  geom_point() +
+  expand_limits(y = 0) +
+  coord_flip() +
+  ylab("cumulative # rosters") +
+  xlab("") +
+  ggtitle("Welsh Nationals 2026 roster cumulative distribution")
+gp
+
+ggsave(gp, filename = "roster_cumdist_welsh_nationals.png")
+
+```
 
 
 ```{r}
