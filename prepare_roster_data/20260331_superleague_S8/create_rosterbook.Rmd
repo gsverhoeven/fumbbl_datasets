@@ -36,8 +36,7 @@ df_rosters1$group_name <- group_name
 tournament_ruleset <- params$tournament_ruleset
 ```
 
-# II. Data cleaning
-## Beginning of data cleaning
+# drop empty rows and add cnt col
 
 ```{r}
 df_rosters <- df_rosters1 %>%
@@ -102,11 +101,13 @@ df_rosters %>%
 
 ```{r}
 # fix wrong inducement
+# drop the white dwarf (we already have Grombrindal :-)
 
 df_rosters <- df_rosters %>%
   filter(!(position %in% c("1 part-time assistant coach", "1 temp agency cheerleader", "the White Dwarf")))
 
-# drop the white dwarf (we already have Grombrindal :-)
+df_rosters <- df_rosters %>%
+  filter(!(coach_name == "Twyllenimor" & position == "1 bribe"))
 
 
 ```
